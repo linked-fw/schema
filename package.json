@@ -68,6 +68,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/linked-cm/schema.git"
+    "url": "git+https://github.com/linked-fw/schema.git"
   }
 }
