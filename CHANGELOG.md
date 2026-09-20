@@ -1,5 +1,11 @@
 # @\_linked/schema
 
+## 1.1.3
+
+### Patch Changes
+
+- [#18](https://github.com/linked-fw/schema/pull/18) [`156c056`](https://github.com/linked-fw/schema/commit/156c0565e68e6d95c6a66881c227773d797d3564) Thanks [@flyon](https://github.com/flyon)! - Declare npm as the package manager for this repo, convert the build scripts off `yarn`, and mark `package-lock.json` as a generated file.
+
 ## 1.1.1
 
 ### Patch Changes
