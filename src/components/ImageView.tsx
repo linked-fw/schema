@@ -24,8 +24,10 @@ export const ImageView = linkedComponent<
   delete restProps.source;
   // delete restProps.shape;
 
+  const src = contentUrl ? asset(contentUrl) : undefined;
+
   return (
-    <img {...restProps} src={asset(contentUrl)} width={width} height={height} />
+    <img {...restProps} src={src} width={width} height={height} />
   );
 });
 

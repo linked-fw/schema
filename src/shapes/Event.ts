@@ -59,6 +59,11 @@ export class Event extends Thing {
     return null;
   }
 
+  @objectProperty({
+    path: schema.superEvent,
+    shape: Event,
+    maxCount: 1,
+  })
   get superEvent(): Event {
     return null;
   }
