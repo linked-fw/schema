@@ -1,7 +1,5 @@
 import { Prefix } from '@_linked/core/utils/Prefix';
 import { createNameSpace } from '@_linked/core/utils/NameSpace';
-import { linkedOntology } from '../package.js';
-import * as _this from './schema.js';
 
 export const loadData = async () => {
   return Promise.all([
@@ -299,7 +297,3 @@ export const schema = {
   childItem,
 };
 
-linkedOntology(_this, ns, 'schema', loadData, [
-  '../data/schema.json',
-  '../data/schema-added.json',
-]);
