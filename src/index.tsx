@@ -1,4 +1,5 @@
 import './types.js';
+import './ontologies/schema.register.js';
 import './shapes/MediaObject.js';
 import './shapes/ArtBlock.js';
 import './shapes/Apartment.js';
