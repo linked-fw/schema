@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
 import style from './ImageUploader.module.css';
-import { Button } from 'lincd-mui-base/components/Button';
 import { cl } from '@_linked/react/utils/ClassNames';
 import { Spinner } from '@_linked/primitives/components/Spinner';
 
