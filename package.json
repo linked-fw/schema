@@ -21,7 +21,7 @@
     "copy-to-lib": "echo 'copying CSS + JSON assets to lib folder' && copyfiles -u 1 'src/**/*.css' 'src/**/*.json' lib/esm"
   },
   "dependencies": {
-    "@_linked/core": "^2.0.1",
+    "@_linked/core": "^2.22.8",
     "@_linked/primitives": "^1.0",
     "@_linked/react": "^1.1.0",
     "@_linked/server-utils": "^1.0",
