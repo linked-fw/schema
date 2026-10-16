@@ -5,6 +5,7 @@ import { schema } from '../ontologies/schema.js';
 import { linkedShape } from '../package.js';
 
 @linkedShape({
+  name: 'ListItem',
   description:
     'An item in a list or data feed. Represents list elements with position and item relationships. (element, entry, member)',
 })

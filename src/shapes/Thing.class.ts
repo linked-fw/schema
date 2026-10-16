@@ -5,6 +5,7 @@ import { linkedShape } from '../package.js';
 import { schema } from '../ontologies/schema.js';
 
 @linkedShape({
+  name: 'Thing',
   description:
     'The most generic type in Schema.org; superclass for all entities. Can be a person, place, organization, product, etc. (entity, resource, item)',
 })

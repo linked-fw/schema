@@ -6,6 +6,7 @@ import { linkedShape } from '../package.js';
 import { CreativeWork } from './CreativeWork.class.js';
 
 @linkedShape({
+  name: 'MediaObject',
   description:
     'A media object such as an image, video, or audio file. Represents digital media with content URL, encoding, and file properties. (media, file, content)',
 })

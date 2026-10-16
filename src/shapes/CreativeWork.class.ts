@@ -5,6 +5,7 @@ import { xsd } from '@_linked/xsd/ontologies/xsd';
 import { Thing } from './Thing.class.js';
 
 @linkedShape({
+  name: 'CreativeWork',
   description:
     'A work or composition that is the result of creative effort. Represents content with creator, dates, and copyright info. (content, work, creation)',
 })

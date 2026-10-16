@@ -3,6 +3,7 @@ import { schema } from '../ontologies/schema.js';
 import { linkedShape } from '../package.js';
 
 @linkedShape({
+  name: 'ArtBlock',
   description:
     'A custom art block implementation for ArtBlocks platform. Represents generative artworks with creator relationships and creation metadata. (generative art, NFT, block)',
 })

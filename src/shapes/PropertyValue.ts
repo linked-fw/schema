@@ -4,6 +4,7 @@ import { schema } from '../ontologies/schema.js';
 import { linkedShape } from '../package.js';
 
 @linkedShape({
+  name: 'PropertyValue',
   description:
     'A property-value pair representing structured data. Represents key-value pairs with property ID and value relationships. (pair, attribute, data)',
 })

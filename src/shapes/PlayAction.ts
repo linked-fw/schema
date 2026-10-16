@@ -3,6 +3,7 @@ import { linkedShape } from '../package.js';
 import { Action } from './Action.js';
 
 @linkedShape({
+  name: 'PlayAction',
   description:
     'An action of playing a game, sport, or other activity. Represents recreational activities with agent and object relationships. (gameplay, recreation, activity)',
 })

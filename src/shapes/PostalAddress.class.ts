@@ -5,6 +5,7 @@ import { schema } from '../ontologies/schema.js';
 import { AdministrativeArea } from './AdministrativeArea.class.js';
 
 @linkedShape({
+  name: 'PostalAddress',
   description:
     'A mailing address; includes street, city, postal code, and country. Used for contact info of people, places, or organizations. (address, contact, location)',
 })
