@@ -7,6 +7,7 @@ import { Event } from './Event.js';
 import { Person } from './Person.js';
 
 @linkedShape({
+  name: 'JoinAction',
   description:
     'An action of joining an event or group. Represents participation with agent person and event relationships. (participation, attendance, enrollment)',
 })

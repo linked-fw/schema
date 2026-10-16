@@ -5,6 +5,7 @@ import { linkedShape } from '../package.js';
 import { Thing } from './Thing.js';
 
 @linkedShape({
+  name: 'Comment',
   description:
     'A comment on an item. Represents user feedback with parent-child relationships and threaded discussions. (feedback, remark, note)',
 })

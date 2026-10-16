@@ -9,6 +9,7 @@ import { Place } from './Place.js';
 import { Thing } from './Thing.js';
 
 @linkedShape({
+  name: 'Event',
   description:
     'An occurrence happening at a certain time and location. Represents events with start/end dates, attendees, and location. (occurrence, happening, gathering)',
 })

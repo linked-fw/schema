@@ -6,6 +6,7 @@ import { linkedShape } from '../package.js';
 import { Person } from './Person.js';
 
 @linkedShape({
+  name: 'BefriendAction',
   description:
     'An action of establishing a friendship relationship. Represents social connections with agent and object person relationships. (friend request, connection, social)',
 })

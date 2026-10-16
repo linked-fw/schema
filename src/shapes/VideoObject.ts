@@ -4,6 +4,7 @@ import { linkedShape } from '../package.js';
 import { MediaObject } from './MediaObject.js';
 
 @linkedShape({
+  name: 'VideoObject',
   description:
     'A video file or video stream. Represents video content with duration, encoding, and playback properties. (video, movie, clip)',
 })

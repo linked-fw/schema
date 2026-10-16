@@ -4,6 +4,7 @@ import { CreativeWork } from './CreativeWork.js';
 import { literalProperty } from '@_linked/core/shapes/SHACL';
 
 @linkedShape({
+  name: 'Code',
   description:
     'Computer programming source code. Represents code with text content, programming language, and creative work properties. (source code, program, script)',
 })

@@ -6,6 +6,7 @@ import { Intangible } from './Intangible.js';
 import { Thing } from './Thing.js';
 
 @linkedShape({
+  name: 'DataFeedItem',
   description:
     'A single item within a data feed. Represents feed entries with creation dates, modification tracking, and item relationships. (entry, feed item, record)',
 })

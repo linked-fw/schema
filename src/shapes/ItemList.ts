@@ -6,6 +6,7 @@ import { linkedShape } from '../package.js';
 import { ListItem } from './ListItem.js';
 
 @linkedShape({
+  name: 'ItemList',
   description:
     'A list of items of any sort. Represents ordered collections with item list elements and position relationships. (list, collection, sequence)',
 })

@@ -8,6 +8,7 @@ import { Place } from './Place.js';
 import { Thing } from './Thing.js';
 
 @linkedShape({
+  name: 'Action',
   description:
     'An action performed by a person or organization. Represents activities with agent, participant, location, and timing. (activity, operation, task)',
 })

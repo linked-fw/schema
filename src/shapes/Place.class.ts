@@ -4,6 +4,7 @@ import { linkedShape } from '../package.js';
 import { Thing } from './Thing.class.js';
 
 @linkedShape({
+  name: 'Place',
   description:
     'Entities that have a somewhat fixed, physical extension. Represents locations with coordinates, addresses, and containment relationships. (location, venue, site)',
 })

@@ -19,6 +19,7 @@ export interface ImageCreationMetaData {
 }
 
 @linkedShape({
+  name: 'ImageObject',
   description:
     'A Schema.org ImageObject; represents an image file or resource. Used for thumbnails, profile pictures, media. (photo, picture, graphic)',
 })

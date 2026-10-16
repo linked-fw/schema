@@ -5,6 +5,7 @@ import { CreativeWork } from './CreativeWork.js';
 import { Person } from './Person.js';
 
 @linkedShape({
+  name: 'VisualArtwork',
   description:
     'A work of art that is primarily visual in character. Represents artworks with artist relationships, medium details, and creative work properties. (artwork, painting, sculpture)',
 })

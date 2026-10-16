@@ -6,6 +6,7 @@ import { schema } from '../ontologies/schema.js';
 import { Thing } from './Thing.js';
 
 @linkedShape({
+  name: 'Organization',
   description:
     'An organization such as a school, NGO, corporation, club, etc.; has members, leaders, and contact info. Links to Person and Address. (org, company, group, institution)',
 })

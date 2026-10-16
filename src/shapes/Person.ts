@@ -14,6 +14,7 @@ import './DefinedTerm.js';
 import { AdministrativeArea } from './AdministrativeArea.js';
 
 @linkedShape({
+  name: 'Person',
   description:
     'A person (alive, dead, fictional); can be a member, leader, or contact for organizations. Holds identifiers and contact details. (individual, human, actor, user)',
 })

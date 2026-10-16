@@ -6,6 +6,7 @@ import { PropertyValue } from './PropertyValue.js';
 import { Thing } from './Thing.js';
 
 @linkedShape({
+  name: 'Observation',
   description:
     'An observation of a specific entity at a particular time. Represents measurements with observation dates, variable tracking, and entity relationships. (measurement, data point, record)',
 })
