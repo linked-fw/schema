@@ -27,7 +27,7 @@
     "@_linked/core": "^2.27.0",
     "@_linked/primitives": "^1.8.0",
     "@_linked/react": "^2.0.0",
-    "@_linked/server-utils": "^1.9.0",
+    "@_linked/server-utils": "^1.14.0",
     "@_linked/xsd": "^1.0",
     "formidable": "^3.5.4",
     "prism-react-renderer": "^2.4.1"

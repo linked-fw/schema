@@ -297,9 +297,9 @@ describe('RPC declarations', () => {
   it('declares every client-called file method callable for signed-in users', async () => {
     const { getOwnCallableLevel } = await import('@_linked/server-utils/utils/callable');
     for (const method of ['deleteFile', 'getAllFilestoreImages', 'fromDataURL', 'fromFormFile']) {
-      assert.equal(getOwnCallableLevel(ImageObjectProvider, method), 'user', `ImageObjectProvider.${method}`);
+      assert.equal(getOwnCallableLevel(ImageObjectProvider, method), 'signed-in', `ImageObjectProvider.${method}`);
     }
-    assert.equal(getOwnCallableLevel(VideoObjectProvider, 'fromFormFile'), 'user');
+    assert.equal(getOwnCallableLevel(VideoObjectProvider, 'fromFormFile'), 'signed-in');
   });
 });
 
