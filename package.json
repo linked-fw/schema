@@ -6,7 +6,7 @@
     "lib",
     "CHANGELOG.md"
   ],
-  "version": "1.5.2",
+  "version": "1.5.3",
   "packageManager": "npm@12.2.0",
   "linkedPackage": true,
   "author": {

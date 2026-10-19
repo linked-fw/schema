@@ -1,5 +1,11 @@
 # @\_linked/schema
 
+## 1.5.3
+
+### Patch Changes
+
+- [#73](https://github.com/linked-fw/schema/pull/73) [`b77d570`](https://github.com/linked-fw/schema/commit/b77d5708565934980f47f63259ffaed965aacd35) Thanks [@flyon](https://github.com/flyon)! - The media upload policy set with `configureMediaUploads()` is now kept on `globalThis` (core's `sharedState`, key `Symbol.for('@_linked/schema:MediaUploadPolicy')`), so an image or video upload handled by a second copy of the module applies the configured size limits and `ownerPrefix` instead of the defaults. The API is unchanged. Requires `@_linked/core` 2.36.0 or later.
+
 ## 1.5.2
 
 ### Patch Changes
