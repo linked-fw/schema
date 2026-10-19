@@ -12,6 +12,7 @@
  * Server-only: imports `crypto`.
  */
 import { createHash } from 'crypto';
+import { sharedState } from '@_linked/core/utils/sharedState';
 
 declare var process: any;
 
@@ -52,7 +53,12 @@ function envBytes(name: string, fallback: number): number {
   return Math.floor(value);
 }
 
-let configured: Partial<MediaUploadPolicy> = {};
+// On `globalThis`, so a policy the app configures reaches an uploader that
+// loaded another copy of this module (see the shared-state convention in
+// linked-fw/cli's docs/architecture/shared-state-and-error-brands.md).
+const state = sharedState('@_linked/schema', 'MediaUploadPolicy', () => ({
+  configured: {} as Partial<MediaUploadPolicy>,
+}));
 
 /**
  * Override the upload rules. Values not given fall back to the environment
@@ -67,10 +73,11 @@ export function configureMediaUploads(next: Partial<MediaUploadPolicy> = {}): vo
       throw new Error(`${key} must be a positive number of bytes.`);
     }
   }
-  configured = { ...next };
+  state.configured = { ...next };
 }
 
 export function getMediaUploadPolicy(): MediaUploadPolicy {
+  const configured = state.configured ?? {};
   return {
     maxImageBytes:
       configured.maxImageBytes ??
