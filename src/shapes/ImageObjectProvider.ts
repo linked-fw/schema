@@ -35,14 +35,14 @@ export class ImageObjectProvider extends ShapeProvider {
    * Delete one of the caller's own uploads. `filePath` is the store key, or the
    * public URL a save returned. Keys outside the caller's prefix answer 404.
    */
-  @callable('user')
+  @callable('signed-in')
   async deleteFile(filePath: string): Promise<void> {
     const caller = requireMediaCaller(this.request);
     return LinkedFileStorage.deleteFile(ownedKeyForDelete(caller, filePath));
   }
 
   /** The caller's own uploads (keys under their prefix). */
-  @callable('user')
+  @callable('signed-in')
   async getAllFilestoreImages(): Promise<ShapeSet<ImageObject>> {
     const caller = requireMediaCaller(this.request);
     const prefix = `${caller.prefix}/`;
@@ -64,7 +64,7 @@ export class ImageObjectProvider extends ShapeProvider {
    * decoded bytes must be of the declared type, and `filePath` must end in an
    * extension of that type.
    */
-  @callable('user')
+  @callable('signed-in')
   async fromDataURL(
     dataUrl: string,
     filePath?: string,
@@ -117,7 +117,7 @@ export class ImageObjectProvider extends ShapeProvider {
    * type the client sends is ignored. The stored name must end in an extension
    * of that type.
    */
-  @callable('user')
+  @callable('signed-in')
   async fromFormFile(): Promise<ImageObject> {
     // const form = formidable({});
     //

@@ -27,7 +27,7 @@ export class VideoObjectProvider extends ShapeProvider {
    * the client sends is ignored. The stored name must end in an extension of
    * that type.
    */
-  @callable('user')
+  @callable('signed-in')
   async fromFormFile(): Promise<VideoObject> {
     const caller = requireMediaCaller(this.request);
     return uploadMediaFromFormFile(
