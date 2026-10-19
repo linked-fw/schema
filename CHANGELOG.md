@@ -1,5 +1,11 @@
 # @\_linked/schema
 
+## 1.5.2
+
+### Patch Changes
+
+- [#71](https://github.com/linked-fw/schema/pull/71) [`84f17d7`](https://github.com/linked-fw/schema/commit/84f17d7f041bed20ad0823b22d38bb36573525c3) Thanks [@flyon](https://github.com/flyon)! - Provider methods that need a session are declared `@callable('signed-in')` instead of the deprecated alias `'user'`. No behaviour change. Requires `@_linked/server-utils` ^1.14.0.
+
 ## 1.5.1
 
 ### Patch Changes
