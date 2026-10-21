@@ -52,6 +52,8 @@ export const ItemList = term('ItemList');
 export const ListItem = term('ListItem');
 export const MediaObject = term('MediaObject');
 export const Observation = term('Observation');
+export const PostalAddress = term('PostalAddress');
+export const DataFeedItem = term('DataFeedItem');
 
 // Properties
 export const artEdition = term('artEdition');
@@ -121,11 +123,9 @@ export const founder = term('founder');
 export const postalCode = term('postalCode');
 export const areaServed = term('areaServed');
 export const startTime = term('startTime');
-export const teamID = term('teamID');
 export const knows = term('knows');
 export const parentItem = term('parentItem');
 export const text = term('text');
-export const isMarried = term('isMarried');
 export const skills = term('skills');
 export const inDefinedTermSet = term('inDefinedTermSet');
 export const hasDefinedTerm = term('hasDefinedTerm');
@@ -152,7 +152,6 @@ export const streetAddress = term('streetAddress');
 export const creator = term('creator');
 export const author = term('author');
 export const headline = term('headline');
-export const childItem = term('childItem');
 
 export const schema = {
   // Classes
@@ -188,6 +187,8 @@ export const schema = {
   ItemList,
   ListItem,
   Observation,
+  PostalAddress,
+  DataFeedItem,
   House,
   Place,
   City,
@@ -202,7 +203,6 @@ export const schema = {
   alternateName,
   gender,
   description,
-  teamID,
   disambiguatingDescription,
   identifier,
   image,
@@ -274,7 +274,6 @@ export const schema = {
   startTime,
   parentItem,
   text,
-  isMarried,
   skills,
   inDefinedTermSet,
   hasDefinedTerm,
@@ -289,6 +288,5 @@ export const schema = {
   addressRegion,
   addressLocality,
   streetAddress,
-  childItem,
 };
 

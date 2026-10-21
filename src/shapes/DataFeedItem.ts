@@ -2,7 +2,8 @@ import { literalProperty, objectProperty } from '@_linked/core/shapes/SHACL';
 import { schema } from '../ontologies/schema.js';
 import { linkedShape } from '../package.js';
 import { xsd } from '@_linked/xsd/ontologies/xsd';
-import { Intangible } from './Intangible.js';
+import { Intangible } from './Intangible.class.js';
+import './Intangible.js';
 import { Thing } from './Thing.js';
 
 @linkedShape({
@@ -11,7 +12,7 @@ import { Thing } from './Thing.js';
     'A single item within a data feed. Represents feed entries with creation dates, modification tracking, and item relationships. (entry, feed item, record)',
 })
 export class DataFeedItem extends Intangible {
-  static targetClass = schema.CreativeWork;
+  static targetClass = schema.DataFeedItem;
 
   @literalProperty({
     path: schema.dateCreated,

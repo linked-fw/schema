@@ -63,16 +63,6 @@ export class Person extends Thing {
   }
 
   @literalProperty({
-    path: schema.isMarried,
-    datatype: xsd.boolean,
-    required: false,
-    maxCount: 1,
-  })
-  get isMarried(): boolean {
-    return false;
-  }
-
-  @literalProperty({
     path: schema.telephone,
     maxCount: 1,
   })

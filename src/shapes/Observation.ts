@@ -3,6 +3,8 @@ import { schema } from '../ontologies/schema.js';
 import { linkedShape } from '../package.js';
 import { xsd } from '@_linked/xsd/ontologies/xsd';
 import { PropertyValue } from './PropertyValue.js';
+import { Intangible } from './Intangible.class.js';
+import './Intangible.js';
 import { Thing } from './Thing.js';
 
 @linkedShape({
@@ -10,7 +12,7 @@ import { Thing } from './Thing.js';
   description:
     'An observation of a specific entity at a particular time. Represents measurements with observation dates, variable tracking, and entity relationships. (measurement, data point, record)',
 })
-export class Observation extends Thing {
+export class Observation extends Intangible {
   static targetClass = schema.Observation;
 
   @literalProperty({
