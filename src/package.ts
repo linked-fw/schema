@@ -10,7 +10,7 @@ const {
   getPackageShape,
   packageExports,
   packageName,
-} = linkedPackage('@_linked/schema');
+} = linkedPackage('@_linked/schema', {mirrors: 'http://schema.org/'});
 
 const linkedComponent = createLinkedComponentFn(
   registerPackageExport,

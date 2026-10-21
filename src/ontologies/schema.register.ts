@@ -11,10 +11,7 @@
  * From a sibling module the same import is ordinary and survives.
  */
 import * as terms from './schema.js';
-import {loadData, ns} from './schema.js';
+import {dataFiles, loadData, ns} from './schema.js';
 import {linkedOntology} from '../package.js';
 
-linkedOntology(terms, ns, 'schema', loadData, [
-  '../data/schema.json',
-  '../data/schema-added.json',
-]);
+linkedOntology(terms, ns, 'schema', loadData, dataFiles);

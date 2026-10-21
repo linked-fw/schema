@@ -1,21 +1,16 @@
 import { Prefix } from '@_linked/core/utils/Prefix';
 import { createNameSpace } from '@_linked/core/utils/NameSpace';
+import { loadOntologyFiles } from '@_linked/core/ontology/loadOntologyFiles';
 
-export const loadData = async () => {
-  return Promise.all([
-    //@ts-ignore
-    import('../data/schema-added.json', { with: { type: 'json' } }).then(
-      (data) => data.default
-    ),
-    //@ts-ignore
-    import('../data/schema.json', { with: { type: 'json' } }).then(
-      (data) => data.default
-    ),
-  ]);
-};
+/** The package's ontology data, relative to this module (Turtle, copied into `lib/` by the build). */
+export const dataFiles = ['../data/schema.ttl', '../data/schema-added.ttl'];
 
-//NOTE: we have changed the usual namespace https://schema.org/ to http://schema.org/ because tools like jsonld will convert all URI's to HTTP
-//for now, our approach is therefor to convert to & use http versions only. schema.json has been adjusted too, and all namespaces in other files should use http://schema.org
+/** Reads the package's ontology data (server only). */
+export const loadData = () => loadOntologyFiles(import.meta.url, dataFiles);
+
+// The namespace is http://schema.org/, not schema.org's preferred https://schema.org/: tools like
+// jsonld convert every schema.org IRI to http. `src/data/schema.ttl` uses http too
+// (`scripts/write-turtle.mjs` rewrites https on import), and so should every other file.
 export const ns = createNameSpace('http://schema.org/');
 Prefix.add('schema', 'http://schema.org/');
 const term = (suffix: string) => ns(suffix);
