@@ -1,6 +1,6 @@
 import { literalProperty, objectProperty } from '@_linked/core/shapes/SHACL';
 import { linkedShape } from '../package.js';
-import { Thing } from './Thing.class.js';
+import { Intangible } from './Intangible.class.js';
 import { schema } from '../ontologies/schema.js';
 import { AdministrativeArea } from './AdministrativeArea.class.js';
 
@@ -9,8 +9,8 @@ import { AdministrativeArea } from './AdministrativeArea.class.js';
   description:
     'A mailing address; includes street, city, postal code, and country. Used for contact info of people, places, or organizations. (address, contact, location)',
 })
-export class PostalAddress extends Thing {
-  static targetClass = schema.Thing;
+export class PostalAddress extends Intangible {
+  static targetClass = schema.PostalAddress;
 
   @literalProperty({
     path: schema.postalCode,

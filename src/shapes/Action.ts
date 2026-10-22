@@ -1,3 +1,4 @@
+import { ShapeSet } from '@_linked/core/collections/ShapeSet';
 import { xsd } from '@_linked/xsd/ontologies/xsd';
 import { literalProperty, objectProperty } from '@_linked/core/shapes/SHACL';
 import * as actionConstants from '../constants.js';
@@ -42,46 +43,30 @@ export class Action extends Thing {
     return null;
   }
 
+  /**
+   * Other co-agents that took part in the action indirectly (schema.org: "Other co-agents that
+   * participated in the action indirectly"), so any number of them.
+   */
   @objectProperty({
     path: schema.participant,
     shape: Person,
-    maxCount: 1,
   })
-  get participant(): Person {
-    return null;
+  get participant(): ShapeSet<Person> {
+    return new ShapeSet<Person>();
   }
 
+  /**
+   * The object the action is carried out upon (schema.org: "The object upon which the action is
+   * carried out"), a single role.
+   */
   @objectProperty({
     path: schema.object,
     shape: Thing,
+    maxCount: 1,
   })
-  get objects() {
+  get object(): Thing {
     return null;
   }
-
-  // @objectProperty({
-  //   path: schema.object,
-  //   shape: Thing,
-  //   maxCount:1
-  // })
-  // get firstObject(): Thing {
-  //   return this.objects.first();
-  // }
-
-  // set objects(objects: ShapeSet<Thing>) {
-  //   objects.updateEach(schema.object, this.namedNode);
-  // }
-
-  // get object(): Thing {
-  //   if (this.hasProperty(schema.object)) {
-  //     return this.getOneAs(schema.object, Thing, true);
-  //   } else {
-  //     return null;
-  //   }
-  // }
-  // set object(val: Thing) {
-  //   this.overwrite(schema.object, val ? val.node : null);
-  // }
 
   @objectProperty({
     path: schema.location,

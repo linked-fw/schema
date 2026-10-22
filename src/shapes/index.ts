@@ -13,7 +13,6 @@ import './Action.js';
 import './AdministrativeArea.js';
 import './Answer.js';
 import './Apartment.js';
-import './ArtBlock.js';
 import './BefriendAction.js';
 import './Code.js';
 import './Comment.js';

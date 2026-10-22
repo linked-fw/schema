@@ -1,21 +1,16 @@
 import { Prefix } from '@_linked/core/utils/Prefix';
 import { createNameSpace } from '@_linked/core/utils/NameSpace';
+import { loadOntologyFiles } from '@_linked/core/ontology/loadOntologyFiles';
 
-export const loadData = async () => {
-  return Promise.all([
-    //@ts-ignore
-    import('../data/schema-added.json', { with: { type: 'json' } }).then(
-      (data) => data.default
-    ),
-    //@ts-ignore
-    import('../data/schema.json', { with: { type: 'json' } }).then(
-      (data) => data.default
-    ),
-  ]);
-};
+/** The package's ontology data, relative to this module (Turtle, copied into `lib/` by the build). */
+export const dataFiles = ['../data/schema.ttl', '../data/schema-added.ttl'];
 
-//NOTE: we have changed the usual namespace https://schema.org/ to http://schema.org/ because tools like jsonld will convert all URI's to HTTP
-//for now, our approach is therefor to convert to & use http versions only. schema.json has been adjusted too, and all namespaces in other files should use http://schema.org
+/** Reads the package's ontology data (server only). */
+export const loadData = () => loadOntologyFiles(import.meta.url, dataFiles);
+
+// The namespace is http://schema.org/, not schema.org's preferred https://schema.org/: tools like
+// jsonld convert every schema.org IRI to http. `src/data/schema.ttl` uses http too
+// (`scripts/write-turtle.mjs` rewrites https on import), and so should every other file.
 export const ns = createNameSpace('http://schema.org/');
 Prefix.add('schema', 'http://schema.org/');
 const term = (suffix: string) => ns(suffix);
@@ -57,6 +52,8 @@ export const ItemList = term('ItemList');
 export const ListItem = term('ListItem');
 export const MediaObject = term('MediaObject');
 export const Observation = term('Observation');
+export const PostalAddress = term('PostalAddress');
+export const DataFeedItem = term('DataFeedItem');
 
 // Properties
 export const artEdition = term('artEdition');
@@ -126,11 +123,9 @@ export const founder = term('founder');
 export const postalCode = term('postalCode');
 export const areaServed = term('areaServed');
 export const startTime = term('startTime');
-export const teamID = term('teamID');
 export const knows = term('knows');
 export const parentItem = term('parentItem');
 export const text = term('text');
-export const isMarried = term('isMarried');
 export const skills = term('skills');
 export const inDefinedTermSet = term('inDefinedTermSet');
 export const hasDefinedTerm = term('hasDefinedTerm');
@@ -157,7 +152,6 @@ export const streetAddress = term('streetAddress');
 export const creator = term('creator');
 export const author = term('author');
 export const headline = term('headline');
-export const childItem = term('childItem');
 
 export const schema = {
   // Classes
@@ -193,6 +187,8 @@ export const schema = {
   ItemList,
   ListItem,
   Observation,
+  PostalAddress,
+  DataFeedItem,
   House,
   Place,
   City,
@@ -207,7 +203,6 @@ export const schema = {
   alternateName,
   gender,
   description,
-  teamID,
   disambiguatingDescription,
   identifier,
   image,
@@ -279,7 +274,6 @@ export const schema = {
   startTime,
   parentItem,
   text,
-  isMarried,
   skills,
   inDefinedTermSet,
   hasDefinedTerm,
@@ -294,6 +288,5 @@ export const schema = {
   addressRegion,
   addressLocality,
   streetAddress,
-  childItem,
 };
 

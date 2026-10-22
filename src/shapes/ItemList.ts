@@ -3,6 +3,8 @@ import { Shape } from '@_linked/core/shapes/Shape';
 import { objectProperty } from '@_linked/core/shapes/SHACL';
 import { schema } from '../ontologies/schema.js';
 import { linkedShape } from '../package.js';
+import { Intangible } from './Intangible.class.js';
+import './Intangible.js';
 import { ListItem } from './ListItem.js';
 
 @linkedShape({
@@ -10,7 +12,7 @@ import { ListItem } from './ListItem.js';
   description:
     'A list of items of any sort. Represents ordered collections with item list elements and position relationships. (list, collection, sequence)',
 })
-export class ItemList<S extends Shape = Shape> extends Shape {
+export class ItemList<S extends Shape = Shape> extends Intangible {
   static targetClass = schema.ItemList;
 
   @objectProperty({
