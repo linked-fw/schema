@@ -1,5 +1,5 @@
 ---
-"@_linked/schema": major
+"@_linked/schema": minor
 ---
 
 Ontology data is Turtle, the shapes follow schema.org's class hierarchy, and the package holds only schema.org's terms. Needs `@_linked/core` with `loadOntologyFiles` and the shape check, and a build that copies `src/**/*.ttl` into `lib/`.
