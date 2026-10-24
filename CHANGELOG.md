@@ -1,5 +1,11 @@
 # @\_linked/schema
 
+## 1.8.1
+
+### Patch Changes
+
+- [#84](https://github.com/linked-fw/schema/pull/84) [`6aab6ba`](https://github.com/linked-fw/schema/commit/6aab6ba96fb5d1be4739cab89d30e8448d463466) Thanks [@flyon](https://github.com/flyon)! - README links core's "Using ontology terms" (namespace imports, accessors over `{id}`). No code changed.
+
 ## 1.8.0
 
 ### Minor Changes
