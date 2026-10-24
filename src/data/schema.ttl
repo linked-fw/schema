@@ -1,7 +1,7 @@
 # schema.org vocabulary, version 30.1 (the current release), as schema.org publishes it:
 # https://schema.org/version/30.1/schemaorg-current-https.nt, written as Turtle by
 # scripts/write-turtle.mjs (https://schema.org/ rewritten to http://schema.org/, the package's
-# namespace; nothing else changed). Refresh: backlog 002.
+# namespace, except schema:isPartOf objects; nothing else changed). Refresh: backlog 002.
 
 @prefix schema: <http://schema.org/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .

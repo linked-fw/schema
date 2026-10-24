@@ -21,11 +21,11 @@ else. A namespace import is the one way to use them:
   vocabulary a term comes from, also where several are used side by side (`schema.name`,
   `rdfs.label`).
 - **It tree-shakes.** Every term is a `/*#__PURE__*/` named export, so a bundler keeps only the
-  terms a module uses. The whole module is 402,091 bytes of source, and a bundle that keeps
-  every term is 125,759 bytes (esbuild, minified); a bundle that uses `schema.Person` alone costs 18 bytes more than one with
-  no terms at all (1,868 against 1,850 bytes, esbuild, minified), as measured in
-  [cli report 027](https://github.com/linked-fw/cli/blob/main/docs/reports/027-ontology-accessor-generator.md).
-  An aggregated object would keep them all. (Report 027 measured the 2,802-term release.)
+  terms a module uses. On the 2,802-term release,
+  [cli report 027](https://github.com/linked-fw/cli/blob/main/docs/reports/027-ontology-accessor-generator.md)
+  measured a 402,091-byte module and, with esbuild (minified), a 125,759-byte bundle when every
+  term is kept, against 1,868 bytes for `schema.Person` alone: 18 bytes more than a bundle with
+  no terms (1,850). An aggregated object would keep them all.
 
 Names are generated, one rule for all: a character that cannot appear in an identifier becomes
 `_`, a leading digit gets a leading `_` (`schema:3DModel` → `schema._3DModel`), and a reserved word

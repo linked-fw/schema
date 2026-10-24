@@ -20,5 +20,6 @@ the source and version. The README records the source and the `-added` conventio
   ⊂ `CreativeWork`); `OrderItem` ⊂ `StructuredValue` (was `Intangible`); `PaymentMethod` ⊂
   `Intangible` (was `Enumeration`); `Quantity` is now only a `schema:DataType` (was ⊂
   `Intangible`); `Observation` ⊂ `QuantitativeValue`; `DefinedRegion` ⊂ `Place`; `Drug`,
-  `DietarySupplement` ⊂ `Product`; several classes gain external equivalence superclasses (FIBO,
-  OMG Commons). Apps sync the hierarchy into every dataset, so `sh:targetClass` inference follows.
+  `DietarySupplement` ⊂ `Product`; `PaymentService` also ⊂ `PaymentMethod`; external superclasses
+  (FIBO, OMG Commons) on `Brand`, `Country`, `DigitalDocument`, `Invoice`, `Order`, `ProductGroup`,
+  `WarrantyPromise`. Apps sync the hierarchy into every dataset, so `sh:targetClass` inference follows.
