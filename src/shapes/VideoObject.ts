@@ -1,5 +1,5 @@
 import { Server } from '@_linked/server-utils/utils/Server';
-import { schema } from '../ontologies/schema.js';
+import * as schema from '../ontologies/schema.js';
 import { linkedShape } from '../package.js';
 import { MediaObject } from './MediaObject.js';
 

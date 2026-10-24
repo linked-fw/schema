@@ -15,8 +15,8 @@ standard (`@_linked/dcat`, `dcmi`, `org`, `sioc`, `owl`, `rdfs`, `xsd`); CN's ar
 
 ## Only schema.org's terms
 
-- `src/data/schema.ttl` is schema.org's vocabulary (namespace `http://schema.org/`, see the note
-  in `src/ontologies/schema.ts`). Every shape's target class and property paths, and every term
+- `src/data/schema.ttl` is schema.org's vocabulary (namespace `http://schema.org/`, see the
+  [README](../README.md#the-data)). Every shape's target class and property paths, and every term
   `src/ontologies/schema.ts` exports, is defined there. The shape check reports any other
   `schema:` IRI as `mirror-undefined-term`, from this package or from any package that uses one.
 - A custom shape, or a term schema.org does not define, lives in its own package and namespace.

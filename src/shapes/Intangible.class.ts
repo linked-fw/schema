@@ -1,4 +1,4 @@
-import { schema } from '../ontologies/schema.js';
+import * as schema from '../ontologies/schema.js';
 import { linkedShape } from '../package.js';
 import { Thing } from './Thing.class.js';
 
