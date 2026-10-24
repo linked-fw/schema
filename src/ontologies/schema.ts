@@ -29,7 +29,7 @@ export const AchieveAction = /*#__PURE__*/ ns('AchieveAction');
 /** An action performed by a direct agent and indirect participants upon a direct object. */
 export const Action = /*#__PURE__*/ ns('Action');
 
-/** A set of requirements that a must be fulfilled in order to perform an Action. */
+/** A set of requirements that must be fulfilled in order to perform an Action. */
 export const ActionAccessSpecification = /*#__PURE__*/ ns('ActionAccessSpecification');
 
 /** The status of an Action. */
@@ -41,7 +41,7 @@ export const ActivateAction = /*#__PURE__*/ ns('ActivateAction');
 /** Represents the activation fee part of the total price for an offered product, for example a cellphone contract. */
 export const ActivationFee = /*#__PURE__*/ ns('ActivationFee');
 
-/** An in-progress action (e.g, while watching the movie, or driving to a location). */
+/** An in-progress action (e.g., while watching the movie, or driving to a location). */
 export const ActiveActionStatus = /*#__PURE__*/ ns('ActiveActionStatus');
 
 /** Active, but not recruiting new participants. */
@@ -85,6 +85,12 @@ export const AlbumRelease = /*#__PURE__*/ ns('AlbumRelease');
 
 /** Item contains alcohol or promotes alcohol consumption. */
 export const AlcoholConsideration = /*#__PURE__*/ ns('AlcoholConsideration');
+
+/** Content coded as ' algorithmic media ' using the IPTC digital source type vocabulary. */
+export const AlgorithmicMediaDigitalSource = /*#__PURE__*/ ns('AlgorithmicMediaDigitalSource');
+
+/** Content coded as ' algorithmically enhanced ' using the IPTC digital source type vocabulary. */
+export const AlgorithmicallyEnhancedDigitalSource = /*#__PURE__*/ ns('AlgorithmicallyEnhancedDigitalSource');
 
 /** An intangible item that describes an alignment between a learning resource and a node in an educational framework. */
 export const AlignmentObject = /*#__PURE__*/ ns('AlignmentObject');
@@ -199,6 +205,12 @@ export const Audiobook = /*#__PURE__*/ ns('Audiobook');
 
 /** Book format: Audiobook. */
 export const AudiobookFormat = /*#__PURE__*/ ns('AudiobookFormat');
+
+/** A specific branch of medical science concerned with the diagnosis, management, and non-surgical treatment of hearing, balance, and related auditory processing… */
+export const Audiology = /*#__PURE__*/ ns('Audiology');
+
+/** The action of authenticating into a device or application. */
+export const AuthenticateAction = /*#__PURE__*/ ns('AuthenticateAction');
 
 /** Indicates that the publisher gives some special status to the publication of the document. */
 export const AuthoritativeLegalValue = /*#__PURE__*/ ns('AuthoritativeLegalValue');
@@ -452,11 +464,20 @@ export const BusinessSupport = /*#__PURE__*/ ns('BusinessSupport');
 /** The act of giving money to a seller in exchange for goods or services rendered. */
 export const BuyAction = /*#__PURE__*/ ns('BuyAction');
 
+/** Payment in advance by bank transfer, equivalent to http://purl.org/goodrelations/v1#ByBankTransferInAdvance. */
+export const ByBankTransferInAdvance = /*#__PURE__*/ ns('ByBankTransferInAdvance');
+
+/** Payment by invoice, typically after the goods were delivered, equivalent to http://purl.org/goodrelations/v1#ByInvoice. */
+export const ByInvoice = /*#__PURE__*/ ns('ByInvoice');
+
 /** A CDCPMDRecord is a data structure representing a record in a CDC tabular data format used for hospital data reporting. */
 export const CDCPMDRecord = /*#__PURE__*/ ns('CDCPMDRecord');
 
 /** CDFormat. */
 export const CDFormat = /*#__PURE__*/ ns('CDFormat');
+
+/** Cash on Delivery (COD) payment, equivalent to http://purl.org/goodrelations/v1#COD. */
+export const COD = /*#__PURE__*/ ns('COD');
 
 /** X-ray computed tomography imaging. */
 export const CT = /*#__PURE__*/ ns('CT');
@@ -488,11 +509,14 @@ export const CarUsageType = /*#__PURE__*/ ns('CarUsageType');
 /** A specific branch of medical science that pertains to diagnosis and treatment of disorders of heart and vasculature. */
 export const Cardiovascular = /*#__PURE__*/ ns('Cardiovascular');
 
-/** Cardiovascular system assessment withclinical examination. */
+/** Cardiovascular system assessment with clinical examination. */
 export const CardiovascularExam = /*#__PURE__*/ ns('CardiovascularExam');
 
 /** A case series (also known as a clinical series) is a medical research study that tracks patients with a known exposure given similar treatment or examines… */
 export const CaseSeries = /*#__PURE__*/ ns('CaseSeries');
+
+/** Payment using cash, on premises, equivalent to http://purl.org/goodrelations/v1#Cash. */
+export const Cash = /*#__PURE__*/ ns('Cash');
 
 /** A casino. */
 export const Casino = /*#__PURE__*/ ns('Casino');
@@ -515,6 +539,18 @@ export const CausesHealthAspect = /*#__PURE__*/ ns('CausesHealthAspect');
 /** A graveyard. */
 export const Cemetery = /*#__PURE__*/ ns('Cemetery');
 
+/** A Certification is an official and authoritative statement about a subject, for example a product, service, person, or organization. */
+export const Certification = /*#__PURE__*/ ns('Certification');
+
+/** Specifies that a certification is active. */
+export const CertificationActive = /*#__PURE__*/ ns('CertificationActive');
+
+/** Specifies that a certification is inactive (no longer in effect). */
+export const CertificationInactive = /*#__PURE__*/ ns('CertificationInactive');
+
+/** Enumerates the different statuses of a Certification (Active and Inactive). */
+export const CertificationStatusEnumeration = /*#__PURE__*/ ns('CertificationStatusEnumeration');
+
 /** One of the sections into which a book is divided. */
 export const Chapter = /*#__PURE__*/ ns('Chapter');
 
@@ -527,7 +563,10 @@ export const CheckAction = /*#__PURE__*/ ns('CheckAction');
 /** The act of an agent communicating (service provider, social media, etc) their arrival by registering/confirming for a previously reserved service (e.g. flight… */
 export const CheckInAction = /*#__PURE__*/ ns('CheckInAction');
 
-/** The act of an agent communicating (service provider, social media, etc) their departure of a previously reserved service (e.g. flight check in) or place (e.g.… */
+/** Payment in advance by sending a check, equivalent to http://purl.org/goodrelations/v1#CheckInAdvance. */
+export const CheckInAdvance = /*#__PURE__*/ ns('CheckInAdvance');
+
+/** The act of an agent communicating (service provider, social media, etc) their departure of a previously reserved service (e.g. flight check-in) or place (e.g.… */
 export const CheckOutAction = /*#__PURE__*/ ns('CheckOutAction');
 
 /** Web page type: Checkout page. */
@@ -590,7 +629,7 @@ export const Code = /*#__PURE__*/ ns('Code');
 /** Also known as a panel study. */
 export const CohortStudy = /*#__PURE__*/ ns('CohortStudy');
 
-/** A collection of items e.g. creative works or products. */
+/** A collection of items, e.g. creative works or products. */
 export const Collection = /*#__PURE__*/ ns('Collection');
 
 /** Web page type: Collection page. */
@@ -644,6 +683,18 @@ export const Completed = /*#__PURE__*/ ns('Completed');
 /** An action that has already taken place. */
 export const CompletedActionStatus = /*#__PURE__*/ ns('CompletedActionStatus');
 
+/** Content coded as ' composite capture ' using the IPTC digital source type vocabulary. */
+export const CompositeCaptureDigitalSource = /*#__PURE__*/ ns('CompositeCaptureDigitalSource');
+
+/** Content coded as ' algorithmic media ' using the IPTC digital source type vocabulary. */
+export const CompositeDigitalSource = /*#__PURE__*/ ns('CompositeDigitalSource');
+
+/** Content coded as ' composite synthetic ' using the IPTC digital source type vocabulary. */
+export const CompositeSyntheticDigitalSource = /*#__PURE__*/ ns('CompositeSyntheticDigitalSource');
+
+/** Content coded as ' composite with trained algorithmic media ' using the IPTC digital source type vocabulary. */
+export const CompositeWithTrainedAlgorithmicMediaDigitalSource = /*#__PURE__*/ ns('CompositeWithTrainedAlgorithmicMediaDigitalSource');
+
 /** A compound price specification is one that bundles multiple prices that all apply in combination for different dimensions of consumption. */
 export const CompoundPriceSpecification = /*#__PURE__*/ ns('CompoundPriceSpecification');
 
@@ -653,11 +704,17 @@ export const ComputerLanguage = /*#__PURE__*/ ns('ComputerLanguage');
 /** A computer store. */
 export const ComputerStore = /*#__PURE__*/ ns('ComputerStore');
 
+/** Event type: Conference event. */
+export const ConferenceEvent = /*#__PURE__*/ ns('ConferenceEvent');
+
 /** The act of notifying someone that a future event/action is going to happen as expected. */
 export const ConfirmAction = /*#__PURE__*/ ns('ConfirmAction');
 
 /** A Consortium is a membership Organization whose members are typically Organizations. */
 export const Consortium = /*#__PURE__*/ ns('Consortium');
+
+/** The ConstraintNode type is provided to support usecases in which a node in a structured data graph is described with properties which appear to describe a… */
+export const ConstraintNode = /*#__PURE__*/ ns('ConstraintNode');
 
 /** The act of ingesting information/resources/food. */
 export const ConsumeAction = /*#__PURE__*/ ns('ConsumeAction');
@@ -689,6 +746,9 @@ export const Conversation = /*#__PURE__*/ ns('Conversation');
 /** The act of producing/preparing food. */
 export const CookAction = /*#__PURE__*/ ns('CookAction');
 
+/** An organization that is a joint project of multiple organizations or persons. */
+export const Cooperative = /*#__PURE__*/ ns('Cooperative');
+
 /** Organization: A business corporation. */
 export const Corporation = /*#__PURE__*/ ns('Corporation');
 
@@ -698,7 +758,7 @@ export const CorrectionComment = /*#__PURE__*/ ns('CorrectionComment');
 /** A country. */
 export const Country = /*#__PURE__*/ ns('Country');
 
-/** A description of an educational course which may be offered as distinct instances at which take place at different times or take place at different locations… */
+/** A description of an educational course which may be offered as distinct instances which take place at different times or take place at different locations, or… */
 export const Course = /*#__PURE__*/ ns('Course');
 
 /** An instance of a Course which is distinct from other instances because it is offered at a different time or location or through different media or modes of… */
@@ -719,11 +779,14 @@ export const CreateAction = /*#__PURE__*/ ns('CreateAction');
 /** The most generic kind of creative work, including books, movies, photographs, software programs, etc. */
 export const CreativeWork = /*#__PURE__*/ ns('CreativeWork');
 
-/** A media season e.g. tv, radio, video game etc. */
+/** A media season, e.g. TV, radio, video game etc. */
 export const CreativeWorkSeason = /*#__PURE__*/ ns('CreativeWorkSeason');
 
 /** A CreativeWorkSeries in schema.org is a group of related items, typically but not necessarily of the same kind. */
 export const CreativeWorkSeries = /*#__PURE__*/ ns('CreativeWorkSeries');
+
+/** A credential is a certificate that is used to verify the identity of a person or entity. */
+export const Credential = /*#__PURE__*/ ns('Credential');
 
 /** A card payment method of a particular brand or name. */
 export const CreditCard = /*#__PURE__*/ ns('CreditCard');
@@ -746,6 +809,30 @@ export const CurrencyConversionService = /*#__PURE__*/ ns('CurrencyConversionSer
 /** An alternative, closely-related condition typically considered later in the differential diagnosis process along with the signs that are used to distinguish it. */
 export const DDxElement = /*#__PURE__*/ ns('DDxElement');
 
+/** DECooperativeCharity: Non-profit type referring to a charitable Cooperative (German Genossenschaft) that has been recognized by the tax authorities as a… */
+export const DECooperativeCharity = /*#__PURE__*/ ns('DECooperativeCharity');
+
+/** DEFoundationCharity: Non-profit type referring to a charitable Foundation (German Stiftung) that has been recognized by the tax authorities as a charitable… */
+export const DEFoundationCharity = /*#__PURE__*/ ns('DEFoundationCharity');
+
+/** DEJointStockCompanyCharity: Non-profit type referring to a charitable Joint Stock Company (German gAG gemeinnützige Aktiengesellschaft) that has been… */
+export const DEJointStockCompanyCharity = /*#__PURE__*/ ns('DEJointStockCompanyCharity');
+
+/** DELimitedLiabilityCharity: Non-profit type referring to a charitable Common Stock Company (German gGmbH or gemeinnützige Gesellschaft mit beschränkter Haftung)… */
+export const DELimitedLiabilityCharity = /*#__PURE__*/ ns('DELimitedLiabilityCharity');
+
+/** DENonprofitType: Non-profit organization type originating from Germany in accordance with article 52 of the German fiscal code (Abgabenverordnung or AO). */
+export const DENonprofitType = /*#__PURE__*/ ns('DENonprofitType');
+
+/** DENotRegisteredAssociationCharity: Non-profit type referring to a charitable association that is not registered with the German association register… */
+export const DENotRegisteredAssociationCharity = /*#__PURE__*/ ns('DENotRegisteredAssociationCharity');
+
+/** DEPublicCharity: Non-profit type referring to a charitable government owned juridical person (German Körperschaft öffentlichen Rechts) that has been recognized… */
+export const DEPublicCharity = /*#__PURE__*/ ns('DEPublicCharity');
+
+/** DERegisteredAssociationCharity: Non-profit type referring to a charitable association that is registered with the German association register (german… */
+export const DERegisteredAssociationCharity = /*#__PURE__*/ ns('DERegisteredAssociationCharity');
+
 /** DJMixAlbum. */
 export const DJMixAlbum = /*#__PURE__*/ ns('DJMixAlbum');
 
@@ -767,8 +854,11 @@ export const DangerousGoodConsideration = /*#__PURE__*/ ns('DangerousGoodConside
 /** A collection of datasets. */
 export const DataCatalog = /*#__PURE__*/ ns('DataCatalog');
 
-/** A dataset in downloadable form. */
+/** All or part of a Dataset in downloadable form. */
 export const DataDownload = /*#__PURE__*/ ns('DataDownload');
+
+/** Content coded as ' data driven media ' using the IPTC digital source type vocabulary. */
+export const DataDrivenMediaDigitalSource = /*#__PURE__*/ ns('DataDrivenMediaDigitalSource');
 
 /** A single feed providing structured information about one or more entities or topics. */
 export const DataFeed = /*#__PURE__*/ ns('DataFeed');
@@ -800,6 +890,9 @@ export const DaySpa = /*#__PURE__*/ ns('DaySpa');
 /** The act of stopping or deactivating a device or application (e.g. stopping a timer or turning off a flashlight). */
 export const DeactivateAction = /*#__PURE__*/ ns('DeactivateAction');
 
+/** A Declaration of Conformity (DoC), a formal document issued by a manufacturer declaring that a product meets specific regulatory requirements. */
+export const DeclarationOfConformity = /*#__PURE__*/ ns('DeclarationOfConformity');
+
 /** Content coded 'missing context' in a MediaReview, considered in the context of how it was published or shared. */
 export const DecontextualizedContent = /*#__PURE__*/ ns('DecontextualizedContent');
 
@@ -812,7 +905,7 @@ export const DefinedRegion = /*#__PURE__*/ ns('DefinedRegion');
 /** A word, name, acronym, phrase, etc. with a formal definition. */
 export const DefinedTerm = /*#__PURE__*/ ns('DefinedTerm');
 
-/** A set of defined terms for example a set of categories or a classification scheme, a glossary, dictionary or enumeration. */
+/** A set of defined terms, for example a set of categories or a classification scheme, a glossary, dictionary or enumeration. */
 export const DefinedTermSet = /*#__PURE__*/ ns('DefinedTermSet');
 
 /** Indicates a document for which the text is conclusively what the law says and is legally binding. */
@@ -881,14 +974,20 @@ export const DiagnosticProcedure = /*#__PURE__*/ ns('DiagnosticProcedure');
 /** A strategy of regulating the intake of food to achieve or maintain a specific health-related goal. */
 export const Diet = /*#__PURE__*/ ns('Diet');
 
-/** Dietetic and nutrition as a medical specialty. */
+/** Dietetics and nutrition as a medical specialty. */
 export const DietNutrition = /*#__PURE__*/ ns('DietNutrition');
 
 /** A product taken by mouth that contains a dietary ingredient intended to supplement the diet. */
 export const DietarySupplement = /*#__PURE__*/ ns('DietarySupplement');
 
+/** Content coded as ' digital art ' using the IPTC digital source type vocabulary. */
+export const DigitalArtDigitalSource = /*#__PURE__*/ ns('DigitalArtDigitalSource');
+
 /** DigitalAudioTapeFormat. */
 export const DigitalAudioTapeFormat = /*#__PURE__*/ ns('DigitalAudioTapeFormat');
+
+/** Content coded as ' digital capture ' using the IPTC digital source type vocabulary. */
+export const DigitalCaptureDigitalSource = /*#__PURE__*/ ns('DigitalCaptureDigitalSource');
 
 /** An electronic file or document. */
 export const DigitalDocument = /*#__PURE__*/ ns('DigitalDocument');
@@ -904,6 +1003,12 @@ export const DigitalFormat = /*#__PURE__*/ ns('DigitalFormat');
 
 /** Enumerates some common technology platforms, for use with properties such as actionPlatform. */
 export const DigitalPlatformEnumeration = /*#__PURE__*/ ns('DigitalPlatformEnumeration');
+
+/** A digital product passport (DPP), a record containing information about a product's lifecycle, sustainability, and compliance. */
+export const DigitalProductPassport = /*#__PURE__*/ ns('DigitalProductPassport');
+
+/** Payment in advance by direct debit from the bank, equivalent to http://purl.org/goodrelations/v1#DirectDebit. */
+export const DirectDebit = /*#__PURE__*/ ns('DirectDebit');
 
 /** DisabilitySupport: this is a benefit for disability support. */
 export const DisabilitySupport = /*#__PURE__*/ ns('DisabilitySupport');
@@ -1094,7 +1199,7 @@ export const EmploymentAgency = /*#__PURE__*/ ns('EmploymentAgency');
 /** A specific branch of medical science that pertains to diagnosis and treatment of disorders of endocrine glands and their secretions. */
 export const Endocrine = /*#__PURE__*/ ns('Endocrine');
 
-/** An agent approves/certifies/likes/supports/sanction an object. */
+/** An agent approves/certifies/likes/supports/sanctions an object. */
 export const EndorseAction = /*#__PURE__*/ ns('EndorseAction');
 
 /** An EndorsementRating is a rating that expresses some level of endorsement, for example inclusion in a "critic's pick" blog, a "Like" or "+1" on a social… */
@@ -1130,8 +1235,14 @@ export const EntryPoint = /*#__PURE__*/ ns('EntryPoint');
 /** Lists or enumerations—for example, a list of cuisines or music genres, etc. */
 export const Enumeration = /*#__PURE__*/ ns('Enumeration');
 
+/** An Environmental Product Declaration (EPD) that quantifies environmental information on the life cycle of a product. */
+export const EnvironmentalProductDeclaration = /*#__PURE__*/ ns('EnvironmentalProductDeclaration');
+
 /** A media episode (e.g. TV, radio, video game) which can be part of a series or season. */
 export const Episode = /*#__PURE__*/ ns('Episode');
+
+/** Representation of an Error. */
+export const Error = /*#__PURE__*/ ns('Error');
 
 /** An event happening at a certain time and location, such as a concert, lecture, or festival. */
 export const Event = /*#__PURE__*/ ns('Event');
@@ -1175,6 +1286,9 @@ export const EvidenceLevelB = /*#__PURE__*/ ns('EvidenceLevelB');
 /** Only consensus opinion of experts, case studies, or standard-of-care. */
 export const EvidenceLevelC = /*#__PURE__*/ ns('EvidenceLevelC');
 
+/** An example MeasurementMethodEnum (to remove when real enums are added). */
+export const ExampleMeasurementMethodEnum = /*#__PURE__*/ ns('ExampleMeasurementMethodEnum');
+
 /** A structured value representing exchange rate. */
 export const ExchangeRateSpecification = /*#__PURE__*/ ns('ExchangeRateSpecification');
 
@@ -1193,7 +1307,7 @@ export const ExercisePlan = /*#__PURE__*/ ns('ExercisePlan');
 /** Event type: Exhibition event, e.g. at a museum, library, archive, tradeshow,... */
 export const ExhibitionEvent = /*#__PURE__*/ ns('ExhibitionEvent');
 
-/** Eye or ophtalmological function assessment with clinical examination. */
+/** Eye or ophthalmological function assessment with clinical examination. */
 export const Eye = /*#__PURE__*/ ns('Eye');
 
 /** A FAQPage is a WebPage presenting one or more "Frequently asked questions" (see also QAPage). */
@@ -1237,6 +1351,9 @@ export const Festival = /*#__PURE__*/ ns('Festival');
 
 /** The act of capturing sound and moving images on film, video, or digitally. */
 export const FilmAction = /*#__PURE__*/ ns('FilmAction');
+
+/** Represents financial incentives for goods/services offered by an organization (or individual). */
+export const FinancialIncentive = /*#__PURE__*/ ns('FinancialIncentive');
 
 /** A product provided to consumers and businesses by financial institutions such as banks, insurance companies, brokerage firms, consumer finance companies, and… */
 export const FinancialProduct = /*#__PURE__*/ ns('FinancialProduct');
@@ -1295,10 +1412,28 @@ export const Friday = /*#__PURE__*/ ns('Friday');
 /** Front-wheel drive is a transmission layout where the engine drives the front wheels. */
 export const FrontWheelDriveConfiguration = /*#__PURE__*/ ns('FrontWheelDriveConfiguration');
 
+/** Fulfillment to a collection point location. */
+export const FulfillmentTypeCollectionPoint = /*#__PURE__*/ ns('FulfillmentTypeCollectionPoint');
+
+/** Fulfillment to a customer selected address. */
+export const FulfillmentTypeDelivery = /*#__PURE__*/ ns('FulfillmentTypeDelivery');
+
+/** A type of product fulfillment. */
+export const FulfillmentTypeEnumeration = /*#__PURE__*/ ns('FulfillmentTypeEnumeration');
+
+/** Fulfillment through pick-up drop-off locations. */
+export const FulfillmentTypePickupDropoff = /*#__PURE__*/ ns('FulfillmentTypePickupDropoff');
+
+/** Fulfillment through pick-up in a store. */
+export const FulfillmentTypePickupInStore = /*#__PURE__*/ ns('FulfillmentTypePickupInStore');
+
+/** Fulfillment to a customer selected address after scheduling with the customer. */
+export const FulfillmentTypeScheduledDelivery = /*#__PURE__*/ ns('FulfillmentTypeScheduledDelivery');
+
 /** Indicates full game availability. */
 export const FullGameAvailability = /*#__PURE__*/ ns('FullGameAvailability');
 
-/** Specifies that a refund can be done in the full amount the customer paid for the product */
+/** Specifies that a refund can be done in the full amount the customer paid for the product. */
 export const FullRefund = /*#__PURE__*/ ns('FullRefund');
 
 /** A FundingAgency is an organization that implements one or more FundingSchemes and manages the granting process (via Grants, typically MonetaryGrants). */
@@ -1406,7 +1541,7 @@ export const GovernmentService = /*#__PURE__*/ ns('GovernmentService');
 /** A grant, typically financial or otherwise quantifiable, of resources. */
 export const Grant = /*#__PURE__*/ ns('Grant');
 
-/** Book format: GraphicNovel. */
+/** This type is deprecated: GraphicNovel does not fit the BookFormatType enumeration, as it can appear in multiple formats (e.g., Hardcover, eBook). */
 export const GraphicNovel = /*#__PURE__*/ ns('GraphicNovel');
 
 /** A grocery store. */
@@ -1415,13 +1550,13 @@ export const GroceryStore = /*#__PURE__*/ ns('GroceryStore');
 /** The airline boards by groups based on check-in time, priority, etc. */
 export const GroupBoardingPolicy = /*#__PURE__*/ ns('GroupBoardingPolicy');
 
-/** Guide is a page or article that recommend specific products or services, or aspects of a thing for a user to consider. */
+/** Guide is a page or article that recommends specific products or services, or aspects of a thing for a user to consider. */
 export const Guide = /*#__PURE__*/ ns('Guide');
 
 /** A specific branch of medical science that pertains to the health care of women, particularly in the diagnosis and treatment of disorders affecting the female… */
 export const Gynecologic = /*#__PURE__*/ ns('Gynecologic');
 
-/** A business that provide Heating, Ventilation and Air Conditioning services. */
+/** A business that provides Heating, Ventilation and Air Conditioning services. */
 export const HVACBusiness = /*#__PURE__*/ ns('HVACBusiness');
 
 /** A hackathon event. */
@@ -1433,7 +1568,7 @@ export const HairSalon = /*#__PURE__*/ ns('HairSalon');
 /** A diet conforming to Islamic dietary practices. */
 export const HalalDiet = /*#__PURE__*/ ns('HalalDiet');
 
-/** Book format: Hardcover. */
+/** A durable, archival-quality book featuring a rigid protective shell made of heavy board wrapped in cloth or paper, designed to withstand heavy use and… */
 export const Hardcover = /*#__PURE__*/ ns('Hardcover');
 
 /** A hardware store. */
@@ -1505,13 +1640,13 @@ export const Hospital = /*#__PURE__*/ ns('Hospital');
 /** A hostel - cheap accommodation, often in shared dormitories. */
 export const Hostel = /*#__PURE__*/ ns('Hostel');
 
-/** A hotel is an establishment that provides lodging paid on a short-term basis (Source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/Hotel). */
+/** A hotel is an establishment that provides lodging paid on a short-term basis (source: Wikipedia, the free encyclopedia, see http://en.wikipedia.org/wiki/Hotel). */
 export const Hotel = /*#__PURE__*/ ns('Hotel');
 
 /** A hotel room is a single room in a hotel. */
 export const HotelRoom = /*#__PURE__*/ ns('HotelRoom');
 
-/** A house is a building or structure that has the ability to be occupied for habitation by humans or other creatures (Source: Wikipedia, the free encyclopedia… */
+/** A house is a building or structure that has the ability to be occupied for habitation by humans or other creatures (source: Wikipedia, the free encyclopedia… */
 export const House = /*#__PURE__*/ ns('House');
 
 /** A house painting service. */
@@ -1529,7 +1664,7 @@ export const HowTo = /*#__PURE__*/ ns('HowTo');
 /** A direction indicating a single action to do in the instructions for how to achieve a result. */
 export const HowToDirection = /*#__PURE__*/ ns('HowToDirection');
 
-/** An item used as either a tool or supply when performing the instructions for how to to achieve a result. */
+/** An item used as either a tool or supply when performing the instructions for how to achieve a result. */
 export const HowToItem = /*#__PURE__*/ ns('HowToItem');
 
 /** A sub-grouping of steps in the instructions for how to achieve a result (e.g. steps for making a pie crust within a pie recipe). */
@@ -1555,6 +1690,48 @@ export const HyperTocEntry = /*#__PURE__*/ ns('HyperTocEntry');
 
 /** Represents the broad notion of iOS-based operating systems. */
 export const IOSPlatform = /*#__PURE__*/ ns('IOSPlatform');
+
+/** IPTC "Digital Source" codes for use with the digitalSourceType property, providing information about the source for a digital media object. */
+export const IPTCDigitalSourceEnumeration = /*#__PURE__*/ ns('IPTCDigitalSourceEnumeration');
+
+/** ITAmateurSportsClubCharity: Non-profit type referring to Italian amateur sports clubs organized in corporate form (Ital. */
+export const ITAmateurSportsClubCharity = /*#__PURE__*/ ns('ITAmateurSportsClubCharity');
+
+/** ITAssociativeNetworkCharity: Non-profit type referring to Italian associative networks (Ital. */
+export const ITAssociativeNetworkCharity = /*#__PURE__*/ ns('ITAssociativeNetworkCharity');
+
+/** ITCooperativeCharity: Non-profit type referring to Italian social cooperatives (Ital. */
+export const ITCooperativeCharity = /*#__PURE__*/ ns('ITCooperativeCharity');
+
+/** ITMutualAidCharity: Non-profit type referring to Italian mutual aid societies (Ital. */
+export const ITMutualAidCharity = /*#__PURE__*/ ns('ITMutualAidCharity');
+
+/** ITNonprofitType: Non-profit organization type originating from Italy. */
+export const ITNonprofitType = /*#__PURE__*/ ns('ITNonprofitType');
+
+/** ITOtherThirdSectorEntityCharity: Non-profit type referring to other Italian Third Sector entities (Ital. */
+export const ITOtherThirdSectorEntityCharity = /*#__PURE__*/ ns('ITOtherThirdSectorEntityCharity');
+
+/** ITPhilanthropicEntityCharity: Non-profit type referring to Italian philanthropic entities (Ital. */
+export const ITPhilanthropicEntityCharity = /*#__PURE__*/ ns('ITPhilanthropicEntityCharity');
+
+/** ITSocialCompanyCharity: Non-profit type referring to Italian social enterprises (Ital. */
+export const ITSocialCompanyCharity = /*#__PURE__*/ ns('ITSocialCompanyCharity');
+
+/** ITSocialCooperativeCharity: Non-profit type referring to Italian social cooperatives (Ital. */
+export const ITSocialCooperativeCharity = /*#__PURE__*/ ns('ITSocialCooperativeCharity');
+
+/** ITSocialEnterpriseCharity: Non-profit type referring to Italian social enterprises (Ital. */
+export const ITSocialEnterpriseCharity = /*#__PURE__*/ ns('ITSocialEnterpriseCharity');
+
+/** ITSocialPromotionCharity: Non-profit type referring to Italian social promotion associations (Ital. */
+export const ITSocialPromotionCharity = /*#__PURE__*/ ns('ITSocialPromotionCharity');
+
+/** ITSportCompanyCharity: Non-profit type referring to Italian amateur sports clubs organized in corporate form (Ital. */
+export const ITSportCompanyCharity = /*#__PURE__*/ ns('ITSportCompanyCharity');
+
+/** ITVolunteerAssociationCharity: Non-profit type referring to Italian volunteer organizations (Ital. */
+export const ITVolunteerAssociationCharity = /*#__PURE__*/ ns('ITVolunteerAssociationCharity');
 
 /** An ice cream shop. */
 export const IceCreamShop = /*#__PURE__*/ ns('IceCreamShop');
@@ -1583,10 +1760,64 @@ export const InStock = /*#__PURE__*/ ns('InStock');
 /** Indicates that the item is available only at physical locations. */
 export const InStoreOnly = /*#__PURE__*/ ns('InStoreOnly');
 
+/** Payment in advance in some form of shop or kiosk for goods purchased online. */
+export const InStorePrepay = /*#__PURE__*/ ns('InStorePrepay');
+
+/** The types of expenses that are covered by the incentive. */
+export const IncentiveQualifiedExpenseType = /*#__PURE__*/ ns('IncentiveQualifiedExpenseType');
+
+/** This incentive applies to goods only. */
+export const IncentiveQualifiedExpenseTypeGoodsOnly = /*#__PURE__*/ ns('IncentiveQualifiedExpenseTypeGoodsOnly');
+
+/** This incentive can apply to either goods or services (or both). */
+export const IncentiveQualifiedExpenseTypeGoodsOrServices = /*#__PURE__*/ ns('IncentiveQualifiedExpenseTypeGoodsOrServices');
+
+/** This incentive applies to services only. */
+export const IncentiveQualifiedExpenseTypeServicesOnly = /*#__PURE__*/ ns('IncentiveQualifiedExpenseTypeServicesOnly');
+
+/** This incentive applies to utility bills. */
+export const IncentiveQualifiedExpenseTypeUtilityBill = /*#__PURE__*/ ns('IncentiveQualifiedExpenseTypeUtilityBill');
+
+/** Enumerates a status for an incentive, such as whether it is active. */
+export const IncentiveStatus = /*#__PURE__*/ ns('IncentiveStatus');
+
+/** This incentive is currently active. */
+export const IncentiveStatusActive = /*#__PURE__*/ ns('IncentiveStatusActive');
+
+/** This incentive is currently being developed, and may become active/retired in the future. */
+export const IncentiveStatusInDevelopment = /*#__PURE__*/ ns('IncentiveStatusInDevelopment');
+
+/** This incentive is currently active, but may not be accepting new applicants (e.g. max number of redemptions reached for a year) */
+export const IncentiveStatusOnHold = /*#__PURE__*/ ns('IncentiveStatusOnHold');
+
+/** This incentive is not longer available. */
+export const IncentiveStatusRetired = /*#__PURE__*/ ns('IncentiveStatusRetired');
+
+/** Enumerates common financial incentives for products, including tax credits, tax deductions, rebates and subsidies, etc. */
+export const IncentiveType = /*#__PURE__*/ ns('IncentiveType');
+
+/** An incentive where the recipient can receive additional funding for the purchase/lease of the good/service, which must be paid back. */
+export const IncentiveTypeLoan = /*#__PURE__*/ ns('IncentiveTypeLoan');
+
+/** An incentive that reduces the purchase/lease cost of the good/service in question. */
+export const IncentiveTypeRebateOrSubsidy = /*#__PURE__*/ ns('IncentiveTypeRebateOrSubsidy');
+
+/** An incentive that directly reduces the amount of tax owed by the recipient. */
+export const IncentiveTypeTaxCredit = /*#__PURE__*/ ns('IncentiveTypeTaxCredit');
+
+/** An incentive that reduces the recipient's amount of taxable income. */
+export const IncentiveTypeTaxDeduction = /*#__PURE__*/ ns('IncentiveTypeTaxDeduction');
+
+/** An incentive that reduces/exempts the recipient from taxation applicable to the incentivized good/service (e.g. luxury taxes, registration taxes, circulation… */
+export const IncentiveTypeTaxWaiver = /*#__PURE__*/ ns('IncentiveTypeTaxWaiver');
+
+/** An individual medical practitioner. */
+export const IndividualPhysician = /*#__PURE__*/ ns('IndividualPhysician');
+
 /** A single, identifiable product instance (e.g. a laptop with a particular serial number). */
 export const IndividualProduct = /*#__PURE__*/ ns('IndividualProduct');
 
-/** Something in medical science that pertains to infectious diseases i.e caused by bacterial, viral, fungal or parasitic infections. */
+/** Something in medical science that pertains to infectious diseases, i.e. caused by bacterial, viral, fungal or parasitic infections. */
 export const Infectious = /*#__PURE__*/ ns('Infectious');
 
 /** Classes of agents or pathogens that transmit infectious diseases. */
@@ -1609,6 +1840,9 @@ export const InstallAction = /*#__PURE__*/ ns('InstallAction');
 
 /** Represents the installment pricing component of the total price for an offered product. */
 export const Installment = /*#__PURE__*/ ns('Installment');
+
+/** An event with no duration, like for instance a computer log entry. */
+export const InstantaneousEvent = /*#__PURE__*/ ns('InstantaneousEvent');
 
 /** An Insurance agency. */
 export const InsuranceAgency = /*#__PURE__*/ ns('InsuranceAgency');
@@ -1678,6 +1912,9 @@ export const JoinAction = /*#__PURE__*/ ns('JoinAction');
 
 /** The anatomical location at which two or more bones make contact. */
 export const Joint = /*#__PURE__*/ ns('Joint');
+
+/** Specifies that the consumer can keep the product, even when receiving a refund or store credit. */
+export const KeepProduct = /*#__PURE__*/ ns('KeepProduct');
 
 /** A diet conforming to Jewish dietary practices. */
 export const KosherDiet = /*#__PURE__*/ ns('KosherDiet');
@@ -1754,7 +1991,7 @@ export const LimitedAvailability = /*#__PURE__*/ ns('LimitedAvailability');
 /** LimitedByGuaranteeCharity: Non-profit type referring to a charitable company that is limited by guarantee (UK). */
 export const LimitedByGuaranteeCharity = /*#__PURE__*/ ns('LimitedByGuaranteeCharity');
 
-/** A Role that represents a Web link e.g. as expressed via the 'url' property. */
+/** A Role that represents a Web link, e.g. as expressed via the 'url' property. */
 export const LinkRole = /*#__PURE__*/ ns('LinkRole');
 
 /** A shop that sells alcoholic drinks such as wine, beer, whisky and other spirits. */
@@ -1763,7 +2000,7 @@ export const LiquorStore = /*#__PURE__*/ ns('LiquorStore');
 /** An list item, e.g. a step in a checklist or how-to description. */
 export const ListItem = /*#__PURE__*/ ns('ListItem');
 
-/** Represents the list price (the price a product is actually advertised for) of an offered product. */
+/** Represents the list price of an offered product. */
 export const ListPrice = /*#__PURE__*/ ns('ListPrice');
 
 /** The act of consuming audio content. */
@@ -1802,6 +2039,9 @@ export const LodgingBusiness = /*#__PURE__*/ ns('LodgingBusiness');
 /** A reservation for lodging at a hotel, motel, inn, etc. Note: This type is for information about actual reservations, e.g. in confirmation emails or HTML pages… */
 export const LodgingReservation = /*#__PURE__*/ ns('LodgingReservation');
 
+/** The action of logging into a device or application. */
+export const LoginAction = /*#__PURE__*/ ns('LoginAction');
+
 /** Unlike cross-sectional studies, longitudinal studies track the same people, and therefore the differences observed in those people are less likely to be the… */
 export const Longitudinal = /*#__PURE__*/ ns('Longitudinal');
 
@@ -1832,6 +2072,9 @@ export const MRI = /*#__PURE__*/ ns('MRI');
 /** Represents the manufacturer suggested retail price ("MSRP") of an offered product. */
 export const MSRP = /*#__PURE__*/ ns('MSRP');
 
+/** Indicates that the item is made to order (custom made). */
+export const MadeToOrder = /*#__PURE__*/ ns('MadeToOrder');
+
 /** The male gender. */
 export const Male = /*#__PURE__*/ ns('Male');
 
@@ -1856,11 +2099,20 @@ export const MathSolver = /*#__PURE__*/ ns('MathSolver');
 /** The maximum dosing schedule considered safe for a drug or supplement as recommended by an authority or by the drug/supplement's manufacturer. */
 export const MaximumDoseSchedule = /*#__PURE__*/ ns('MaximumDoseSchedule');
 
+/** The maximum retail price (MRP) of a product sold in India. */
+export const MaximumRetailPrice = /*#__PURE__*/ ns('MaximumRetailPrice');
+
 /** Related topics may be treated by a Topic. */
 export const MayTreatHealthAspect = /*#__PURE__*/ ns('MayTreatHealthAspect');
 
+/** Enumeration(s) for use with measurementMethod. */
+export const MeasurementMethodEnum = /*#__PURE__*/ ns('MeasurementMethodEnum');
+
 /** Enumeration of common measurement types (or dimensions), for example "chest" for a person, "inseam" for pants, "gauge" for screws, or "wheel" for bicycles. */
 export const MeasurementTypeEnumeration = /*#__PURE__*/ ns('MeasurementTypeEnumeration');
+
+/** MediaEnumeration enumerations are lists of codes, labels etc. useful for describing media objects. */
+export const MediaEnumeration = /*#__PURE__*/ ns('MediaEnumeration');
 
 /** Web page type: Media gallery page. */
 export const MediaGallery = /*#__PURE__*/ ns('MediaGallery');
@@ -1868,7 +2120,7 @@ export const MediaGallery = /*#__PURE__*/ ns('MediaGallery');
 /** Codes for use with the mediaAuthenticityCategory property, indicating the authenticity of a media object (in the context of how it was published or shared). */
 export const MediaManipulationRatingEnumeration = /*#__PURE__*/ ns('MediaManipulationRatingEnumeration');
 
-/** A media object, such as an image, video, or audio object embedded in a web page or a downloadable dataset i.e. DataDownload. */
+/** A media object, such as an image, video, audio, or text object embedded in a web page or a downloadable dataset i.e. DataDownload. */
 export const MediaObject = /*#__PURE__*/ ns('MediaObject');
 
 /** A MediaReview is a more specialized form of Review dedicated to the evaluation of media content online, typically in the context of fact-checking and… */
@@ -2000,7 +2252,7 @@ export const MedicalTestPanel = /*#__PURE__*/ ns('MedicalTestPanel');
 /** Any medical intervention designed to prevent, treat, and cure human diseases and medical conditions, including both curative and palliative therapies. */
 export const MedicalTherapy = /*#__PURE__*/ ns('MedicalTherapy');
 
-/** A medical trial is a type of medical study that uses scientific process used to compare the safety and efficacy of medical therapies or medical procedures. */
+/** A medical trial is a type of medical study that uses a scientific process to compare the safety and efficacy of medical therapies or medical procedures. */
 export const MedicalTrial = /*#__PURE__*/ ns('MedicalTrial');
 
 /** Design models for medical trials. */
@@ -2012,8 +2264,14 @@ export const MedicalWebPage = /*#__PURE__*/ ns('MedicalWebPage');
 /** Systems of medical practice. */
 export const MedicineSystem = /*#__PURE__*/ ns('MedicineSystem');
 
-/** A meeting room, conference room, or conference hall is a room provided for singular events such as business conferences and meetings (Source: Wikipedia, the… */
+/** A meeting room, conference room, or conference hall is a room provided for singular events such as business conferences and meetings (source: Wikipedia, the… */
 export const MeetingRoom = /*#__PURE__*/ ns('MeetingRoom');
+
+/** A MemberProgram defines a loyalty (or membership) program that provides its members with certain benefits, for example better pricing, free shipping or… */
+export const MemberProgram = /*#__PURE__*/ ns('MemberProgram');
+
+/** A MemberProgramTier specifies a tier under a loyalty (member) program, for example "gold". */
+export const MemberProgramTier = /*#__PURE__*/ ns('MemberProgramTier');
 
 /** A men's clothing store. */
 export const MensClothingStore = /*#__PURE__*/ ns('MensClothingStore');
@@ -2059,6 +2317,9 @@ export const Midwifery = /*#__PURE__*/ ns('Midwifery');
 
 /** Represents the minimum advertised price ("MAP") (as dictated by the manufacturer) of an offered product. */
 export const MinimumAdvertisedPrice = /*#__PURE__*/ ns('MinimumAdvertisedPrice');
+
+/** Content coded as ' minor human edits ' using the IPTC digital source type vocabulary. */
+export const MinorHumanEditsDigitalSource = /*#__PURE__*/ ns('MinorHumanEditsDigitalSource');
 
 /** Content about common misconceptions and myths that are related to a topic. */
 export const MisconceptionsHealthAspect = /*#__PURE__*/ ns('MisconceptionsHealthAspect');
@@ -2144,6 +2405,9 @@ export const MovingCompany = /*#__PURE__*/ ns('MovingCompany');
 /** A trial that takes place at multiple centers. */
 export const MultiCenterTrial = /*#__PURE__*/ ns('MultiCenterTrial');
 
+/** Content coded as ' algorithmic media ' using the IPTC digital source type vocabulary. */
+export const MultiFrameComputationalCaptureDigitalSource = /*#__PURE__*/ ns('MultiFrameComputationalCaptureDigitalSource');
+
 /** Play mode: MultiPlayer. */
 export const MultiPlayer = /*#__PURE__*/ ns('MultiPlayer');
 
@@ -2165,7 +2429,7 @@ export const Museum = /*#__PURE__*/ ns('Museum');
 /** A collection of music tracks. */
 export const MusicAlbum = /*#__PURE__*/ ns('MusicAlbum');
 
-/** Classification of the album by it's type of content: soundtrack, live album, studio album, etc. */
+/** Classification of the album by its type of content: soundtrack, live album, studio album, etc. */
 export const MusicAlbumProductionType = /*#__PURE__*/ ns('MusicAlbumProductionType');
 
 /** The kind of release which this album is: single, EP or album. */
@@ -2189,7 +2453,7 @@ export const MusicRecording = /*#__PURE__*/ ns('MusicRecording');
 /** A MusicRelease is a specific release of a music album. */
 export const MusicRelease = /*#__PURE__*/ ns('MusicRelease');
 
-/** Format of this release (the type of recording media used, ie. */
+/** Format of this release (the type of recording media used, i.e. compact disc, digital media, LP, etc.). */
 export const MusicReleaseFormatType = /*#__PURE__*/ ns('MusicReleaseFormatType');
 
 /** A music store. */
@@ -2210,11 +2474,14 @@ export const NLNonprofitType = /*#__PURE__*/ ns('NLNonprofitType');
 /** A nail salon. */
 export const NailSalon = /*#__PURE__*/ ns('NailSalon');
 
-/** Item is a narcotic as defined by the 1961 UN convention, for example marijuna or heroin. */
+/** Item is a narcotic as defined by the 1961 UN convention, for example marijuana or heroin. */
 export const NarcoticConsideration = /*#__PURE__*/ ns('NarcoticConsideration');
 
 /** Neck assessment with clinical examination. */
 export const Neck = /*#__PURE__*/ ns('Neck');
+
+/** Content coded as ' negative film ' using the IPTC digital source type vocabulary. */
+export const NegativeFilmDigitalSource = /*#__PURE__*/ ns('NegativeFilmDigitalSource');
 
 /** A common pathway for the electrochemical nerve impulses that are transmitted along each of the axons. */
 export const Nerve = /*#__PURE__*/ ns('Nerve');
@@ -2309,7 +2576,7 @@ export const Nonprofit501c27 = /*#__PURE__*/ ns('Nonprofit501c27');
 /** Nonprofit501c28: Non-profit type referring to National Railroad Retirement Investment Trusts. */
 export const Nonprofit501c28 = /*#__PURE__*/ ns('Nonprofit501c28');
 
-/** Nonprofit501c3: Non-profit type referring to Religious, Educational, Charitable, Scientific, Literary, Testing for Public Safety, to Foster National or… */
+/** Nonprofit501c3: Non-profit type referring to Religious, Educational, Charitable, Scientific, Literary, Testing for Public Safety, Fostering National or… */
 export const Nonprofit501c3 = /*#__PURE__*/ ns('Nonprofit501c3');
 
 /** Nonprofit501c4: Non-profit type referring to Civic Leagues, Social Welfare Organizations, and Local Associations of Employees. */
@@ -2348,7 +2615,7 @@ export const Nonprofit501n = /*#__PURE__*/ ns('Nonprofit501n');
 /** Nonprofit501q: Non-profit type referring to Credit Counseling Organizations. */
 export const Nonprofit501q = /*#__PURE__*/ ns('Nonprofit501q');
 
-/** Nonprofit527: Non-profit type referring to Political organizations. */
+/** Nonprofit527: Non-profit type referring to political organizations. */
 export const Nonprofit527 = /*#__PURE__*/ ns('Nonprofit527');
 
 /** NonprofitANBI: Non-profit type referring to a Public Benefit Organization (NL). */
@@ -2387,7 +2654,7 @@ export const NutritionInformation = /*#__PURE__*/ ns('NutritionInformation');
 /** The character of a medical substance, typically a medicine, of being available over the counter or not. */
 export const OTC = /*#__PURE__*/ ns('OTC');
 
-/** Instances of the class Observation are used to specify observations about an entity (which may or may not be an instance of a StatisticalPopulation), at a… */
+/** Instances of the class Observation are used to specify observations about an entity at a particular time. */
 export const Observation = /*#__PURE__*/ ns('Observation');
 
 /** An observational study design. */
@@ -2444,7 +2711,7 @@ export const OfflinePermanently = /*#__PURE__*/ ns('OfflinePermanently');
 /** Game server status: OfflineTemporarily. */
 export const OfflineTemporarily = /*#__PURE__*/ ns('OfflineTemporarily');
 
-/** A publication event e.g. catch-up TV or radio podcast, during which a program is available on-demand. */
+/** A publication event, e.g. catch-up TV or radio podcast, during which a program is available on-demand. */
 export const OnDemandEvent = /*#__PURE__*/ ns('OnDemandEvent');
 
 /** A DeliveryMethod in which an item is collected on site, e.g. in a store or at a box office. */
@@ -2468,6 +2735,9 @@ export const OnlineEventAttendanceMode = /*#__PURE__*/ ns('OnlineEventAttendance
 /** Game server status: OnlineFull. */
 export const OnlineFull = /*#__PURE__*/ ns('OnlineFull');
 
+/** An eCommerce marketplace. */
+export const OnlineMarketplace = /*#__PURE__*/ ns('OnlineMarketplace');
+
 /** Indicates that the item is available only online. */
 export const OnlineOnly = /*#__PURE__*/ ns('OnlineOnly');
 
@@ -2479,6 +2749,12 @@ export const OpenTrial = /*#__PURE__*/ ns('OpenTrial');
 
 /** A structured value providing information about the opening hours of a place or a certain service inside a place. */
 export const OpeningHoursSpecification = /*#__PURE__*/ ns('OpeningHoursSpecification');
+
+/** System software that manages computer hardware and software resources, and provides common services for computer programs. */
+export const OperatingSystem = /*#__PURE__*/ ns('OperatingSystem');
+
+/** A specific branch of medical science that pertains to the diagnosis and treatment of disorders of the eye and its associated visual structures, including… */
+export const Ophthalmology = /*#__PURE__*/ ns('Ophthalmology');
 
 /** An OpinionNewsArticle is a NewsArticle that primarily expresses opinions rather than journalistic reporting of news and events. */
 export const OpinionNewsArticle = /*#__PURE__*/ ns('OpinionNewsArticle');
@@ -2573,7 +2849,10 @@ export const Painting = /*#__PURE__*/ ns('Painting');
 /** A medical procedure intended primarily for palliative purposes, aimed at relieving the symptoms of an underlying health condition. */
 export const PalliativeProcedure = /*#__PURE__*/ ns('PalliativeProcedure');
 
-/** Book format: Paperback. */
+/** A small, unbound or stapled booklet consisting of few pages with a flexible paper cover, designed for the economical distribution of focused information on a… */
+export const Pamphlet = /*#__PURE__*/ ns('Pamphlet');
+
+/** A flexible, lightweight book bound with a thick paper or cardstock cover and glued spine, prioritizing portability and affordability over long-term durability. */
 export const Paperback = /*#__PURE__*/ ns('Paperback');
 
 /** The delivery of a parcel either via the postal service or a commercial service. */
@@ -2639,6 +2918,9 @@ export const PaymentDue = /*#__PURE__*/ ns('PaymentDue');
 /** A payment method is a standardized procedure for transferring the monetary amount for a purchase. */
 export const PaymentMethod = /*#__PURE__*/ ns('PaymentMethod');
 
+/** The type of payment method, only for generic payment types, specific forms of payments, like card payment should be expressed using subclasses of PaymentMethod. */
+export const PaymentMethodType = /*#__PURE__*/ ns('PaymentMethodType');
+
 /** The payment is due and considered late. */
 export const PaymentPastDue = /*#__PURE__*/ ns('PaymentPastDue');
 
@@ -2663,13 +2945,16 @@ export const PerformAction = /*#__PURE__*/ ns('PerformAction');
 /** A PerformanceRole is a Role that some entity places with regard to a theatrical performance, e.g. in a Movie, TVSeries etc. */
 export const PerformanceRole = /*#__PURE__*/ ns('PerformanceRole');
 
+/** Live performance Event of the performing arts (music, theatre, dance, acrobatics, spoken word), including performance art and performative sports (e.g.… */
+export const PerformingArtsEvent = /*#__PURE__*/ ns('PerformingArtsEvent');
+
 /** A theater or other performing art center. */
 export const PerformingArtsTheater = /*#__PURE__*/ ns('PerformingArtsTheater');
 
 /** A performance group, such as a band, an orchestra, or a circus. */
 export const PerformingGroup = /*#__PURE__*/ ns('PerformingGroup');
 
-/** A publication in any medium issued in successive parts bearing numerical or chronological designations and intended, such as a magazine, scholarly journal, or… */
+/** A publication in any medium issued in successive parts bearing numerical or chronological designations and intended to continue indefinitely, such as a… */
 export const Periodical = /*#__PURE__*/ ns('Periodical');
 
 /** A permit issued by an organization, e.g. a parking pass. */
@@ -2686,6 +2971,9 @@ export const Pharmacy = /*#__PURE__*/ ns('Pharmacy');
 
 /** The practice or art and science of preparing and dispensing drugs and medicines. */
 export const PharmacySpecialty = /*#__PURE__*/ ns('PharmacySpecialty');
+
+/** Payment by billing via the phone carrier. */
+export const PhoneCarrierPayment = /*#__PURE__*/ ns('PhoneCarrierPayment');
 
 /** A photograph. */
 export const Photograph = /*#__PURE__*/ ns('Photograph');
@@ -2705,10 +2993,13 @@ export const PhysicalExam = /*#__PURE__*/ ns('PhysicalExam');
 /** A process of progressive physical care and rehabilitation aimed at improving a health condition. */
 export const PhysicalTherapy = /*#__PURE__*/ ns('PhysicalTherapy');
 
-/** A doctor's office. */
+/** An individual physician or a physician's office considered as a MedicalOrganization. */
 export const Physician = /*#__PURE__*/ ns('Physician');
 
-/** The practice of treatment of disease, injury, or deformity by physical methods such as massage, heat treatment, and exercise rather than by drugs or surgery.. */
+/** A doctor's office or clinic. */
+export const PhysiciansOffice = /*#__PURE__*/ ns('PhysiciansOffice');
+
+/** The practice of treatment of disease, injury, or deformity by physical methods such as massage, heat treatment, and exercise rather than by drugs or surgery. */
 export const Physiotherapy = /*#__PURE__*/ ns('Physiotherapy');
 
 /** Entities that have a somewhat fixed, physical extension. */
@@ -2729,7 +3020,7 @@ export const PlasticSurgery = /*#__PURE__*/ ns('PlasticSurgery');
 /** A play is a form of literature, usually consisting of dialogue between characters, intended for theatrical performance rather than just reading. */
 export const Play = /*#__PURE__*/ ns('Play');
 
-/** The act of playing/exercising/training/performing for enjoyment, leisure, recreation, Competition or exercise. */
+/** The act of playing/exercising/training/performing for enjoyment, leisure, recreation, competition or exercise. */
 export const PlayAction = /*#__PURE__*/ ns('PlayAction');
 
 /** The act of playing a video game. */
@@ -2756,8 +3047,14 @@ export const Podiatric = /*#__PURE__*/ ns('Podiatric');
 /** A police station. */
 export const PoliceStation = /*#__PURE__*/ ns('PoliceStation');
 
+/** Organization: Political Party. */
+export const PoliticalParty = /*#__PURE__*/ ns('PoliticalParty');
+
 /** A pond. */
 export const Pond = /*#__PURE__*/ ns('Pond');
+
+/** Content coded as ' positive film ' using the IPTC digital source type vocabulary. */
+export const PositiveFilmDigitalSource = /*#__PURE__*/ ns('PositiveFilmDigitalSource');
 
 /** A post office. */
 export const PostOffice = /*#__PURE__*/ ns('PostOffice');
@@ -2765,7 +3062,7 @@ export const PostOffice = /*#__PURE__*/ ns('PostOffice');
 /** The mailing address. */
 export const PostalAddress = /*#__PURE__*/ ns('PostalAddress');
 
-/** Indicates a range of postalcodes, usually defined as the set of valid codes between postalCodeBegin and postalCodeEnd, inclusively. */
+/** Indicates a range of postal codes, usually defined as the set of valid codes between postalCodeBegin and postalCodeEnd, inclusively. */
 export const PostalCodeRangeSpecification = /*#__PURE__*/ ns('PostalCodeRangeSpecification');
 
 /** A large, usually printed placard, bill, or announcement, often illustrated, that is posted to advertise or publicize something. */
@@ -2816,6 +3113,9 @@ export const PriceTypeEnumeration = /*#__PURE__*/ ns('PriceTypeEnumeration');
 /** The medical care by a physician, or other health-care professional, who is the patient's first contact with the health-care system and who may recommend a… */
 export const PrimaryCare = /*#__PURE__*/ ns('PrimaryCare');
 
+/** Content coded as ' print ' using the IPTC digital source type vocabulary. */
+export const PrintDigitalSource = /*#__PURE__*/ ns('PrintDigitalSource');
+
 /** A prion is an infectious agent composed of protein in a misfolded form. */
 export const Prion = /*#__PURE__*/ ns('Prion');
 
@@ -2830,6 +3130,24 @@ export const ProductGroup = /*#__PURE__*/ ns('ProductGroup');
 
 /** A datasheet or vendor specification of a product (in the sense of a prototypical description). */
 export const ProductModel = /*#__PURE__*/ ns('ProductModel');
+
+/** ProductReturnEnumeration enumerates several kinds of product return policy. */
+export const ProductReturnEnumeration = /*#__PURE__*/ ns('ProductReturnEnumeration');
+
+/** ProductReturnFiniteReturnWindow: there is a finite window for product returns. */
+export const ProductReturnFiniteReturnWindow = /*#__PURE__*/ ns('ProductReturnFiniteReturnWindow');
+
+/** ProductReturnNotPermitted: product returns are not permitted. */
+export const ProductReturnNotPermitted = /*#__PURE__*/ ns('ProductReturnNotPermitted');
+
+/** A ProductReturnPolicy provides information about product return policies associated with an Organization or Product. */
+export const ProductReturnPolicy = /*#__PURE__*/ ns('ProductReturnPolicy');
+
+/** ProductReturnUnlimitedWindow: there is an unlimited window for product returns. */
+export const ProductReturnUnlimitedWindow = /*#__PURE__*/ ns('ProductReturnUnlimitedWindow');
+
+/** ProductReturnUnspecified: a product return policy is not specified here. */
+export const ProductReturnUnspecified = /*#__PURE__*/ ns('ProductReturnUnspecified');
 
 /** Original definition: "provider of professional services." The general ProfessionalService type for local businesses was deprecated due to confusion with… */
 export const ProfessionalService = /*#__PURE__*/ ns('ProfessionalService');
@@ -2882,7 +3200,7 @@ export const PublicSwimmingPool = /*#__PURE__*/ ns('PublicSwimmingPool');
 /** A public toilet is a room or small building containing one or more toilets (and possibly also urinals) which is available for use by the general public, or by… */
 export const PublicToilet = /*#__PURE__*/ ns('PublicToilet');
 
-/** A PublicationEvent corresponds indifferently to the event of publication for a CreativeWork of any type e.g. a broadcast event, an on-demand event, a… */
+/** A PublicationEvent corresponds indifferently to the event of publication for a CreativeWork of any type, e.g. a broadcast event, an on-demand event, a… */
 export const PublicationEvent = /*#__PURE__*/ ns('PublicationEvent');
 
 /** A part of a successively published publication such as a periodical or publication volume, often numbered, usually containing a grouping of works such as… */
@@ -2893,6 +3211,21 @@ export const PublicationVolume = /*#__PURE__*/ ns('PublicationVolume');
 
 /** A specific branch of medical science that pertains to the study of the respiratory system and its respective disease states. */
 export const Pulmonary = /*#__PURE__*/ ns('Pulmonary');
+
+/** Enumerates a purchase type for an item. */
+export const PurchaseType = /*#__PURE__*/ ns('PurchaseType');
+
+/** This is a lease of an item. */
+export const PurchaseTypeLease = /*#__PURE__*/ ns('PurchaseTypeLease');
+
+/** This is a purchase of a new item. */
+export const PurchaseTypeNewPurchase = /*#__PURE__*/ ns('PurchaseTypeNewPurchase');
+
+/** This is a trade-in for an item. */
+export const PurchaseTypeTradeIn = /*#__PURE__*/ ns('PurchaseTypeTradeIn');
+
+/** This is a purchase of a used item. */
+export const PurchaseTypeUsedPurchase = /*#__PURE__*/ ns('PurchaseTypeUsedPurchase');
 
 /** A QAPage is a WebPage focussed on a specific Question and its Answer(s), e.g. in a question answering site or documenting Frequently Asked Questions (FAQs). */
 export const QAPage = /*#__PURE__*/ ns('QAPage');
@@ -2906,7 +3239,7 @@ export const QuantitativeValue = /*#__PURE__*/ ns('QuantitativeValue');
 /** A statistical distribution of values. */
 export const QuantitativeValueDistribution = /*#__PURE__*/ ns('QuantitativeValueDistribution');
 
-/** Quantities such as distance, time, mass, weight, etc. Particular instances of say Mass are entities like '3 Kg' or '4 milligrams'. */
+/** Quantities such as distance, time, mass, weight, etc. Particular instances of say Mass are strings like '3 kg' or '4 milligrams'. */
 export const Quantity = /*#__PURE__*/ ns('Quantity');
 
 /** A specific question - e.g. from a user seeking answers online, or collected in a Frequently Asked Questions (FAQ) document. */
@@ -3008,6 +3341,9 @@ export const RegisterAction = /*#__PURE__*/ ns('RegisterAction');
 /** A registry-based study design. */
 export const Registry = /*#__PURE__*/ ns('Registry');
 
+/** Represents the regular price of an offered product. */
+export const RegularPrice = /*#__PURE__*/ ns('RegularPrice');
+
 /** The drug's cost represents the maximum reimbursement paid by an insurer for the drug. */
 export const ReimbursementCap = /*#__PURE__*/ ns('ReimbursementCap');
 
@@ -3083,8 +3419,14 @@ export const ReservationStatusType = /*#__PURE__*/ ns('ReservationStatusType');
 /** Reserving a concrete object. */
 export const ReserveAction = /*#__PURE__*/ ns('ReserveAction');
 
+/** Indicates that the item is reserved and therefore not available. */
+export const Reserved = /*#__PURE__*/ ns('Reserved');
+
 /** A reservoir of water, typically an artificially created lake, like the Lake Kariba reservoir. */
 export const Reservoir = /*#__PURE__*/ ns('Reservoir');
+
+/** The action of resetting the password of a device or application. */
+export const ResetPasswordAction = /*#__PURE__*/ ns('ResetPasswordAction');
 
 /** The place where a person lives. */
 export const Residence = /*#__PURE__*/ ns('Residence');
@@ -3098,7 +3440,7 @@ export const RespiratoryTherapy = /*#__PURE__*/ ns('RespiratoryTherapy');
 /** A restaurant. */
 export const Restaurant = /*#__PURE__*/ ns('Restaurant');
 
-/** Specifies that the customer must pay a restocking fee when returning a product */
+/** Specifies that the customer must pay a restocking fee when returning a product. */
 export const RestockingFees = /*#__PURE__*/ ns('RestockingFees');
 
 /** A diet restricted to certain foods or preparations for cultural, religious, health or lifestyle reasons. */
@@ -3122,7 +3464,7 @@ export const ReturnAction = /*#__PURE__*/ ns('ReturnAction');
 /** Specifies that product returns must be made at a kiosk. */
 export const ReturnAtKiosk = /*#__PURE__*/ ns('ReturnAtKiosk');
 
-/** Specifies that product returns must to be done by mail. */
+/** Specifies that product returns must be done by mail. */
 export const ReturnByMail = /*#__PURE__*/ ns('ReturnByMail');
 
 /** Specifies that product returns must be paid for, and are the responsibility of, the customer. */
@@ -3149,7 +3491,7 @@ export const ReturnLabelSourceEnumeration = /*#__PURE__*/ ns('ReturnLabelSourceE
 /** Enumerates several types of product return methods. */
 export const ReturnMethodEnumeration = /*#__PURE__*/ ns('ReturnMethodEnumeration');
 
-/** Specifies that the customer must pay the return shipping costs when returning a product */
+/** Specifies that the customer must pay the return shipping costs when returning a product. */
 export const ReturnShippingFees = /*#__PURE__*/ ns('ReturnShippingFees');
 
 /** A review of an item - for example, of a restaurant, movie, or store. */
@@ -3179,7 +3521,7 @@ export const Role = /*#__PURE__*/ ns('Role');
 /** A roofing contractor. */
 export const RoofingContractor = /*#__PURE__*/ ns('RoofingContractor');
 
-/** A room is a distinguishable space within a structure, usually separated from other spaces by interior walls. */
+/** A room is a distinguishable space within a structure, usually separated from other spaces by interior walls (source: Wikipedia, the free encyclopedia, see… */
 export const Room = /*#__PURE__*/ ns('Room');
 
 /** The act of notifying an event organizer as to whether you expect to attend the event. */
@@ -3196,6 +3538,9 @@ export const RsvpResponseType = /*#__PURE__*/ ns('RsvpResponseType');
 
 /** The invitee will attend. */
 export const RsvpResponseYes = /*#__PURE__*/ ns('RsvpResponseYes');
+
+/** Specialized software environment that provides the essential infrastructure, libraries, and services required to execute a program. */
+export const RuntimePlatform = /*#__PURE__*/ ns('RuntimePlatform');
 
 /** Represents the suggested retail price ("SRP") of an offered product. */
 export const SRP = /*#__PURE__*/ ns('SRP');
@@ -3233,6 +3578,9 @@ export const School = /*#__PURE__*/ ns('School');
 /** A School District is an administrative area for the administration of schools. */
 export const SchoolDistrict = /*#__PURE__*/ ns('SchoolDistrict');
 
+/** Content coded as ' algorithmic media ' using the IPTC digital source type vocabulary. */
+export const ScreenCaptureDigitalSource = /*#__PURE__*/ ns('ScreenCaptureDigitalSource');
+
 /** A screening of a movie or other video. */
 export const ScreeningEvent = /*#__PURE__*/ ns('ScreeningEvent');
 
@@ -3254,7 +3602,7 @@ export const SearchRescueOrganization = /*#__PURE__*/ ns('SearchRescueOrganizati
 /** Web page type: Search results page. */
 export const SearchResultsPage = /*#__PURE__*/ ns('SearchResultsPage');
 
-/** A media season e.g. tv, radio, video game etc. */
+/** A media season, e.g. TV, radio, video game etc. */
 export const Season = /*#__PURE__*/ ns('Season');
 
 /** Used to describe a seat, such as a reserved seat in an event reservation. */
@@ -3278,8 +3626,11 @@ export const SelfStorage = /*#__PURE__*/ ns('SelfStorage');
 /** The act of taking money from a buyer in exchange for goods or services rendered. */
 export const SellAction = /*#__PURE__*/ ns('SellAction');
 
-/** The act of physically/electronically dispatching an object for transfer from an origin to a destination.Related actions: * ReceiveAction: The reciprocal of… */
+/** The act of physically/electronically dispatching an object for transfer from an origin to a destination. */
 export const SendAction = /*#__PURE__*/ ns('SendAction');
+
+/** An art forms that use images deployed in a specific order for the purpose of graphic storytelling (i.e., narration of graphic stories) or conveying information. */
+export const SequentialArt = /*#__PURE__*/ ns('SequentialArt');
 
 /** A Series in schema.org is a group of related items, typically but not necessarily of the same kind. */
 export const Series = /*#__PURE__*/ ns('Series');
@@ -3290,6 +3641,9 @@ export const Service = /*#__PURE__*/ ns('Service');
 /** A means for accessing a service, e.g. a government office location, web site, or phone number. */
 export const ServiceChannel = /*#__PURE__*/ ns('ServiceChannel');
 
+/** ServicePeriod represents a duration with some constraints about cutoff time and business days. */
+export const ServicePeriod = /*#__PURE__*/ ns('ServicePeriod');
+
 /** The item contains sexually oriented content such as nudity, suggestive or explicit material, or related online services, or is intended to enhance sexual… */
 export const SexualContentConsideration = /*#__PURE__*/ ns('SexualContentConsideration');
 
@@ -3299,11 +3653,17 @@ export const ShareAction = /*#__PURE__*/ ns('ShareAction');
 /** Printed music, as opposed to performed or recorded music. */
 export const SheetMusic = /*#__PURE__*/ ns('SheetMusic');
 
+/** ShippingConditions represent a set of constraints and information about the conditions of shipping a product. */
+export const ShippingConditions = /*#__PURE__*/ ns('ShippingConditions');
+
 /** ShippingDeliveryTime provides various pieces of information about delivery times for shipping. */
 export const ShippingDeliveryTime = /*#__PURE__*/ ns('ShippingDeliveryTime');
 
 /** A ShippingRateSettings represents re-usable pieces of shipping information. */
 export const ShippingRateSettings = /*#__PURE__*/ ns('ShippingRateSettings');
+
+/** ShippingService represents the criteria used to determine if and how an offer could be shipped to a customer. */
+export const ShippingService = /*#__PURE__*/ ns('ShippingService');
 
 /** A shoe store. */
 export const ShoeStore = /*#__PURE__*/ ns('ShoeStore');
@@ -3434,6 +3794,9 @@ export const Statement = /*#__PURE__*/ ns('Statement');
 /** A StatisticalPopulation is a set of instances of a certain given type that satisfy some set of constraints. */
 export const StatisticalPopulation = /*#__PURE__*/ ns('StatisticalPopulation');
 
+/** StatisticalVariable represents any type of statistical metric that can be measured at a place and time. */
+export const StatisticalVariable = /*#__PURE__*/ ns('StatisticalVariable');
+
 /** Lists or enumerations dealing with status types. */
 export const StatusEnumeration = /*#__PURE__*/ ns('StatusEnumeration');
 
@@ -3443,11 +3806,14 @@ export const SteeringPositionValue = /*#__PURE__*/ ns('SteeringPositionValue');
 /** A retail good store. */
 export const Store = /*#__PURE__*/ ns('Store');
 
-/** Specifies that the customer receives a store credit as refund when returning a product */
+/** Specifies that the customer receives a store credit as refund when returning a product. */
 export const StoreCreditRefund = /*#__PURE__*/ ns('StoreCreditRefund');
 
 /** Physical activity that is engaged in to improve muscle and bone strength. */
 export const StrengthTraining = /*#__PURE__*/ ns('StrengthTraining');
+
+/** Represents the strikethrough price (the previous advertised price) of an offered product. */
+export const StrikethroughPrice = /*#__PURE__*/ ns('StrikethroughPrice');
 
 /** Structured values are used when the value of a property has a more complex structure than simply being a textual value or a reference to another thing. */
 export const StructuredValue = /*#__PURE__*/ ns('StructuredValue');
@@ -3467,7 +3833,7 @@ export const Substance = /*#__PURE__*/ ns('Substance');
 /** A subway station. */
 export const SubwayStation = /*#__PURE__*/ ns('SubwayStation');
 
-/** A suite in a hotel or other public accommodation, denotes a class of luxury accommodations, the key feature of which is multiple rooms (Source: Wikipedia, the… */
+/** A suite in a hotel or other public accommodation, denotes a class of luxury accommodations, the key feature of which is multiple rooms (source: Wikipedia, the… */
 export const Suite = /*#__PURE__*/ ns('Suite');
 
 /** The day of the week between Saturday and Monday. */
@@ -3487,6 +3853,9 @@ export const SuspendAction = /*#__PURE__*/ ns('SuspendAction');
 
 /** Suspended. */
 export const Suspended = /*#__PURE__*/ ns('Suspended');
+
+/** A syllabus that describes the material covered in a course, often with several such sections per Course so that a distinct timeRequired can be provided for… */
+export const Syllabus = /*#__PURE__*/ ns('Syllabus');
 
 /** Symptoms or related symptoms of a Topic. */
 export const SymptomsHealthAspect = /*#__PURE__*/ ns('SymptomsHealthAspect');
@@ -3554,6 +3923,9 @@ export const Text = /*#__PURE__*/ ns('Text');
 /** A file composed primarily of text. */
 export const TextDigitalDocument = /*#__PURE__*/ ns('TextDigitalDocument');
 
+/** A text file. */
+export const TextObject = /*#__PURE__*/ ns('TextObject');
+
 /** Event type: Theater performance. */
 export const TheaterEvent = /*#__PURE__*/ ns('TheaterEvent');
 
@@ -3583,6 +3955,21 @@ export const Ticket = /*#__PURE__*/ ns('Ticket');
 
 /** The act of reaching a draw in a competitive activity. */
 export const TieAction = /*#__PURE__*/ ns('TieAction');
+
+/** An enumeration of possible benefits as part of a loyalty (members) program. */
+export const TierBenefitEnumeration = /*#__PURE__*/ ns('TierBenefitEnumeration');
+
+/** Benefit of the tier is earning of loyalty points. */
+export const TierBenefitLoyaltyPoints = /*#__PURE__*/ ns('TierBenefitLoyaltyPoints');
+
+/** Benefit of the tier is a members-only price. */
+export const TierBenefitLoyaltyPrice = /*#__PURE__*/ ns('TierBenefitLoyaltyPrice');
+
+/** Benefit of the tier is members-only returns, for example free unlimited returns. */
+export const TierBenefitLoyaltyReturns = /*#__PURE__*/ ns('TierBenefitLoyaltyReturns');
+
+/** Benefit of the tier is a members-only shipping price or speed (for example free shipping or 1-day shipping). */
+export const TierBenefitLoyaltyShipping = /*#__PURE__*/ ns('TierBenefitLoyaltyShipping');
 
 /** A point in time recurring on multiple days in the form hh:mm:ss[Z|(+|-)hh:mm] (see XML schema for details). */
 export const Time = /*#__PURE__*/ ns('Time');
@@ -3635,6 +4022,9 @@ export const TrainStation = /*#__PURE__*/ ns('TrainStation');
 /** A trip on a commercial train line. */
 export const TrainTrip = /*#__PURE__*/ ns('TrainTrip');
 
+/** Content coded as ' trained algorithmic media ' using the IPTC digital source type vocabulary. */
+export const TrainedAlgorithmicMediaDigitalSource = /*#__PURE__*/ ns('TrainedAlgorithmicMediaDigitalSource');
+
 /** The act of transferring/moving (abstract or concrete) animate or inanimate objects from one place to another. */
 export const TransferAction = /*#__PURE__*/ ns('TransferAction');
 
@@ -3644,7 +4034,7 @@ export const TransformedContent = /*#__PURE__*/ ns('TransformedContent');
 /** A transit map. */
 export const TransitMap = /*#__PURE__*/ ns('TransitMap');
 
-/** The act of traveling from an fromLocation to a destination by a specified mode of transport, optionally with participants. */
+/** The act of traveling from a fromLocation to a destination by a specified mode of transport, optionally with participants. */
 export const TravelAction = /*#__PURE__*/ ns('TravelAction');
 
 /** A travel agency. */
@@ -3755,6 +4145,9 @@ export const UserReview = /*#__PURE__*/ ns('UserReview');
 /** UserInteraction and its subtypes is an old way of talking about users interacting with pages. */
 export const UserTweets = /*#__PURE__*/ ns('UserTweets');
 
+/** A kind of lodging business that focuses on renting single properties for limited time. */
+export const VacationRental = /*#__PURE__*/ ns('VacationRental');
+
 /** A diet exclusive of all animal products. */
 export const VeganDiet = /*#__PURE__*/ ns('VeganDiet');
 
@@ -3806,6 +4199,9 @@ export const ViolenceConsideration = /*#__PURE__*/ ns('ViolenceConsideration');
 /** An online or virtual location for attending events. */
 export const VirtualLocation = /*#__PURE__*/ ns('VirtualLocation');
 
+/** Content coded as ' virtual recording ' using the IPTC digital source type vocabulary. */
+export const VirtualRecordingDigitalSource = /*#__PURE__*/ ns('VirtualRecordingDigitalSource');
+
 /** Pathogenic virus that causes viral infection. */
 export const Virus = /*#__PURE__*/ ns('Virus');
 
@@ -3818,7 +4214,7 @@ export const VisualArtwork = /*#__PURE__*/ ns('VisualArtwork');
 /** Vital signs are measures of various physiological functions in order to assess the most basic body functions. */
 export const VitalSign = /*#__PURE__*/ ns('VitalSign');
 
-/** A volcano, like Fuji san. */
+/** A volcano, like Fujisan. */
 export const Volcano = /*#__PURE__*/ ns('Volcano');
 
 /** The act of expressing a preference from a fixed/finite/structured set of choices/options. */
@@ -3842,7 +4238,7 @@ export const WantAction = /*#__PURE__*/ ns('WantAction');
 /** A structured value representing the duration and scope of services that will be provided to a customer free of charge in case of a defect or malfunction of a… */
 export const WarrantyPromise = /*#__PURE__*/ ns('WarrantyPromise');
 
-/** A range of of services that will be provided to a customer free of charge in case of a defect or malfunction of a product. */
+/** A range of services that will be provided to a customer free of charge in case of a defect or malfunction of a product. */
 export const WarrantyScope = /*#__PURE__*/ ns('WarrantyScope');
 
 /** The act of consuming dynamic/moving visual content. */
@@ -3857,43 +4253,43 @@ export const WeaponConsideration = /*#__PURE__*/ ns('WeaponConsideration');
 /** The act of dressing oneself in clothing. */
 export const WearAction = /*#__PURE__*/ ns('WearAction');
 
-/** Measurement of the back section, for example of a jacket */
+/** Measurement of the back section, for example of a jacket. */
 export const WearableMeasurementBack = /*#__PURE__*/ ns('WearableMeasurementBack');
 
-/** Measurement of the chest/bust section, for example of a suit */
+/** Measurement of the chest/bust section, for example of a suit. */
 export const WearableMeasurementChestOrBust = /*#__PURE__*/ ns('WearableMeasurementChestOrBust');
 
-/** Measurement of the collar, for example of a shirt */
+/** Measurement of the collar, for example of a shirt. */
 export const WearableMeasurementCollar = /*#__PURE__*/ ns('WearableMeasurementCollar');
 
-/** Measurement of the cup, for example of a bra */
+/** Measurement of the cup, for example of a bra. */
 export const WearableMeasurementCup = /*#__PURE__*/ ns('WearableMeasurementCup');
 
-/** Measurement of the height, for example the heel height of a shoe */
+/** Measurement of the height, for example the heel height of a shoe. */
 export const WearableMeasurementHeight = /*#__PURE__*/ ns('WearableMeasurementHeight');
 
-/** Measurement of the hip section, for example of a skirt */
+/** Measurement of the hip section, for example of a skirt. */
 export const WearableMeasurementHips = /*#__PURE__*/ ns('WearableMeasurementHips');
 
-/** Measurement of the inseam, for example of pants */
+/** Measurement of the inseam, for example of pants. */
 export const WearableMeasurementInseam = /*#__PURE__*/ ns('WearableMeasurementInseam');
 
-/** Represents the length, for example of a dress */
+/** Represents the length, for example of a dress. */
 export const WearableMeasurementLength = /*#__PURE__*/ ns('WearableMeasurementLength');
 
-/** Measurement of the outside leg, for example of pants */
+/** Measurement of the outside leg, for example of pants. */
 export const WearableMeasurementOutsideLeg = /*#__PURE__*/ ns('WearableMeasurementOutsideLeg');
 
-/** Measurement of the sleeve length, for example of a shirt */
+/** Measurement of the sleeve length, for example of a shirt. */
 export const WearableMeasurementSleeve = /*#__PURE__*/ ns('WearableMeasurementSleeve');
 
 /** Enumerates common types of measurement for wearables products. */
 export const WearableMeasurementTypeEnumeration = /*#__PURE__*/ ns('WearableMeasurementTypeEnumeration');
 
-/** Measurement of the waist section, for example of pants */
+/** Measurement of the waist section, for example of pants. */
 export const WearableMeasurementWaist = /*#__PURE__*/ ns('WearableMeasurementWaist');
 
-/** Measurement of the width, for example of shoes */
+/** Measurement of the width, for example of shoes. */
 export const WearableMeasurementWidth = /*#__PURE__*/ ns('WearableMeasurementWidth');
 
 /** Size group "Big" for wearables. */
@@ -3968,7 +4364,7 @@ export const WearableSizeSystemDE = /*#__PURE__*/ ns('WearableSizeSystemDE');
 /** EN 13402 (joint European standard for size labelling of clothes). */
 export const WearableSizeSystemEN13402 = /*#__PURE__*/ ns('WearableSizeSystemEN13402');
 
-/** Enumerates common size systems specific for wearable products */
+/** Enumerates common size systems specific for wearable products. */
 export const WearableSizeSystemEnumeration = /*#__PURE__*/ ns('WearableSizeSystemEnumeration');
 
 /** European size system for wearables. */
@@ -4061,7 +4457,7 @@ export const Zoo = /*#__PURE__*/ ns('Zoo');
 /** A 3D model represents some kind of 3D content, which may have encodings in one or more MediaObjects. */
 export const _3DModel = /*#__PURE__*/ ns('3DModel');
 
-/** The subject matter of the content. */
+/** The subject matter of an object. */
 export const about = /*#__PURE__*/ ns('about');
 
 /** Indicates whether the book is an abridged edition. */
@@ -4079,7 +4475,7 @@ export const acceptedAnswer = /*#__PURE__*/ ns('acceptedAnswer');
 /** The offer(s) -- e.g., product, quantity and price combinations -- included in the order. */
 export const acceptedOffer = /*#__PURE__*/ ns('acceptedOffer');
 
-/** The payment method(s) accepted by seller for this offer. */
+/** The payment method(s) that are accepted in general by an organization, or for some specific demand or offer. */
 export const acceptedPaymentMethod = /*#__PURE__*/ ns('acceptedPaymentMethod');
 
 /** Indicates whether a FoodEstablishment accepts reservations. */
@@ -4088,10 +4484,10 @@ export const acceptsReservations = /*#__PURE__*/ ns('acceptsReservations');
 /** Password, PIN, or access code needed for delivery (e.g. from a locker). */
 export const accessCode = /*#__PURE__*/ ns('accessCode');
 
-/** The human sensory perceptual system or cognitive faculty through which a person may process or perceive information. */
+/** The human sensory perceptual system or cognitive faculty through which a person may process or perceive the intellectual content of a resource, not including… */
 export const accessMode = /*#__PURE__*/ ns('accessMode');
 
-/** A list of single or combined accessModes that are sufficient to understand all the intellectual content of a resource. */
+/** A list of single or combined access modes that are sufficient to understand all the intellectual content of a resource, including any adaptations. */
 export const accessModeSufficient = /*#__PURE__*/ ns('accessModeSufficient');
 
 /** Indicates that the resource is compatible with the referenced accessibility API. */
@@ -4109,7 +4505,7 @@ export const accessibilityHazard = /*#__PURE__*/ ns('accessibilityHazard');
 /** A human-readable summary of specific accessibility features or deficiencies, consistent with the other accessibility metadata but expressing subtleties such as… */
 export const accessibilitySummary = /*#__PURE__*/ ns('accessibilitySummary');
 
-/** Category of an Accommodation, following real estate conventions e.g. RESO (see PropertySubType, and PropertyType fields for suggested values). */
+/** Category of an Accommodation, following real estate conventions, e.g. RESO (see PropertySubType, and PropertyType fields for suggested values). */
 export const accommodationCategory = /*#__PURE__*/ ns('accommodationCategory');
 
 /** A floorplan of some Accommodation. */
@@ -4136,7 +4532,7 @@ export const acquiredFrom = /*#__PURE__*/ ns('acquiredFrom');
 /** The ACRISS Car Classification Code is a code used by many car rental companies, for classifying vehicles. */
 export const acrissCode = /*#__PURE__*/ ns('acrissCode');
 
-/** A set of requirements that a must be fulfilled in order to perform an Action. */
+/** A set of requirements that must be fulfilled in order to perform an Action. */
 export const actionAccessibilityRequirement = /*#__PURE__*/ ns('actionAccessibilityRequirement');
 
 /** An application that can complete the request. */
@@ -4147,6 +4543,9 @@ export const actionOption = /*#__PURE__*/ ns('actionOption');
 
 /** The high level platform(s) where the Action can be performed for the given URL. */
 export const actionPlatform = /*#__PURE__*/ ns('actionPlatform');
+
+/** Description of the process by which the action was performed. */
+export const actionProcess = /*#__PURE__*/ ns('actionProcess');
 
 /** Indicates the current disposition of the Action. */
 export const actionStatus = /*#__PURE__*/ ns('actionStatus');
@@ -4163,10 +4562,10 @@ export const activityDuration = /*#__PURE__*/ ns('activityDuration');
 /** How often one should engage in the activity. */
 export const activityFrequency = /*#__PURE__*/ ns('activityFrequency');
 
-/** An actor, e.g. in tv, radio, movie, video games etc., or in an event. */
+/** An actor (individual or a group), e.g. in TV, radio, movie, video games etc., or in an event. */
 export const actor = /*#__PURE__*/ ns('actor');
 
-/** An actor, e.g. in tv, radio, movie, video games etc. Actors can be associated with individual items or with a series, episode, clip. */
+/** An actor, e.g. in TV, radio, movie, video games etc. Actors can be associated with individual items or with a series, episode, clip. */
 export const actors = /*#__PURE__*/ ns('actors');
 
 /** An additional offer that can only be obtained in combination with the first base offer (e.g. supplements and extensions that are available for a surcharge). */
@@ -4178,7 +4577,7 @@ export const additionalName = /*#__PURE__*/ ns('additionalName');
 /** If responding yes, the number of guests who will attend in addition to the invitee. */
 export const additionalNumberOfGuests = /*#__PURE__*/ ns('additionalNumberOfGuests');
 
-/** A property-value pair representing an additional characteristics of the entitity, e.g. a product feature or another characteristic for which there is no… */
+/** A property-value pair representing an additional characteristic of the entity, e.g. a product feature or another characteristic for which there is no matching… */
 export const additionalProperty = /*#__PURE__*/ ns('additionalProperty');
 
 /** An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. */
@@ -4220,6 +4619,12 @@ export const afterMedia = /*#__PURE__*/ ns('afterMedia');
 /** The direct performer or driver of the action (animate or inanimate). */
 export const agent = /*#__PURE__*/ ns('agent');
 
+/** The number of completed interactions for this entity, in a particular role (the 'agent'), in a particular action (indicated in the statistic), and in a… */
+export const agentInteractionStatistic = /*#__PURE__*/ ns('agentInteractionStatistic');
+
+/** Indicates a prototype of the elements in the list that is used to hold aggregate information (ratings, offers, etc.). */
+export const aggregateElement = /*#__PURE__*/ ns('aggregateElement');
+
 /** The overall rating, based on a collection of reviews or ratings, of the item. */
 export const aggregateRating = /*#__PURE__*/ ns('aggregateRating');
 
@@ -4229,7 +4634,7 @@ export const aircraft = /*#__PURE__*/ ns('aircraft');
 /** A music album. */
 export const album = /*#__PURE__*/ ns('album');
 
-/** Classification of the album by it's type of content: soundtrack, live album, studio album, etc. */
+/** Classification of the album by its type of content: soundtrack, live album, studio album, etc. */
 export const albumProductionType = /*#__PURE__*/ ns('albumProductionType');
 
 /** A release of this album. */
@@ -4289,7 +4694,7 @@ export const answerExplanation = /*#__PURE__*/ ns('answerExplanation');
 /** The muscle whose action counteracts the specified muscle. */
 export const antagonist = /*#__PURE__*/ ns('antagonist');
 
-/** Indicates an occurence of a Claim in some CreativeWork. */
+/** Indicates an occurrence of a Claim in some CreativeWork. */
 export const appearance = /*#__PURE__*/ ns('appearance');
 
 /** A country where a particular merchant return policy applies to, for example the two-letter ISO 3166-1 alpha-2 country code. */
@@ -4310,7 +4715,7 @@ export const applicationCategory = /*#__PURE__*/ ns('applicationCategory');
 /** Contact details for further information relevant to this job posting. */
 export const applicationContact = /*#__PURE__*/ ns('applicationContact');
 
-/** The date at which the program stops collecting applications for the next enrollment cycle. */
+/** The date on which the program stops collecting applications for the next enrollment cycle. */
 export const applicationDeadline = /*#__PURE__*/ ns('applicationDeadline');
 
 /** The date at which the program begins collecting applications for the next enrollment cycle. */
@@ -4388,10 +4793,13 @@ export const artist = /*#__PURE__*/ ns('artist');
 /** The supporting materials for the artwork, e.g. Canvas, Paper, Wood, Board, etc. */
 export const artworkSurface = /*#__PURE__*/ ns('artworkSurface');
 
+/** An Amazon Standard Identification Number (ASIN) is a 10-character alphanumeric unique identifier assigned by Amazon.com and its partners for product… */
+export const asin = /*#__PURE__*/ ns('asin');
+
 /** An aspect of medical practice that is considered on the page, such as 'diagnosis', 'treatment', 'causes', 'prognosis', 'etiology', 'epidemiology', etc. */
 export const aspect = /*#__PURE__*/ ns('aspect');
 
-/** Library file name e.g., mscorlib.dll, system.web.dll. */
+/** Library file name, e.g., mscorlib.dll, system.web.dll. */
 export const assembly = /*#__PURE__*/ ns('assembly');
 
 /** Associated product/technology version. */
@@ -4442,11 +4850,17 @@ export const audienceType = /*#__PURE__*/ ns('audienceType');
 /** An embedded audio object. */
 export const audio = /*#__PURE__*/ ns('audio');
 
+/** Date when a certification was last audited. */
+export const auditDate = /*#__PURE__*/ ns('auditDate');
+
 /** The Organization responsible for authenticating the user's subscription. */
 export const authenticator = /*#__PURE__*/ ns('authenticator');
 
 /** The author of this content or rating. */
 export const author = /*#__PURE__*/ ns('author');
+
+/** An organization or person officially appointed to act on behalf of the manufacturer in a specific region or context. */
+export const authorizedRepresentative = /*#__PURE__*/ ns('authorizedRepresentative');
 
 /** The availability of this item&#x2014;for example In stock, Out of stock, Pre-order, etc. */
 export const availability = /*#__PURE__*/ ns('availability');
@@ -4649,7 +5063,7 @@ export const broadcastSignalModulation = /*#__PURE__*/ ns('broadcastSignalModula
 /** The subchannel used for the broadcast. */
 export const broadcastSubChannel = /*#__PURE__*/ ns('broadcastSubChannel');
 
-/** The timezone in ISO 8601 format for which the service bases its broadcasts */
+/** The timezone in ISO 8601 format for which the service bases its broadcasts. */
 export const broadcastTimezone = /*#__PURE__*/ ns('broadcastTimezone');
 
 /** The organization owning or operating the broadcast service. */
@@ -4727,11 +5141,23 @@ export const catalogNumber = /*#__PURE__*/ ns('catalogNumber');
 /** A category for the item. */
 export const category = /*#__PURE__*/ ns('category');
 
+/** The cause of a medical condition. */
+export const cause = /*#__PURE__*/ ns('cause');
+
 /** The condition, complication, symptom, sign, etc. caused. */
 export const causeOf = /*#__PURE__*/ ns('causeOf');
 
 /** A sub property of recipient. */
 export const ccRecipient = /*#__PURE__*/ ns('ccRecipient');
+
+/** Identifier of a certification instance (as registered with an independent certification body). */
+export const certificationIdentification = /*#__PURE__*/ ns('certificationIdentification');
+
+/** Rating of a certification instance (as defined by an independent certification body). */
+export const certificationRating = /*#__PURE__*/ ns('certificationRating');
+
+/** Indicates the current status of a certification: active or inactive. */
+export const certificationStatus = /*#__PURE__*/ ns('certificationStatus');
 
 /** Fictional person connected with a creative work. */
 export const character = /*#__PURE__*/ ns('character');
@@ -4747,6 +5173,9 @@ export const cheatCode = /*#__PURE__*/ ns('cheatCode');
 
 /** The earliest someone may check into a lodging establishment. */
 export const checkinTime = /*#__PURE__*/ ns('checkinTime');
+
+/** A URL template (RFC 6570) for a checkout page for an offer. */
+export const checkoutPageURLTemplate = /*#__PURE__*/ ns('checkoutPageURLTemplate');
 
 /** The latest someone may check out of a lodging establishment. */
 export const checkoutTime = /*#__PURE__*/ ns('checkoutTime');
@@ -4778,7 +5207,7 @@ export const circle = /*#__PURE__*/ ns('circle');
 /** A citation or reference to another creative work, such as another publication, web page, scholarly article, etc. */
 export const citation = /*#__PURE__*/ ns('citation');
 
-/** For a Claim interpreted from MediaObject content sed to indicate a claim contained, implied or refined from the content of a MediaObject. */
+/** For a Claim interpreted from MediaObject content, the interpretedAsClaim property can be used to indicate a claim contained, implied or refined from the… */
 export const claimInterpreter = /*#__PURE__*/ ns('claimInterpreter');
 
 /** A short summary of the specific claims reviewed in a ClaimReview. */
@@ -4802,7 +5231,7 @@ export const coach = /*#__PURE__*/ ns('coach');
 /** A medical code for the entity, taken from a controlled vocabulary or ontology such as ICD-9, DiseasesDB, MeSH, SNOMED-CT, RxNorm, etc. */
 export const code = /*#__PURE__*/ ns('code');
 
-/** Link to the repository where the un-compiled, human readable code and related code is located (SVN, github, CodePlex). */
+/** Link to the repository where the un-compiled, human readable code and related code is located (SVN, GitHub, CodePlex). */
 export const codeRepository = /*#__PURE__*/ ns('codeRepository');
 
 /** What type of code sample: full (compile ready) solution, code snippet, inline code, scripts, template. */
@@ -4829,6 +5258,9 @@ export const collectionSize = /*#__PURE__*/ ns('collectionSize');
 /** The color of the product. */
 export const color = /*#__PURE__*/ ns('color');
 
+/** A color swatch image, visualizing the color of a Product. */
+export const colorSwatch = /*#__PURE__*/ ns('colorSwatch');
+
 /** The individual who adds color to inked drawings. */
 export const colorist = /*#__PURE__*/ ns('colorist');
 
@@ -4843,6 +5275,9 @@ export const commentText = /*#__PURE__*/ ns('commentText');
 
 /** The time at which the UserComment was made. */
 export const commentTime = /*#__PURE__*/ ns('commentTime');
+
+/** The official registration information of a business including the organization that issued it such as Company House or Chamber of Commerce in form of a… */
+export const companyRegistration = /*#__PURE__*/ ns('companyRegistration');
 
 /** Knowledge, skill, ability or personal attribute that must be demonstrated by a person or other entity in order to do something such as earn an Educational… */
 export const competencyRequired = /*#__PURE__*/ ns('competencyRequired');
@@ -4865,8 +5300,11 @@ export const confirmationNumber = /*#__PURE__*/ ns('confirmationNumber');
 /** Other anatomical structures to which this structure is connected. */
 export const connectedTo = /*#__PURE__*/ ns('connectedTo');
 
-/** Indicates a property used as a constraint to define a StatisticalPopulation with respect to the set of entities corresponding to an indicated type (via… */
-export const constrainingProperty = /*#__PURE__*/ ns('constrainingProperty');
+/** Indicates a property used as a constraint. */
+export const constraintProperty = /*#__PURE__*/ ns('constraintProperty');
+
+/** A consumer notice, such as a safety warning or mandatory information, related to the product. */
+export const consumerNotice = /*#__PURE__*/ ns('consumerNotice');
 
 /** An option available on this contact point (e.g. a toll-free number or support for hearing-impaired callers). */
 export const contactOption = /*#__PURE__*/ ns('contactOption');
@@ -4898,13 +5336,13 @@ export const containsSeason = /*#__PURE__*/ ns('containsSeason');
 /** The location depicted or described in the content. */
 export const contentLocation = /*#__PURE__*/ ns('contentLocation');
 
-/** Official rating of a piece of content&#x2014;for example,'MPAA PG-13'. */
+/** Official rating of a piece of content&#x2014;for example, 'MPAA PG-13'. */
 export const contentRating = /*#__PURE__*/ ns('contentRating');
 
 /** The specific time described by a creative work, for works (e.g. articles, video objects etc.) that emphasise a particular moment within an Event. */
 export const contentReferenceTime = /*#__PURE__*/ ns('contentReferenceTime');
 
-/** File size in (mega/kilo) bytes. */
+/** File size in (mega/kilo)bytes. */
 export const contentSize = /*#__PURE__*/ ns('contentSize');
 
 /** The supported content type(s) for an EntryPoint response. */
@@ -4943,7 +5381,7 @@ export const correctionsPolicy = /*#__PURE__*/ ns('correctionsPolicy');
 /** The category of cost, such as wholesale, retail, reimbursement cap, etc. */
 export const costCategory = /*#__PURE__*/ ns('costCategory');
 
-/** The currency (in 3-letter of the drug cost. */
+/** The currency (in 3-letter) of the drug cost. */
 export const costCurrency = /*#__PURE__*/ ns('costCurrency');
 
 /** Additional details to capture the origin of the cost data. */
@@ -4978,6 +5416,9 @@ export const courseMode = /*#__PURE__*/ ns('courseMode');
 
 /** Requirements for taking the Course. */
 export const coursePrerequisites = /*#__PURE__*/ ns('coursePrerequisites');
+
+/** Represents the length and pace of a course, expressed as a Schedule. */
+export const courseSchedule = /*#__PURE__*/ ns('courseSchedule');
 
 /** The amount of work expected of students taking the course, often provided as a figure per week or per month, and may be broken down by type. */
 export const courseWorkload = /*#__PURE__*/ ns('courseWorkload');
@@ -5069,7 +5510,7 @@ export const cvdNumICUBeds = /*#__PURE__*/ ns('cvdNumICUBeds');
 /** numicubedsocc - ICU BED OCCUPANCY: Total number of staffed inpatient ICU beds that are occupied. */
 export const cvdNumICUBedsOcc = /*#__PURE__*/ ns('cvdNumICUBedsOcc');
 
-/** numtotbeds - ALL HOSPITAL BEDS: Total number of all Inpatient and outpatient beds, including all staffed,ICU, licensed, and overflow (surge) beds used for… */
+/** numtotbeds - ALL HOSPITAL BEDS: Total number of all inpatient and outpatient beds, including all staffed, ICU, licensed, and overflow (surge) beds used for… */
 export const cvdNumTotBeds = /*#__PURE__*/ ns('cvdNumTotBeds');
 
 /** numvent - MECHANICAL VENTILATORS: Total number of ventilators available. */
@@ -5078,7 +5519,10 @@ export const cvdNumVent = /*#__PURE__*/ ns('cvdNumVent');
 /** numventuse - MECHANICAL VENTILATORS IN USE: Total number of ventilators in use. */
 export const cvdNumVentUse = /*#__PURE__*/ ns('cvdNumVentUse');
 
-/** An item within in a data feed. */
+/** Data associated with the event, like for instance a log message. */
+export const data = /*#__PURE__*/ ns('data');
+
+/** An item within a data feed. */
 export const dataFeedElement = /*#__PURE__*/ ns('dataFeedElement');
 
 /** A dataset contained in this catalog. */
@@ -5102,7 +5546,7 @@ export const dateModified = /*#__PURE__*/ ns('dateModified');
 /** Publication date of an online listing. */
 export const datePosted = /*#__PURE__*/ ns('datePosted');
 
-/** Date of first broadcast/publication. */
+/** Date of first publication or broadcast. */
 export const datePublished = /*#__PURE__*/ ns('datePublished');
 
 /** The date/time at which the message has been read by the recipient if a single recipient exists. */
@@ -5201,13 +5645,16 @@ export const dietFeatures = /*#__PURE__*/ ns('dietFeatures');
 /** One of a set of differential diagnoses for the condition. */
 export const differentialDiagnosis = /*#__PURE__*/ ns('differentialDiagnosis');
 
+/** Indicates an IPTCDigitalSourceEnumeration code indicating the nature of the digital source(s) for some CreativeWork. */
+export const digitalSourceType = /*#__PURE__*/ ns('digitalSourceType');
+
 /** Indicates whether an url that is associated with a JobPosting enables direct application for the job, via the posting website. */
 export const directApply = /*#__PURE__*/ ns('directApply');
 
-/** A director of e.g. tv, radio, movie, video gaming etc. content, or of an event. */
+/** A director of e.g. TV, radio, movie, video gaming etc. content, or of an event. */
 export const director = /*#__PURE__*/ ns('director');
 
-/** A director of e.g. tv, radio, movie, video games etc. content. */
+/** A director of e.g. TV, radio, movie, video games etc. content. */
 export const directors = /*#__PURE__*/ ns('directors');
 
 /** A sub property of description. */
@@ -5233,6 +5680,9 @@ export const diseasePreventionInfo = /*#__PURE__*/ ns('diseasePreventionInfo');
 
 /** Statistical information about the spread of a disease, either as WebContent, or described directly as a Dataset, or the specific Observations in the dataset. */
 export const diseaseSpreadStatistics = /*#__PURE__*/ ns('diseaseSpreadStatistics');
+
+/** The location at which an item can be viewed or experienced in-person. */
+export const displayLocation = /*#__PURE__*/ ns('displayLocation');
 
 /** The date that this organization was dissolved. */
 export const dissolutionDate = /*#__PURE__*/ ns('dissolutionDate');
@@ -5315,7 +5765,7 @@ export const duns = /*#__PURE__*/ ns('duns');
 /** A therapy that duplicates or overlaps this one. */
 export const duplicateTherapy = /*#__PURE__*/ ns('duplicateTherapy');
 
-/** The duration of the item (movie, audio recording, event, etc.) in ISO 8601 date format. */
+/** The duration of the item (movie, audio recording, event, etc.) in ISO 8601 duration format. */
 export const duration = /*#__PURE__*/ ns('duration');
 
 /** The duration of the warranty promise. */
@@ -5351,7 +5801,7 @@ export const educationalFramework = /*#__PURE__*/ ns('educationalFramework');
 /** The level in terms of progression through an educational or training context. */
 export const educationalLevel = /*#__PURE__*/ ns('educationalLevel');
 
-/** Similar to courseMode, The medium or means of delivery of the program as a whole. */
+/** Similar to courseMode, the medium or means of delivery of the program as a whole. */
 export const educationalProgramMode = /*#__PURE__*/ ns('educationalProgramMode');
 
 /** An educationalRole of an EducationalAudience. */
@@ -5380,6 +5830,9 @@ export const eligibleRegion = /*#__PURE__*/ ns('eligibleRegion');
 
 /** The transaction volume, in a monetary unit, for which the offer or price specification is valid, e.g. for indicating a minimal purchasing volume, to express… */
 export const eligibleTransactionVolume = /*#__PURE__*/ ns('eligibleTransactionVolume');
+
+/** The supplier of the incentivized item/service for which the incentive is valid for such as a utility company, merchant, or contractor. */
+export const eligibleWithSupplier = /*#__PURE__*/ ns('eligibleWithSupplier');
 
 /** Email address. */
 export const email = /*#__PURE__*/ ns('email');
@@ -5417,7 +5870,7 @@ export const encodesCreativeWork = /*#__PURE__*/ ns('encodesCreativeWork');
 /** A media object that encodes this CreativeWork. */
 export const encoding = /*#__PURE__*/ ns('encoding');
 
-/** Media type typically expressed using a MIME format (see IANA site and MDN reference) e.g. application/zip for a SoftwareApplication binary, audio/mpeg for.mp3… */
+/** Media type typically expressed using a MIME format (see IANA site and MDN reference), e.g. application/zip for a SoftwareApplication binary, audio/mpeg for.mp3… */
 export const encodingFormat = /*#__PURE__*/ ns('encodingFormat');
 
 /** The supported encoding type(s) for an EntryPoint request. */
@@ -5462,7 +5915,7 @@ export const entertainmentBusiness = /*#__PURE__*/ ns('entertainmentBusiness');
 /** The characteristics of associated patients, such as age, gender, race etc. */
 export const epidemiology = /*#__PURE__*/ ns('epidemiology');
 
-/** An episode of a tv, radio or game media within a series or season. */
+/** An episode of a TV, radio or game media within a series or season. */
 export const episode = /*#__PURE__*/ ns('episode');
 
 /** Position of the episode within an ordered group of episodes. */
@@ -5476,6 +5929,9 @@ export const equal = /*#__PURE__*/ ns('equal');
 
 /** For failed actions, more information on the cause of the failure. */
 export const error = /*#__PURE__*/ ns('error');
+
+/** Application or platform dependant error code. */
+export const errorCode = /*#__PURE__*/ ns('errorCode');
 
 /** The estimated cost of the supply or supplies consumed when performing instructions. */
 export const estimatedCost = /*#__PURE__*/ ns('estimatedCost');
@@ -5522,7 +5978,7 @@ export const exceptDate = /*#__PURE__*/ ns('exceptDate');
 /** The difference between the price at which a broker or other intermediary buys and sells foreign currency. */
 export const exchangeRateSpread = /*#__PURE__*/ ns('exchangeRateSpread');
 
-/** Library file name e.g., mscorlib.dll, system.web.dll. */
+/** Library file name, e.g., mscorlib.dll, system.web.dll. */
 export const executableLibraryName = /*#__PURE__*/ ns('executableLibraryName');
 
 /** A sub property of location. */
@@ -5567,6 +6023,9 @@ export const expires = /*#__PURE__*/ ns('expires');
 /** Tissue, organ, biological sample, etc in which activity of this gene has been observed experimentally. */
 export const expressedIn = /*#__PURE__*/ ns('expressedIn');
 
+/** An address extension such as an apartment number, C/O or alternative name. */
+export const extendedAddress = /*#__PURE__*/ ns('extendedAddress');
+
 /** Family name. */
 export const familyName = /*#__PURE__*/ ns('familyName');
 
@@ -5585,7 +6044,7 @@ export const feesAndCommissionsSpecification = /*#__PURE__*/ ns('feesAndCommissi
 /** The number of grams of fiber. */
 export const fiberContent = /*#__PURE__*/ ns('fiberContent');
 
-/** Media type, typically MIME format (see IANA site) of the content e.g. application/zip of a SoftwareApplication binary. */
+/** Media type, typically MIME format (see IANA site) of the content, e.g. application/zip of a SoftwareApplication binary. */
 export const fileFormat = /*#__PURE__*/ ns('fileFormat');
 
 /** Size of the application / package (e.g. 18MB). */
@@ -5594,7 +6053,7 @@ export const fileSize = /*#__PURE__*/ ns('fileSize');
 /** A financial aid type or program which students may use to pay for tuition or fees associated with the program. */
 export const financialAidEligible = /*#__PURE__*/ ns('financialAidEligible');
 
-/** Indicates the first known occurence of a Claim in some CreativeWork. */
+/** Indicates the first known occurrence of a Claim in some CreativeWork. */
 export const firstAppearance = /*#__PURE__*/ ns('firstAppearance');
 
 /** The date and place the work was first performed. */
@@ -5633,7 +6092,7 @@ export const foodEvent = /*#__PURE__*/ ns('foodEvent');
 /** Any precaution, guidance, contraindication, etc. related to consumption of specific foods while taking this drug. */
 export const foodWarning = /*#__PURE__*/ ns('foodWarning');
 
-/** A person who founded this organization. */
+/** A person or organization who founded this organization. */
 export const founder = /*#__PURE__*/ ns('founder');
 
 /** A person who founded this organization. */
@@ -5648,7 +6107,7 @@ export const foundingLocation = /*#__PURE__*/ ns('foundingLocation');
 /** A flag to signal that the item, event, or place is accessible for free. */
 export const free = /*#__PURE__*/ ns('free');
 
-/** A monetary value above which (or equal to) the shipping rate becomes free. */
+/** A monetary value above (or at) which the shipping rate becomes free. */
 export const freeShippingThreshold = /*#__PURE__*/ ns('freeShippingThreshold');
 
 /** How often the dose is taken, e.g. 'daily'. */
@@ -5668,6 +6127,9 @@ export const fuelEfficiency = /*#__PURE__*/ ns('fuelEfficiency');
 
 /** The type of fuel suitable for the engine or engines of the vehicle. */
 export const fuelType = /*#__PURE__*/ ns('fuelType');
+
+/** Type of fulfillment applicable to the ShippingService. */
+export const fulfillmentType = /*#__PURE__*/ ns('fulfillmentType');
 
 /** The degree of mobility the joint allows. */
 export const functionalClass = /*#__PURE__*/ ns('functionalClass');
@@ -5726,7 +6188,7 @@ export const geoCovers = /*#__PURE__*/ ns('geoCovers');
 /** Represents a relationship between two geometries (or the places they represent), relating a geometry to another that crosses it: "a crosses b: they have some… */
 export const geoCrosses = /*#__PURE__*/ ns('geoCrosses');
 
-/** Represents spatial relations in which two geometries (or the places they represent) are topologically disjoint: they have no point in common. */
+/** Represents spatial relations in which two geometries (or the places they represent) are topologically disjoint: "they have no point in common. */
 export const geoDisjoint = /*#__PURE__*/ ns('geoDisjoint');
 
 /** Represents spatial relations in which two geometries (or the places they represent) are topologically equal, as defined in DE-9IM. */
@@ -5735,7 +6197,7 @@ export const geoEquals = /*#__PURE__*/ ns('geoEquals');
 /** Represents spatial relations in which two geometries (or the places they represent) have at least one point in common. */
 export const geoIntersects = /*#__PURE__*/ ns('geoIntersects');
 
-/** Indicates the GeoCoordinates at the centre of a GeoShape e.g. GeoCircle. */
+/** Indicates the GeoCoordinates at the centre of a GeoShape, e.g. GeoCircle. */
 export const geoMidpoint = /*#__PURE__*/ ns('geoMidpoint');
 
 /** Represents a relationship between two geometries (or the places they represent), relating a geometry to another that geospatially overlaps it, i.e. they have… */
@@ -5744,7 +6206,7 @@ export const geoOverlaps = /*#__PURE__*/ ns('geoOverlaps');
 /** Indicates the approximate radius of a GeoCircle (metres unless indicated otherwise via Distance notation). */
 export const geoRadius = /*#__PURE__*/ ns('geoRadius');
 
-/** Represents spatial relations in which two geometries (or the places they represent) touch: they have at least one boundary point in common, but no interior… */
+/** Represents spatial relations in which two geometries (or the places they represent) touch: "they have at least one boundary point in common, but no interior… */
 export const geoTouches = /*#__PURE__*/ ns('geoTouches');
 
 /** Represents a relationship between two geometries (or the places they represent), relating a geometry to one that contains it, i.e. it is inside (i.e. within)… */
@@ -5810,7 +6272,7 @@ export const hasAdultConsideration = /*#__PURE__*/ ns('hasAdultConsideration');
 /** Indicates a BioChemEntity that (in some sense) has this BioChemEntity as a part. */
 export const hasBioChemEntityPart = /*#__PURE__*/ ns('hasBioChemEntityPart');
 
-/** A symbolic representation of a BioChemEnity. */
+/** A symbolic representation of a BioChemEntity. */
 export const hasBioPolymerSequence = /*#__PURE__*/ ns('hasBioPolymerSequence');
 
 /** A broadcast channel of a broadcast service. */
@@ -5818,6 +6280,9 @@ export const hasBroadcastChannel = /*#__PURE__*/ ns('hasBroadcastChannel');
 
 /** A Category code contained in this code set. */
 export const hasCategoryCode = /*#__PURE__*/ ns('hasCategoryCode');
+
+/** Certification information about a product, organization, service, place, or person. */
+export const hasCertification = /*#__PURE__*/ ns('hasCertification');
 
 /** A course or class that is one of the learning opportunities that constitute an educational / occupational program. */
 export const hasCourse = /*#__PURE__*/ ns('hasCourse');
@@ -5837,6 +6302,9 @@ export const hasDeliveryMethod = /*#__PURE__*/ ns('hasDeliveryMethod');
 /** A permission related to the access to this document (e.g. permission to read or write an electronic document). */
 export const hasDigitalDocumentPermission = /*#__PURE__*/ ns('hasDigitalDocumentPermission');
 
+/** A link to a Digital Product Passport (DPP) or a digital record detailing the lifecycle, sustainability, and compliance data for this product or offer. */
+export const hasDigitalProductPassport = /*#__PURE__*/ ns('hasDigitalProductPassport');
+
 /** Indicates whether some facility (e.g. FoodEstablishment, CovidTestingFacility) offers a service that can be used by driving through in a car. */
 export const hasDriveThroughService = /*#__PURE__*/ ns('hasDriveThroughService');
 
@@ -5846,14 +6314,20 @@ export const hasEnergyConsumptionDetails = /*#__PURE__*/ ns('hasEnergyConsumptio
 /** Defines the energy efficiency Category (which could be either a rating out of range of values or a yes/no certification) for a product according to an… */
 export const hasEnergyEfficiencyCategory = /*#__PURE__*/ ns('hasEnergyEfficiencyCategory');
 
+/** The GS1 digital link associated with the object. */
+export const hasGS1DigitalLink = /*#__PURE__*/ ns('hasGS1DigitalLink');
+
 /** Indicates the aspect or aspects specifically addressed in some HealthTopicContent. */
 export const hasHealthAspect = /*#__PURE__*/ ns('hasHealthAspect');
 
 /** A URL to a map of the place. */
 export const hasMap = /*#__PURE__*/ ns('hasMap');
 
-/** A product measurement, for example the inseam of pants, the wheel size of a bicycle, or the gauge of a screw. */
+/** A measurement of an item, For example, the inseam of pants, the wheel size of a bicycle, the gauge of a screw, or the carbon footprint measured for… */
 export const hasMeasurement = /*#__PURE__*/ ns('hasMeasurement');
+
+/** MemberProgram offered by an Organization, for example an eCommerce merchant or an airline. */
+export const hasMemberProgram = /*#__PURE__*/ ns('hasMemberProgram');
 
 /** Either the actual menu as a structured representation, as text, or a URL of the menu. */
 export const hasMenu = /*#__PURE__*/ ns('hasMenu');
@@ -5882,8 +6356,32 @@ export const hasPOS = /*#__PURE__*/ ns('hasPOS');
 /** Indicates an item or CreativeWork that is part of this item, or CreativeWork (in some sense). */
 export const hasPart = /*#__PURE__*/ ns('hasPart');
 
+/** An offer to participate in the event, for example, Call for Proposals, Call for Speakers, or Call for Performers. */
+export const hasParticipationOffer = /*#__PURE__*/ ns('hasParticipationOffer');
+
+/** Indicates a ProductReturnPolicy that may be applicable. */
+export const hasProductReturnPolicy = /*#__PURE__*/ ns('hasProductReturnPolicy');
+
 /** A common representation such as a protein sequence or chemical structure for this entity. */
 export const hasRepresentation = /*#__PURE__*/ ns('hasRepresentation');
+
+/** Specification of a shipping service offered by the organization. */
+export const hasShippingService = /*#__PURE__*/ ns('hasShippingService');
+
+/** An offer to sponsor the event, for example, Sponsorship Prospectus, Sponsorship Opportunities, or Sponsor Packages. */
+export const hasSponsorshipOffer = /*#__PURE__*/ ns('hasSponsorshipOffer');
+
+/** An eCommerce store part of an online marketplace. */
+export const hasStore = /*#__PURE__*/ ns('hasStore');
+
+/** A member benefit for a particular tier of a loyalty program. */
+export const hasTierBenefit = /*#__PURE__*/ ns('hasTierBenefit');
+
+/** A requirement for a user to join a membership tier, for example: a CreditCard if the tier requires sign up for a credit card, A UnitPriceSpecification if the… */
+export const hasTierRequirement = /*#__PURE__*/ ns('hasTierRequirement');
+
+/** The tiers of a member program. */
+export const hasTiers = /*#__PURE__*/ ns('hasTiers');
 
 /** Indicates a Product that is a member of this ProductGroup (or ProductModel). */
 export const hasVariant = /*#__PURE__*/ ns('hasVariant');
@@ -5897,16 +6395,16 @@ export const healthCondition = /*#__PURE__*/ ns('healthCondition');
 /** Whether the coinsurance applies before or after deductible, etc. TODO: Is this a closed set? */
 export const healthPlanCoinsuranceOption = /*#__PURE__*/ ns('healthPlanCoinsuranceOption');
 
-/** Whether The rate of coinsurance expressed as a number between 0.0 and 1.0. */
+/** The rate of coinsurance expressed as a number between 0.0 and 1.0. */
 export const healthPlanCoinsuranceRate = /*#__PURE__*/ ns('healthPlanCoinsuranceRate');
 
-/** Whether The copay amount. */
+/** The copay amount. */
 export const healthPlanCopay = /*#__PURE__*/ ns('healthPlanCopay');
 
 /** Whether the copay is before or after deductible, etc. TODO: Is this a closed set? */
 export const healthPlanCopayOption = /*#__PURE__*/ ns('healthPlanCopayOption');
 
-/** Whether The costs to the patient for services under this network or formulary. */
+/** The costs to the patient for services under this network or formulary. */
 export const healthPlanCostSharing = /*#__PURE__*/ ns('healthPlanCostSharing');
 
 /** TODO. */
@@ -5939,7 +6437,7 @@ export const height = /*#__PURE__*/ ns('height');
 /** The highest price of all offers available. */
 export const highPrice = /*#__PURE__*/ ns('highPrice');
 
-/** Organization offering the job position. */
+/** Organization or Person offering the job position. */
 export const hiringOrganization = /*#__PURE__*/ ns('hiringOrganization');
 
 /** ArchiveOrganization that holds, keeps or maintains the ArchiveComponent. */
@@ -5954,13 +6452,13 @@ export const homeTeam = /*#__PURE__*/ ns('homeTeam');
 /** An honorific prefix preceding a Person's name such as Dr/Mrs/Mr. */
 export const honorificPrefix = /*#__PURE__*/ ns('honorificPrefix');
 
-/** An honorific suffix following a Person's name such as M.D. */
+/** An honorific suffix following a Person's name such as M.D./PhD/MSCSW. */
 export const honorificSuffix = /*#__PURE__*/ ns('honorificSuffix');
 
 /** A hospital with which the physician or office is affiliated. */
 export const hospitalAffiliation = /*#__PURE__*/ ns('hospitalAffiliation');
 
-/** The organization (airline, travelers' club, etc.) the membership is made with. */
+/** The Organization (airline, travelers' club, retailer, etc.) the membership is made with or which offers the MemberProgram. */
 export const hostingOrganization = /*#__PURE__*/ ns('hostingOrganization');
 
 /** The hours during which this service or contact is available. */
@@ -5996,6 +6494,9 @@ export const image = /*#__PURE__*/ ns('image');
 /** Imaging technique used. */
 export const imagingTechnique = /*#__PURE__*/ ns('imagingTechnique');
 
+/** An organization or person who imports the product into a specific market or region. */
+export const importer = /*#__PURE__*/ ns('importer');
+
 /** The album to which this recording belongs. */
 export const inAlbum = /*#__PURE__*/ ns('inAlbum');
 
@@ -6029,11 +6530,23 @@ export const inStoreReturnsOffered = /*#__PURE__*/ ns('inStoreReturnsOffered');
 /** Qualification, candidature, degree, application that Thesis supports. */
 export const inSupportOf = /*#__PURE__*/ ns('inSupportOf');
 
+/** Describes the amount that can be redeemed from this incentive. */
+export const incentiveAmount = /*#__PURE__*/ ns('incentiveAmount');
+
 /** Description of bonus and commission compensation aspects of the job. */
 export const incentiveCompensation = /*#__PURE__*/ ns('incentiveCompensation');
 
+/** The status of the incentive (active, on hold, retired, etc.). */
+export const incentiveStatus = /*#__PURE__*/ ns('incentiveStatus');
+
+/** The type of incentive offered (tax credit/rebate, tax deduction, tax waiver, subsidies, etc.). */
+export const incentiveType = /*#__PURE__*/ ns('incentiveType');
+
 /** Description of bonus and commission compensation aspects of the job. */
 export const incentives = /*#__PURE__*/ ns('incentives');
+
+/** The type or specific product(s) and/or service(s) being incentivized. */
+export const incentivizedItem = /*#__PURE__*/ ns('incentivizedItem');
 
 /** Smaller compositions included in this work (e.g. a movement in a symphony). */
 export const includedComposition = /*#__PURE__*/ ns('includedComposition');
@@ -6061,6 +6574,9 @@ export const includesHealthPlanNetwork = /*#__PURE__*/ ns('includesHealthPlanNet
 
 /** This links to a node or nodes indicating the exact quantity of the products included in an Offer or ProductCollection. */
 export const includesObject = /*#__PURE__*/ ns('includesObject');
+
+/** Optional. */
+export const incomeLimit = /*#__PURE__*/ ns('incomeLimit');
 
 /** The condition, complication, etc. influenced by this factor. */
 export const increasesRiskOf = /*#__PURE__*/ ns('increasesRiskOf');
@@ -6140,7 +6656,7 @@ export const isAccessoryOrSparePartFor = /*#__PURE__*/ ns('isAccessoryOrSparePar
 /** True if the drug is available in a generic form (regardless of name). */
 export const isAvailableGenerically = /*#__PURE__*/ ns('isAvailableGenerically');
 
-/** A resource from which this work is derived or from which it is a modification or adaption. */
+/** A resource from which this work is derived or from which it is a modification or adaptation. */
 export const isBasedOn = /*#__PURE__*/ ns('isBasedOn');
 
 /** A resource that was used in the creation of this resource. */
@@ -6155,7 +6671,7 @@ export const isEncodedByBioChemEntity = /*#__PURE__*/ ns('isEncodedByBioChemEnti
 /** Indicates whether this content is family friendly. */
 export const isFamilyFriendly = /*#__PURE__*/ ns('isFamilyFriendly');
 
-/** Was the offer accepted as a gift for someone other than the buyer. */
+/** Indicates whether the offer was accepted as a gift for someone other than the buyer. */
 export const isGift = /*#__PURE__*/ ns('isGift');
 
 /** Biological process this BioChemEntity is involved in; please use PropertyValue if you want to include any evidence. */
@@ -6166,6 +6682,9 @@ export const isLiveBroadcast = /*#__PURE__*/ ns('isLiveBroadcast');
 
 /** Subcellular location where this BioChemEntity is located; please use PropertyValue if you want to include any evidence. */
 export const isLocatedInSubcellularLocation = /*#__PURE__*/ ns('isLocatedInSubcellularLocation');
+
+/** Indicates a product that is often bought with the described product. */
+export const isOftenBoughtWith = /*#__PURE__*/ ns('isOftenBoughtWith');
 
 /** Indicates an item or CreativeWork that this item, or CreativeWork (in some sense), is part of. */
 export const isPartOf = /*#__PURE__*/ ns('isPartOf');
@@ -6187,6 +6706,12 @@ export const isResizable = /*#__PURE__*/ ns('isResizable');
 
 /** A pointer to another, functionally similar product (or multiple products). */
 export const isSimilarTo = /*#__PURE__*/ ns('isSimilarTo');
+
+/** The eCommerce marketplace this online store is on. */
+export const isStoreOn = /*#__PURE__*/ ns('isStoreOn');
+
+/** The member program this tier is a part of. */
+export const isTierOf = /*#__PURE__*/ ns('isTierOf');
 
 /** This can be marked 'true' to indicate that some published DeliveryTimeSettings or ShippingRateSettings are intended to apply to all OfferShippingDetails… */
 export const isUnlabelledFallback = /*#__PURE__*/ ns('isUnlabelledFallback');
@@ -6212,16 +6737,16 @@ export const issn = /*#__PURE__*/ ns('issn');
 /** Identifies the issue of publication; for example, "iii" or "2". */
 export const issueNumber = /*#__PURE__*/ ns('issueNumber');
 
-/** The organization issuing the ticket or permit. */
+/** The organization issuing the item, for example a Permit, Ticket, or Certification. */
 export const issuedBy = /*#__PURE__*/ ns('issuedBy');
 
-/** The service through with the permit was granted. */
+/** The service through which the permit was granted. */
 export const issuedThrough = /*#__PURE__*/ ns('issuedThrough');
 
 /** The International Standard Musical Work Code for the composition. */
 export const iswcCode = /*#__PURE__*/ ns('iswcCode');
 
-/** An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists')’. */
+/** An entity represented by an entry in a list or data feed (e.g. an 'artist' in a list of 'artists'). */
 export const item = /*#__PURE__*/ ns('item');
 
 /** A predefined value from OfferItemCondition specifying the condition of the product or service, or the products or services included in the offer. */
@@ -6248,6 +6773,9 @@ export const itemLocation = /*#__PURE__*/ ns('itemLocation');
 /** An item being offered (or demanded). */
 export const itemOffered = /*#__PURE__*/ ns('itemOffered');
 
+/** A measure of the relative popularity or sales rank of the offer within a marketplace, catalog, or platform (e.g. a platform-specific bestseller ranking or… */
+export const itemPopularity = /*#__PURE__*/ ns('itemPopularity');
+
 /** The item that is being reviewed/rated. */
 export const itemReviewed = /*#__PURE__*/ ns('itemReviewed');
 
@@ -6263,13 +6791,16 @@ export const iupacName = /*#__PURE__*/ ns('iupacName');
 /** Description of benefits associated with the job. */
 export const jobBenefits = /*#__PURE__*/ ns('jobBenefits');
 
+/** The expected duration of an employment offer as advertised by the employer. */
+export const jobDuration = /*#__PURE__*/ ns('jobDuration');
+
 /** An indicator as to whether a position is available for an immediate start. */
 export const jobImmediateStart = /*#__PURE__*/ ns('jobImmediateStart');
 
 /** A (typically single) geographic location associated with the job position. */
 export const jobLocation = /*#__PURE__*/ ns('jobLocation');
 
-/** A description of the job location (e.g TELECOMMUTE for telecommute jobs). */
+/** A description of the job location (e.g. TELECOMMUTE for telecommute jobs). */
 export const jobLocationType = /*#__PURE__*/ ns('jobLocationType');
 
 /** The date on which a successful applicant for this job would be expected to start work. */
@@ -6320,11 +6851,20 @@ export const learningResourceType = /*#__PURE__*/ ns('learningResourceType');
 /** Length of the lease for some Accommodation, either particular to some Offer or in some cases intrinsic to the property. */
 export const leaseLength = /*#__PURE__*/ ns('leaseLength');
 
+/** The legal address of an organization which acts as the officially registered address used for legal and tax purposes. */
+export const legalAddress = /*#__PURE__*/ ns('legalAddress');
+
 /** The official name of the organization, e.g. the registered company name. */
 export const legalName = /*#__PURE__*/ ns('legalName');
 
+/** One or multiple persons who represent this organization legally such as CEO or sole administrator. */
+export const legalRepresentative = /*#__PURE__*/ ns('legalRepresentative');
+
 /** The drug or supplement's legal status, including any controlled substance schedules that apply. */
 export const legalStatus = /*#__PURE__*/ ns('legalStatus');
+
+/** Another legislation that this legislation amends, introducing legal changes. */
+export const legislationAmends = /*#__PURE__*/ ns('legislationAmends');
 
 /** Indicates that this legislation (or part of a legislation) somehow transfers another legislation in a different legislative context. */
 export const legislationApplies = /*#__PURE__*/ ns('legislationApplies');
@@ -6332,14 +6872,29 @@ export const legislationApplies = /*#__PURE__*/ ns('legislationApplies');
 /** Another legislation that this legislation changes. */
 export const legislationChanges = /*#__PURE__*/ ns('legislationChanges');
 
+/** Another legislation that this one sets into force. */
+export const legislationCommences = /*#__PURE__*/ ns('legislationCommences');
+
 /** Indicates another legislation taken into account in this consolidated legislation (which is usually the product of an editorial process that revises the… */
 export const legislationConsolidates = /*#__PURE__*/ ns('legislationConsolidates');
+
+/** Another legislation in which this one introduces textual changes, like correction of spelling mistakes, with no legal impact (for modifications that have legal… */
+export const legislationCorrects = /*#__PURE__*/ ns('legislationCorrects');
+
+/** The person or organization that countersigned the legislation. */
+export const legislationCountersignedBy = /*#__PURE__*/ ns('legislationCountersignedBy');
 
 /** The date of adoption or signature of the legislation. */
 export const legislationDate = /*#__PURE__*/ ns('legislationDate');
 
+/** The date at which the Legislation becomes applicable. */
+export const legislationDateOfApplicability = /*#__PURE__*/ ns('legislationDateOfApplicability');
+
 /** The point-in-time at which the provided description of the legislation is valid (e.g.: when looking at the law on the 2016-04-07 (= dateVersion), I get the… */
 export const legislationDateVersion = /*#__PURE__*/ ns('legislationDateVersion');
+
+/** Indicates that this Legislation ensures the implementation of another Legislation, for example by modifying national legislations so that they do not… */
+export const legislationEnsuresImplementationOf = /*#__PURE__*/ ns('legislationEnsuresImplementationOf');
 
 /** An identifier for the legislation. */
 export const legislationIdentifier = /*#__PURE__*/ ns('legislationIdentifier');
@@ -6355,6 +6910,9 @@ export const legislationLegalValue = /*#__PURE__*/ ns('legislationLegalValue');
 
 /** The person or organization that originally passed or made the law: typically parliament (for primary legislation) or government (for secondary legislation). */
 export const legislationPassedBy = /*#__PURE__*/ ns('legislationPassedBy');
+
+/** Another legislation that this legislation repeals (cancels, abrogates). */
+export const legislationRepeals = /*#__PURE__*/ ns('legislationRepeals');
 
 /** An individual or organization that has some kind of responsibility for the legislation. */
 export const legislationResponsible = /*#__PURE__*/ ns('legislationResponsible');
@@ -6382,6 +6940,9 @@ export const letterer = /*#__PURE__*/ ns('letterer');
 
 /** A license document that applies to this content, typically indicated by URL. */
 export const license = /*#__PURE__*/ ns('license');
+
+/** A life event like baptism, communions, Bar Mitzvahs, Aqiqah, Namakarana, Miyamairi, burial,.... */
+export const lifeEvent = /*#__PURE__*/ ns('lifeEvent');
 
 /** A line is a point-to-point path consisting of two or more points. */
 export const line = /*#__PURE__*/ ns('line');
@@ -6500,19 +7061,25 @@ export const maximumIntake = /*#__PURE__*/ ns('maximumIntake');
 /** The maximum physical attendee capacity of an Event whose eventAttendanceMode is OfflineEventAttendanceMode (or the offline aspects, in the case of a… */
 export const maximumPhysicalAttendeeCapacity = /*#__PURE__*/ ns('maximumPhysicalAttendeeCapacity');
 
-/** The maximum physical attendee capacity of an Event whose eventAttendanceMode is OnlineEventAttendanceMode (or the online aspects, in the case of a… */
+/** The maximum virtual attendee capacity of an Event whose eventAttendanceMode is OnlineEventAttendanceMode (or the online aspects, in the case of a… */
 export const maximumVirtualAttendeeCapacity = /*#__PURE__*/ ns('maximumVirtualAttendeeCapacity');
 
 /** Description of the meals that will be provided or available for purchase. */
 export const mealService = /*#__PURE__*/ ns('mealService');
 
-/** The measuredProperty of an Observation, either a schema.org property, a property from other RDF-compatible systems e.g. W3C RDF Data Cube, or schema.org… */
+/** The measuredProperty of an Observation, typically via its StatisticalVariable. */
 export const measuredProperty = /*#__PURE__*/ ns('measuredProperty');
 
-/** The measuredValue of an Observation. */
-export const measuredValue = /*#__PURE__*/ ns('measuredValue');
+/** Identifies the denominator variable when an observation represents a ratio or percentage. */
+export const measurementDenominator = /*#__PURE__*/ ns('measurementDenominator');
 
-/** A technique or technology used in a Dataset (or DataDownload, DataCatalog), corresponding to the method used for measuring the corresponding variable(s)… */
+/** A subproperty of measurementTechnique that can be used for specifying specific methods, in particular via MeasurementMethodEnum. */
+export const measurementMethod = /*#__PURE__*/ ns('measurementMethod');
+
+/** Provides additional qualification to an observation. */
+export const measurementQualifier = /*#__PURE__*/ ns('measurementQualifier');
+
+/** A technique, method or technology used in an Observation, StatisticalVariable or Dataset (or DataDownload, DataCatalog), corresponding to the method used for… */
 export const measurementTechnique = /*#__PURE__*/ ns('measurementTechnique');
 
 /** The specific biochemical interaction through which this drug or supplement produces its pharmacological effect. */
@@ -6587,11 +7154,17 @@ export const minPrice = /*#__PURE__*/ ns('minPrice');
 /** The lower value of some characteristic or property. */
 export const minValue = /*#__PURE__*/ ns('minValue');
 
+/** The minimum order value required for this shipping rate to apply. */
+export const minimumOrderValue = /*#__PURE__*/ ns('minimumOrderValue');
+
 /** The minimum payment required at this time. */
 export const minimumPaymentDue = /*#__PURE__*/ ns('minimumPaymentDue');
 
 /** For a NewsMediaOrganization, a statement on coverage priorities, including any public agenda or stance on issues. */
 export const missionCoveragePrioritiesPolicy = /*#__PURE__*/ ns('missionCoveragePrioritiesPolicy');
+
+/** The mobileUrl property is provided for specific situations in which data consumers need to determine whether one of several provided URLs is a dedicated… */
+export const mobileUrl = /*#__PURE__*/ ns('mobileUrl');
 
 /** The model of the product. */
 export const model = /*#__PURE__*/ ns('model');
@@ -6638,7 +7211,7 @@ export const musicCompositionForm = /*#__PURE__*/ ns('musicCompositionForm');
 /** A member of a music group&#x2014;for example, John, Paul, George, or Ringo. */
 export const musicGroupMember = /*#__PURE__*/ ns('musicGroupMember');
 
-/** Format of this release (the type of recording media used, ie. */
+/** Format of this release (the type of recording media used, i.e. compact disc, digital media, LP, etc.). */
 export const musicReleaseFormat = /*#__PURE__*/ ns('musicReleaseFormat');
 
 /** The key, mode, or scale this composition uses. */
@@ -6659,7 +7232,7 @@ export const nationality = /*#__PURE__*/ ns('nationality');
 /** The expected progression of the condition if it is not treated and allowed to progress naturally. */
 export const naturalProgression = /*#__PURE__*/ ns('naturalProgression');
 
-/** Indicates, in the context of a Review (e.g. framed as 'pro' vs 'con' considerations), negative considerations - either as unstructured text, or a list. */
+/** Provides negative considerations regarding something, most typically in pro/con lists for reviews (alongside positiveNotes). */
 export const negativeNotes = /*#__PURE__*/ ns('negativeNotes');
 
 /** The underlying innervation associated with the muscle. */
@@ -6668,7 +7241,7 @@ export const nerve = /*#__PURE__*/ ns('nerve');
 /** The neurological pathway extension that involves muscle control. */
 export const nerveMotor = /*#__PURE__*/ ns('nerveMotor');
 
-/** The total financial value of the person as calculated by subtracting assets from liabilities. */
+/** The total financial value of the person as calculated by subtracting the total value of liabilities from the total value of assets. */
 export const netWorth = /*#__PURE__*/ ns('netWorth');
 
 /** Indicates a page with news updates and guidelines. */
@@ -6686,7 +7259,7 @@ export const nonEqual = /*#__PURE__*/ ns('nonEqual');
 /** The generic name of this drug or supplement. */
 export const nonProprietaryName = /*#__PURE__*/ ns('nonProprietaryName');
 
-/** nonprofit Status indicates the legal status of a non-profit organization in its primary place of business. */
+/** nonprofitStatus indicates the legal status of a non-profit organization in its primary place of business. */
 export const nonprofitStatus = /*#__PURE__*/ ns('nonprofitStatus');
 
 /** Range of acceptable values for a typical patient, when applicable. */
@@ -6701,8 +7274,11 @@ export const numAdults = /*#__PURE__*/ ns('numAdults');
 /** The number of children staying in the unit. */
 export const numChildren = /*#__PURE__*/ ns('numChildren');
 
-/** Indicates the number of constraints (not counting populationType) defined for a particular StatisticalPopulation. */
+/** Indicates the number of constraints property values defined for a particular ConstraintNode such as StatisticalVariable. */
 export const numConstraints = /*#__PURE__*/ ns('numConstraints');
+
+/** Limits the number of items being shipped for which these conditions apply. */
+export const numItems = /*#__PURE__*/ ns('numItems');
 
 /** The number of tracks in this album or playlist. */
 export const numTracks = /*#__PURE__*/ ns('numTracks');
@@ -6719,7 +7295,7 @@ export const numberOfAvailableAccommodationUnits = /*#__PURE__*/ ns('numberOfAva
 /** The number of axles. */
 export const numberOfAxles = /*#__PURE__*/ ns('numberOfAxles');
 
-/** The total integer number of bathrooms in a some Accommodation, following real estate conventions as documented in RESO: "The simple sum of the number of… */
+/** The total integer number of bathrooms in some Accommodation, following real estate conventions as documented in RESO: "The simple sum of the number of… */
 export const numberOfBathroomsTotal = /*#__PURE__*/ ns('numberOfBathroomsTotal');
 
 /** The total integer number of bedrooms in a some Accommodation, ApartmentComplex or FloorPlan. */
@@ -6734,7 +7310,7 @@ export const numberOfCredits = /*#__PURE__*/ ns('numberOfCredits');
 /** The number of doors. */
 export const numberOfDoors = /*#__PURE__*/ ns('numberOfDoors');
 
-/** The number of employees in an organization e.g. business. */
+/** The number of employees in an organization, e.g. business. */
 export const numberOfEmployees = /*#__PURE__*/ ns('numberOfEmployees');
 
 /** The number of episodes in this season or series. */
@@ -6785,8 +7361,8 @@ export const observationAbout = /*#__PURE__*/ ns('observationAbout');
 /** The observationDate of an Observation. */
 export const observationDate = /*#__PURE__*/ ns('observationDate');
 
-/** The observedNode of an Observation, often a StatisticalPopulation. */
-export const observedNode = /*#__PURE__*/ ns('observedNode');
+/** The length of time an Observation took place over. */
+export const observationPeriod = /*#__PURE__*/ ns('observationPeriod');
 
 /** The allowed total occupancy for the accommodation in persons (including infants etc). */
 export const occupancy = /*#__PURE__*/ ns('occupancy');
@@ -6821,7 +7397,7 @@ export const openingHoursSpecification = /*#__PURE__*/ ns('openingHoursSpecifica
 /** The opening hour of the place or service on the given day(s) of the week. */
 export const opens = /*#__PURE__*/ ns('opens');
 
-/** Operating systems supported (Windows 7, OSX 10.6, Android 1.6). */
+/** Operating systems supported (Windows 7, OS X 10.6, Android 1.6). */
 export const operatingSystem = /*#__PURE__*/ ns('operatingSystem');
 
 /** A sub property of participant. */
@@ -6845,11 +7421,17 @@ export const orderItemStatus = /*#__PURE__*/ ns('orderItemStatus');
 /** The identifier of the transaction. */
 export const orderNumber = /*#__PURE__*/ ns('orderNumber');
 
+/** Value representing the fraction of the value of the order that is charged as shipping cost. */
+export const orderPercentage = /*#__PURE__*/ ns('orderPercentage');
+
 /** The number of the item ordered. */
 export const orderQuantity = /*#__PURE__*/ ns('orderQuantity');
 
 /** The current status of the order. */
 export const orderStatus = /*#__PURE__*/ ns('orderStatus');
+
+/** Minimum and maximum order value for which these shipping conditions are valid. */
+export const orderValue = /*#__PURE__*/ ns('orderValue');
 
 /** The item ordered. */
 export const orderedItem = /*#__PURE__*/ ns('orderedItem');
@@ -6878,10 +7460,13 @@ export const ownedFrom = /*#__PURE__*/ ns('ownedFrom');
 /** The date and time of giving up ownership on the product. */
 export const ownedThrough = /*#__PURE__*/ ns('ownedThrough');
 
+/** A person or organization who owns this Thing. */
+export const owner = /*#__PURE__*/ ns('owner');
+
 /** For an Organization (often but not necessarily a NewsMediaOrganization), a description of organizational ownership structure; funding and grants. */
 export const ownershipFundingInfo = /*#__PURE__*/ ns('ownershipFundingInfo');
 
-/** Products owned by the organization or person. */
+/** Things owned by the organization or person. */
 export const owns = /*#__PURE__*/ ns('owns');
 
 /** The page on which the work ends; for example "138" or "xvi". */
@@ -6971,6 +7556,9 @@ export const paymentMethod = /*#__PURE__*/ ns('paymentMethod');
 /** An identifier for the method of payment used (e.g. the last 4 digits of the credit card). */
 export const paymentMethodId = /*#__PURE__*/ ns('paymentMethodId');
 
+/** The type of a payment method. */
+export const paymentMethodType = /*#__PURE__*/ ns('paymentMethodType');
+
 /** The status of payment; whether the invoice has been paid or not. */
 export const paymentStatus = /*#__PURE__*/ ns('paymentStatus');
 
@@ -7037,7 +7625,7 @@ export const physiologicalBenefits = /*#__PURE__*/ ns('physiologicalBenefits');
 /** Where a taxi will pick up a passenger or a rental car can be picked up. */
 export const pickupLocation = /*#__PURE__*/ ns('pickupLocation');
 
-/** When a taxi will pickup a passenger or a rental car can be picked up. */
+/** When a taxi will pick up a passenger or a rental car can be picked up. */
 export const pickupTime = /*#__PURE__*/ ns('pickupTime');
 
 /** Indicates whether this game is multi-player, co-op or single-player. */
@@ -7052,13 +7640,13 @@ export const playersOnline = /*#__PURE__*/ ns('playersOnline');
 /** A polygon is the area enclosed by a point-to-point path for which the starting and ending points are the same. */
 export const polygon = /*#__PURE__*/ ns('polygon');
 
-/** Indicates the populationType common to all members of a StatisticalPopulation. */
+/** Indicates the populationType common to all members of a StatisticalPopulation or all cases within the scope of a StatisticalVariable. */
 export const populationType = /*#__PURE__*/ ns('populationType');
 
 /** The position of an item in a series or sequence of items. */
 export const position = /*#__PURE__*/ ns('position');
 
-/** Indicates, in the context of a Review (e.g. framed as 'pro' vs 'con' considerations), positive considerations - either as unstructured text, or a list. */
+/** Provides positive considerations regarding something, for example product highlights or (alongside negativeNotes) pro/con lists for reviews. */
 export const positiveNotes = /*#__PURE__*/ ns('positiveNotes');
 
 /** A possible unexpected and unfavorable evolution of a medical condition. */
@@ -7094,6 +7682,9 @@ export const potentialAction = /*#__PURE__*/ ns('potentialAction');
 /** Intended use of the BioChemEntity by humans. */
 export const potentialUse = /*#__PURE__*/ ns('potentialUse');
 
+/** A MedicalOrganization where the IndividualPhysician practices. */
+export const practicesAt = /*#__PURE__*/ ns('practicesAt');
+
 /** A description of the workup, testing, and other preparations required before implanting this device. */
 export const preOp = /*#__PURE__*/ ns('preOp');
 
@@ -7115,10 +7706,10 @@ export const preparation = /*#__PURE__*/ ns('preparation');
 /** Link to prescribing information for the drug. */
 export const prescribingInfo = /*#__PURE__*/ ns('prescribingInfo');
 
-/** Indicates the status of drug prescription eg. */
+/** Indicates the status of drug prescription, e.g. local catalogs classifications or whether the drug is available by prescription or over-the-counter, etc. */
 export const prescriptionStatus = /*#__PURE__*/ ns('prescriptionStatus');
 
-/** A link to the ListItem that preceeds the current one. */
+/** A link to the ListItem that precedes the current one. */
 export const previousItem = /*#__PURE__*/ ns('previousItem');
 
 /** Used in conjunction with eventStatus for rescheduled or cancelled events. */
@@ -7178,7 +7769,7 @@ export const processingTime = /*#__PURE__*/ ns('processingTime');
 /** Processor architecture required to run the application (e.g. IA64). */
 export const processorRequirements = /*#__PURE__*/ ns('processorRequirements');
 
-/** The person or organization who produced the work (e.g. music album, movie, tv/radio series etc.). */
+/** The person or organization who produced the work (e.g. music album, movie, TV/radio series etc.). */
 export const producer = /*#__PURE__*/ ns('producer');
 
 /** The tangible thing generated by the service, e.g. a passport, permit, etc. */
@@ -7190,10 +7781,16 @@ export const productGroupID = /*#__PURE__*/ ns('productGroupID');
 /** The product identifier, such as ISBN. */
 export const productID = /*#__PURE__*/ ns('productID');
 
+/** The productReturnDays property indicates the number of days (from purchase) within which relevant product return policy is applicable. */
+export const productReturnDays = /*#__PURE__*/ ns('productReturnDays');
+
+/** Indicates a Web page or service by URL, for product return. */
+export const productReturnLink = /*#__PURE__*/ ns('productReturnLink');
+
 /** The product or service this support contact point is related to (such as product support for a particular product line). */
 export const productSupported = /*#__PURE__*/ ns('productSupported');
 
-/** The production company or studio responsible for the item e.g. series, video game, episode etc. */
+/** The production company or studio responsible for the item, e.g. series, video game, episode etc. */
 export const productionCompany = /*#__PURE__*/ ns('productionCompany');
 
 /** The date of production of the item, e.g. vehicle. */
@@ -7201,6 +7798,9 @@ export const productionDate = /*#__PURE__*/ ns('productionDate');
 
 /** Proficiency needed for this content; expected values: 'Beginner', 'Expert'. */
 export const proficiencyLevel = /*#__PURE__*/ ns('proficiencyLevel');
+
+/** The MemberProgram associated with a ProgramMembership. */
+export const program = /*#__PURE__*/ ns('program');
 
 /** Any membership in a frequent flyer, hotel loyalty program, etc. being applied to the reservation. */
 export const programMembershipUsed = /*#__PURE__*/ ns('programMembershipUsed');
@@ -7219,6 +7819,9 @@ export const programmingLanguage = /*#__PURE__*/ ns('programmingLanguage');
 
 /** Indicates whether API is managed or unmanaged. */
 export const programmingModel = /*#__PURE__*/ ns('programmingModel');
+
+/** A short string listing or describing pronouns for a person. */
+export const pronouns = /*#__PURE__*/ ns('pronouns');
 
 /** A commonly used identifier for the characteristic represented by the property, e.g. a manufacturer or a standard code for a property. */
 export const propertyID = /*#__PURE__*/ ns('propertyID');
@@ -7259,20 +7862,29 @@ export const publishedBy = /*#__PURE__*/ ns('publishedBy');
 /** A broadcast service associated with the publication event. */
 export const publishedOn = /*#__PURE__*/ ns('publishedOn');
 
-/** The publisher of the creative work. */
+/** The publisher of the article in question. */
 export const publisher = /*#__PURE__*/ ns('publisher');
 
 /** The publishing division which published the comic. */
 export const publisherImprint = /*#__PURE__*/ ns('publisherImprint');
 
-/** The publishingPrinciples property indicates (typically via URL) a document describing the editorial principles of an Organization (or individual e.g. a Person… */
+/** The publishingPrinciples property indicates (typically via URL) a document describing the editorial principles of an Organization (or individual, e.g. a Person… */
 export const publishingPrinciples = /*#__PURE__*/ ns('publishingPrinciples');
 
-/** The date the item e.g. vehicle was purchased by the current owner. */
+/** The date the item, e.g. vehicle, was purchased by the current owner. */
 export const purchaseDate = /*#__PURE__*/ ns('purchaseDate');
+
+/** Optional. */
+export const purchasePriceLimit = /*#__PURE__*/ ns('purchasePriceLimit');
+
+/** Optional. */
+export const purchaseType = /*#__PURE__*/ ns('purchaseType');
 
 /** Specific qualifications required for this role or Occupation. */
 export const qualifications = /*#__PURE__*/ ns('qualifications');
+
+/** Optional. */
+export const qualifiedExpense = /*#__PURE__*/ ns('qualifiedExpense');
 
 /** Guidelines about quarantine rules, e.g. in the context of a pandemic. */
 export const quarantineGuidelines = /*#__PURE__*/ ns('quarantineGuidelines');
@@ -7316,7 +7928,7 @@ export const recipeCategory = /*#__PURE__*/ ns('recipeCategory');
 /** The cuisine of the recipe (for example, French or Ethiopian). */
 export const recipeCuisine = /*#__PURE__*/ ns('recipeCuisine');
 
-/** A single ingredient used in the recipe, e.g. sugar, flour or garlic. */
+/** An ingredient or ordered list of ingredients and potentially quantities used in the recipe, e.g. 1 cup of sugar, flour or garlic. */
 export const recipeIngredient = /*#__PURE__*/ ns('recipeIngredient');
 
 /** A step in making the recipe, in the form of a single item (document, video, etc.) or an ordered list with HowToStep and/or HowToSection items. */
@@ -7357,6 +7969,12 @@ export const recordingOf = /*#__PURE__*/ ns('recordingOf');
 
 /** The only way you get the money back in the event of default is the security. */
 export const recourseLoan = /*#__PURE__*/ ns('recourseLoan');
+
+/** The percentage of recycled material in the product. */
+export const recycledContentPercentage = /*#__PURE__*/ ns('recycledContentPercentage');
+
+/** An official who watches a game or match closely to enforce the rules and arbitrate on matters arising from the play such as referees, umpires or judges. */
+export const referee = /*#__PURE__*/ ns('referee');
 
 /** The reference quantity for which a certain price applies, e.g. 1 EUR per 4 kWh of electricity. */
 export const referenceQuantity = /*#__PURE__*/ ns('referenceQuantity');
@@ -7418,7 +8036,7 @@ export const remainingAttendeeCapacity = /*#__PURE__*/ ns('remainingAttendeeCapa
 /** Whether the terms for payment of interest can be renegotiated during the life of the loan. */
 export const renegotiableLoan = /*#__PURE__*/ ns('renegotiableLoan');
 
-/** Defines the number of times a recurring Event will take place */
+/** Defines the number of times a recurring Event will take place. */
 export const repeatCount = /*#__PURE__*/ ns('repeatCount');
 
 /** Defines the frequency at which Events will occur according to a schedule Schedule. */
@@ -7463,7 +8081,7 @@ export const requirements = /*#__PURE__*/ ns('requirements');
 /** Indicates if use of the media require a subscription (either paid or free). */
 export const requiresSubscription = /*#__PURE__*/ ns('requiresSubscription');
 
-/** The thing -- flight, event, restaurant,etc. being reserved. */
+/** The thing -- flight, event, restaurant, etc. being reserved. */
 export const reservationFor = /*#__PURE__*/ ns('reservationFor');
 
 /** A unique identifier for the reservation. */
@@ -7493,7 +8111,7 @@ export const resultComment = /*#__PURE__*/ ns('resultComment');
 /** A sub property of result. */
 export const resultReview = /*#__PURE__*/ ns('resultReview');
 
-/** The type of return fees for purchased products (for any return reason) */
+/** The type of return fees for purchased products (for any return reason). */
 export const returnFees = /*#__PURE__*/ ns('returnFees');
 
 /** The method (from an enumeration) by which the customer obtains a return shipping label for a product returned for any reason. */
@@ -7553,10 +8171,10 @@ export const rsvpResponse = /*#__PURE__*/ ns('rsvpResponse');
 /** The vasculature the lymphatic structure runs, or efferents, to. */
 export const runsTo = /*#__PURE__*/ ns('runsTo');
 
-/** Runtime platform or script interpreter dependencies (Example - Java v1, Python2.3,.Net Framework 3.0). */
+/** Runtime platform or script interpreter dependencies (example: Java v1, Python 2.3,.NET Framework 3.0). */
 export const runtime = /*#__PURE__*/ ns('runtime');
 
-/** Runtime platform or script interpreter dependencies (Example - Java v1, Python2.3,.Net Framework 3.0). */
+/** Runtime platform or script interpreter dependencies (example: Java v1, Python 2.3,.NET Framework 3.0). */
 export const runtimePlatform = /*#__PURE__*/ ns('runtimePlatform');
 
 /** The RxCUI drug identifier from RXNORM. */
@@ -7565,7 +8183,7 @@ export const rxcui = /*#__PURE__*/ ns('rxcui');
 /** Any potential safety concern associated with the supplement. */
 export const safetyConsideration = /*#__PURE__*/ ns('safetyConsideration');
 
-/** The currency (coded using ISO 4217 ) used for the main salary information in this job posting or for this employee. */
+/** The currency (coded using ISO 4217) used for the main salary information in this job posting or for this employee. */
 export const salaryCurrency = /*#__PURE__*/ ns('salaryCurrency');
 
 /** The expected salary upon completing the training. */
@@ -7615,6 +8233,9 @@ export const season = /*#__PURE__*/ ns('season');
 
 /** Position of the season within an ordered group of seasons. */
 export const seasonNumber = /*#__PURE__*/ ns('seasonNumber');
+
+/** Limited period during which these shipping conditions apply. */
+export const seasonalOverride = /*#__PURE__*/ ns('seasonalOverride');
 
 /** A season in a media series. */
 export const seasons = /*#__PURE__*/ ns('seasons');
@@ -7709,6 +8330,9 @@ export const sha256 = /*#__PURE__*/ ns('sha256');
 /** A CreativeWork such as an image, video, or audio clip shared as part of this posting. */
 export const sharedContent = /*#__PURE__*/ ns('sharedContent');
 
+/** The conditions (constraints, price) applicable to the ShippingService. */
+export const shippingConditions = /*#__PURE__*/ ns('shippingConditions');
+
 /** indicates (possibly multiple) shipping destinations. */
 export const shippingDestination = /*#__PURE__*/ ns('shippingDestination');
 
@@ -7717,6 +8341,9 @@ export const shippingDetails = /*#__PURE__*/ ns('shippingDetails');
 
 /** Label to match an OfferShippingDetails with a ShippingRateSettings (within the context of a shippingSettingsLink cross-reference). */
 export const shippingLabel = /*#__PURE__*/ ns('shippingLabel');
+
+/** Indicates the origin of a shipment, i.e. where it should be coming from. */
+export const shippingOrigin = /*#__PURE__*/ ns('shippingOrigin');
 
 /** The shipping rate is the cost of shipping to the specified destination. */
 export const shippingRate = /*#__PURE__*/ ns('shippingRate');
@@ -7754,7 +8381,7 @@ export const sizeGroup = /*#__PURE__*/ ns('sizeGroup');
 /** The size system used to identify a product's size. */
 export const sizeSystem = /*#__PURE__*/ ns('sizeSystem');
 
-/** A statement of knowledge, skill, ability, task or any other assertion expressing a competency that is desired or required to fulfill this role or to work in… */
+/** A statement of knowledge, skill, ability, task or any other assertion expressing a competency that is either claimed by a person, an organization or desired or… */
 export const skills = /*#__PURE__*/ ns('skills');
 
 /** The Stock Keeping Unit (SKU), i.e. a merchant-specific identifier for a product or service, or the product to which the offer refers. */
@@ -7784,6 +8411,9 @@ export const softwareRequirements = /*#__PURE__*/ ns('softwareRequirements');
 /** Version of the software instance. */
 export const softwareVersion = /*#__PURE__*/ ns('softwareVersion');
 
+/** The source or cause of the event. */
+export const source = /*#__PURE__*/ ns('source');
+
 /** The Organization on whose behalf the creator was working. */
 export const sourceOrganization = /*#__PURE__*/ ns('sourceOrganization');
 
@@ -7807,6 +8437,9 @@ export const specialOpeningHoursSpecification = /*#__PURE__*/ ns('specialOpening
 
 /** One of the domain specialities to which this web page's content applies. */
 export const specialty = /*#__PURE__*/ ns('specialty');
+
+/** A specification of the product, often grouped by a section header/name. */
+export const specification = /*#__PURE__*/ ns('specification');
 
 /** Form of markup used. */
 export const speechToTextMarkup = /*#__PURE__*/ ns('speechToTextMarkup');
@@ -7852,6 +8485,9 @@ export const startOffset = /*#__PURE__*/ ns('startOffset');
 
 /** The startTime of something. */
 export const startTime = /*#__PURE__*/ ns('startTime');
+
+/** Indicates the kind of statistic represented by a StatisticalVariable, e.g. mean, count etc. The value of statType is a property, either from within Schema.org… */
+export const statType = /*#__PURE__*/ ns('statType');
 
 /** The status of the study (enumerated). */
 export const status = /*#__PURE__*/ ns('status');
@@ -7922,6 +8558,9 @@ export const subTrip = /*#__PURE__*/ ns('subTrip');
 /** A CreativeWork or Event about this Thing. */
 export const subjectOf = /*#__PURE__*/ ns('subjectOf');
 
+/** A substance of concern (SoC) contained within the product, typically based on regulatory lists like REACH or RoHS. */
+export const substanceOfConcern = /*#__PURE__*/ ns('substanceOfConcern');
+
 /** Languages in which subtitles/captions are available, in IETF BCP 47 standard format. */
 export const subtitleLanguage = /*#__PURE__*/ ns('subtitleLanguage');
 
@@ -7970,7 +8609,10 @@ export const supportingData = /*#__PURE__*/ ns('supportingData');
 /** A material used as a surface in some artwork, e.g. Canvas, Paper, Wood, Board, etc. */
 export const surface = /*#__PURE__*/ ns('surface');
 
-/** Indicates a target EntryPoint for an Action. */
+/** Indicates (typically several) Syllabus entities that lay out what each section of the overall course will cover. */
+export const syllabusSections = /*#__PURE__*/ ns('syllabusSections');
+
+/** Indicates a target EntryPoint, or url, for an Action. */
 export const target = /*#__PURE__*/ ns('target');
 
 /** A sub property of object. */
@@ -7997,10 +8639,10 @@ export const targetUrl = /*#__PURE__*/ ns('targetUrl');
 /** The Tax / Fiscal ID of the organization or person, e.g. the TIN in the US or the CIF/NIF in Spain. */
 export const taxID = /*#__PURE__*/ ns('taxID');
 
-/** The taxonomic rank of this taxon given preferably as a URI from a controlled vocabulary – (typically the ranks from TDWG TaxonRank ontology or equivalent… */
+/** The taxonomic rank of this taxon given preferably as a URI from a controlled vocabulary – typically the ranks from TDWG TaxonRank ontology or equivalent… */
 export const taxonRank = /*#__PURE__*/ ns('taxonRank');
 
-/** The taxonomic grouping of the organism that expresses, encodes, or in someway related to the BioChemEntity. */
+/** The taxonomic grouping of the organism that expresses, encodes, or in some way related to the BioChemEntity. */
 export const taxonomicRange = /*#__PURE__*/ ns('taxonomicRange');
 
 /** The item being described is intended to help a person learn the competency or learning outcome defined by the referenced term. */
@@ -8015,7 +8657,7 @@ export const temporal = /*#__PURE__*/ ns('temporal');
 /** The temporalCoverage of a CreativeWork indicates the period that the content applies to, i.e. that it describes, either as a DateTime or as a textual string… */
 export const temporalCoverage = /*#__PURE__*/ ns('temporalCoverage');
 
-/** A code that identifies this DefinedTerm within a DefinedTermSet */
+/** A code that identifies this DefinedTerm within a DefinedTermSet. */
 export const termCode = /*#__PURE__*/ ns('termCode');
 
 /** The amount of time in a term as defined by the institution. */
@@ -8054,11 +8696,14 @@ export const ticketedSeat = /*#__PURE__*/ ns('ticketedSeat');
 /** The time of day the program normally runs. */
 export const timeOfDay = /*#__PURE__*/ ns('timeOfDay');
 
-/** Approximate or typical time it takes to work with or through this learning resource for the typical intended target audience, e.g. 'PT30M', 'PT1H25M'. */
+/** Approximate or typical time it usually takes to work with or through the content of this work for the typical or target audience. */
 export const timeRequired = /*#__PURE__*/ ns('timeRequired');
 
 /** The expected length of time to complete the program if attending full-time. */
 export const timeToComplete = /*#__PURE__*/ ns('timeToComplete');
+
+/** The instant the event occured. */
+export const timestamp = /*#__PURE__*/ ns('timestamp');
 
 /** The type of tissue sample required for the test. */
 export const tissueSample = /*#__PURE__*/ ns('tissueSample');
@@ -8090,6 +8735,9 @@ export const tool = /*#__PURE__*/ ns('tool');
 /** The torque (turning force) of the vehicle's engine. */
 export const torque = /*#__PURE__*/ ns('torque');
 
+/** The total number of students that have enrolled in the history of the course. */
+export const totalHistoricalEnrollment = /*#__PURE__*/ ns('totalHistoricalEnrollment');
+
 /** The number of positions open for this job posting. */
 export const totalJobOpenings = /*#__PURE__*/ ns('totalJobOpenings');
 
@@ -8120,7 +8768,7 @@ export const trackingUrl = /*#__PURE__*/ ns('trackingUrl');
 /** A music recording (track)&#x2014;usually a single song. */
 export const tracks = /*#__PURE__*/ ns('tracks');
 
-/** The trailer of a movie or tv/radio series, season, episode, etc. */
+/** The trailer of a movie or TV/radio series, season, episode, etc. */
 export const trailer = /*#__PURE__*/ ns('trailer');
 
 /** The permitted weight of a trailer attached to the vehicle. */
@@ -8165,6 +8813,9 @@ export const trialDesign = /*#__PURE__*/ ns('trialDesign');
 /** The anatomical or organ system that the vein flows into; a larger structure that the vein connects to. */
 export const tributary = /*#__PURE__*/ ns('tributary');
 
+/** The location of origin of the trip, prior to any destination(s). */
+export const tripOrigin = /*#__PURE__*/ ns('tripOrigin');
+
 /** The type of bed to which the BedDetail refers, i.e. the type of bed available in the quantity indicated by quantity. */
 export const typeOfBed = /*#__PURE__*/ ns('typeOfBed');
 
@@ -8195,7 +8846,7 @@ export const unnamedSourcesPolicy = /*#__PURE__*/ ns('unnamedSourcesPolicy');
 /** The number of grams of unsaturated fat. */
 export const unsaturatedFatContent = /*#__PURE__*/ ns('unsaturatedFatContent');
 
-/** Date when this media object was uploaded to this site. */
+/** Date (including time if available) when this media object was uploaded to this site. */
 export const uploadDate = /*#__PURE__*/ ns('uploadDate');
 
 /** The number of upvotes this question, answer or comment has received from the community. */
@@ -8206,6 +8857,9 @@ export const url = /*#__PURE__*/ ns('url');
 
 /** An url template (RFC6570) that will be used to construct the target of the execution of the action. */
 export const urlTemplate = /*#__PURE__*/ ns('urlTemplate');
+
+/** A National Provider Identifier (NPI) is a unique 10-digit identification number issued to health care providers in the United States by the Centers for… */
+export const usNPI = /*#__PURE__*/ ns('usNPI');
 
 /** The schema.org usageInfo property indicates further information about a CreativeWork. */
 export const usageInfo = /*#__PURE__*/ ns('usageInfo');
@@ -8219,7 +8873,7 @@ export const userInteractionCount = /*#__PURE__*/ ns('userInteractionCount');
 /** Device used to perform the test. */
 export const usesDevice = /*#__PURE__*/ ns('usesDevice');
 
-/** The standard for interpreting thePlan ID. */
+/** The standard for interpreting the Plan ID. */
 export const usesHealthPlanIdStandard = /*#__PURE__*/ ns('usesHealthPlanIdStandard');
 
 /** Text of an utterances (spoken words, lyrics etc.) that occurs at a certain section of a media object, represented as a HyperTocEntry. */
@@ -8228,10 +8882,13 @@ export const utterances = /*#__PURE__*/ ns('utterances');
 /** The duration of validity of a permit or similar thing. */
 export const validFor = /*#__PURE__*/ ns('validFor');
 
+/** The membership program tier(s) an Offer (or a PriceSpecification, OfferShippingDetails, or MerchantReturnPolicy under an Offer) is valid for. */
+export const validForMemberTier = /*#__PURE__*/ ns('validForMemberTier');
+
 /** The date when the item becomes valid. */
 export const validFrom = /*#__PURE__*/ ns('validFrom');
 
-/** The geographic area where a permit or similar thing is valid. */
+/** The geographic area where the item is valid. */
 export const validIn = /*#__PURE__*/ ns('validIn');
 
 /** The date after when the item is not valid. */
@@ -8240,11 +8897,14 @@ export const validThrough = /*#__PURE__*/ ns('validThrough');
 /** The date when the item is no longer valid. */
 export const validUntil = /*#__PURE__*/ ns('validUntil');
 
-/** The value of the quantitative value or property value node. */
+/** The value of a QuantitativeValue (including Observation) or property value node. */
 export const value = /*#__PURE__*/ ns('value');
 
 /** Specifies whether the applicable value-added tax (VAT) is included in the price specification or not. */
 export const valueAddedTaxIncluded = /*#__PURE__*/ ns('valueAddedTaxIncluded');
+
+/** A header or section name for grouping related property values. */
+export const valueGroup = /*#__PURE__*/ ns('valueGroup');
 
 /** Specifies the allowed range for number of characters in a literal value. */
 export const valueMaxLength = /*#__PURE__*/ ns('valueMaxLength');
@@ -8273,7 +8933,7 @@ export const variantCover = /*#__PURE__*/ ns('variantCover');
 /** Indicates the property or properties by which the variants in a ProductGroup vary, e.g. their size, color etc. Schema.org properties can be referenced by their… */
 export const variesBy = /*#__PURE__*/ ns('variesBy');
 
-/** The Value-added Tax ID of the organization or person. */
+/** The value-added Tax ID of the organization or person with national prefix (for example IT123456789). */
 export const vatID = /*#__PURE__*/ ns('vatID');
 
 /** A short text indicating the configuration of the vehicle, e.g. '5dr hatchback ST 2.5 MT 225 hp' or 'limited edition'. */
@@ -8348,6 +9008,9 @@ export const webFeed = /*#__PURE__*/ ns('webFeed');
 /** The weight of the product or person. */
 export const weight = /*#__PURE__*/ ns('weight');
 
+/** Value representing the fraction of the weight that is used to compute the shipping price. */
+export const weightPercentage = /*#__PURE__*/ ns('weightPercentage');
+
 /** The permitted total weight of the loaded vehicle, including passengers and cargo and the weight of the empty vehicle. */
 export const weightTotal = /*#__PURE__*/ ns('weightTotal');
 
@@ -8360,7 +9023,7 @@ export const width = /*#__PURE__*/ ns('width');
 /** A sub property of participant. */
 export const winner = /*#__PURE__*/ ns('winner');
 
-/** The number of words in the text of the Article. */
+/** The number of words in the text of the CreativeWork such as an Article, Book, etc. */
 export const wordCount = /*#__PURE__*/ ns('wordCount');
 
 /** Example/instance/realization/derivation of the concept of this creative work. */
