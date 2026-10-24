@@ -41,6 +41,9 @@ Importing the package root (`@_linked/schema`) or `shapes/index` registers the o
 keeps every term;
 import `ontologies/schema` directly where bundle size matters.
 
+How to use terms from any vocabulary, and when `{id}` is still right, is in core's README:
+[Using ontology terms](https://github.com/linked-fw/core#using-ontology-terms).
+
 ## The data
 
 `src/data/schema.ttl` is schema.org's latest release, **version 30.1**,
