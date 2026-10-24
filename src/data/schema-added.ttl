@@ -1,3 +1,5 @@
+# What schema.org's published data lacks: the ontology entity. Only metadata; never a new term
+# (see README §The data).
 @prefix schema: <http://schema.org/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,6 +14,8 @@ schema:
     a owl:Ontology ;
     dc:description "Schema.org is a collaborative, community activity with a mission to create, maintain, and promote schemas for structured data on the Internet, on web pages, in email messages, and beyond." ;
     dc:title "Schema.org" ;
+    dcterms:source <https://schema.org/version/30.1/schemaorg-current-https.nt> ;
+    owl:versionInfo "30.1" ;
     vann:preferredNamespacePrefix "schema" ;
     vann:preferredNamespaceUri "http://schema.org/" ;
     rdfs:label "Schema" .
