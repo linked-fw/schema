@@ -1,7 +1,7 @@
 import { literalProperty, objectProperty } from '@_linked/core/shapes/SHACL';
-import { schema } from '../ontologies/schema.js';
+import * as schema from '../ontologies/schema.js';
 import { linkedShape, packageName } from '../package.js';
-import { xsd } from '@_linked/xsd/ontologies/xsd';
+import * as xsd from '@_linked/xsd/ontologies/xsd';
 import { Thing } from './Thing.class.js';
 
 @linkedShape({

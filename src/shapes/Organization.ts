@@ -2,7 +2,7 @@ import { ShapeSet } from '@_linked/core/collections/ShapeSet';
 import { literalProperty, objectProperty } from '@_linked/core/shapes/SHACL';
 import { linkedShape } from '../package.js';
 import { Person } from './Person.js';
-import { schema } from '../ontologies/schema.js';
+import * as schema from '../ontologies/schema.js';
 import { Thing } from './Thing.js';
 
 @linkedShape({

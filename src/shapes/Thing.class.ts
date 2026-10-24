@@ -2,7 +2,7 @@ import type { NodeReferenceValue } from '@_linked/core/utils/NodeReference';
 import { Shape } from '@_linked/core/shapes/Shape';
 import { literalProperty, objectProperty } from '@_linked/core/shapes/SHACL';
 import { linkedShape } from '../package.js';
-import { schema } from '../ontologies/schema.js';
+import * as schema from '../ontologies/schema.js';
 
 @linkedShape({
   name: 'Thing',

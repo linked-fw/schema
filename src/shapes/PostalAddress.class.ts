@@ -1,7 +1,7 @@
 import { literalProperty, objectProperty } from '@_linked/core/shapes/SHACL';
 import { linkedShape } from '../package.js';
 import { Intangible } from './Intangible.class.js';
-import { schema } from '../ontologies/schema.js';
+import * as schema from '../ontologies/schema.js';
 import { AdministrativeArea } from './AdministrativeArea.class.js';
 
 @linkedShape({

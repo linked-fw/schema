@@ -1,6 +1,6 @@
 import { linkedShape } from '../package.js';
 import { Place } from './Place.class.js';
-import { schema } from '../ontologies/schema.js';
+import * as schema from '../ontologies/schema.js';
 
 @linkedShape({
   name: 'AdministrativeArea',

@@ -1,11 +1,11 @@
 import { ShapeSet } from '@_linked/core/collections/ShapeSet';
 import { literalProperty, objectProperty } from '@_linked/core/shapes/SHACL';
-import { schema } from '../ontologies/schema.js';
+import * as schema from '../ontologies/schema.js';
 import { linkedShape } from '../package.js';
 import { Place } from './Place.js';
 import { Thing } from './Thing.js';
 import { PostalAddress } from './PostalAddress.js';
-import { xsd } from '@_linked/xsd/ontologies/xsd';
+import * as xsd from '@_linked/xsd/ontologies/xsd';
 import type { DefinedTerm } from './DefinedTerm.js';
 // Registers DefinedTerm, which `skills` names rather than references: DefinedTerm
 // extends CreativeWork, whose module registers Person, so a class reference here

@@ -1,5 +1,5 @@
 import { literalProperty } from '@_linked/core/shapes/SHACL';
-import { schema } from '../ontologies/schema.js';
+import * as schema from '../ontologies/schema.js';
 import { linkedShape } from '../package.js';
 import { Place } from './Place.js';
 

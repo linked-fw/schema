@@ -1,8 +1,8 @@
 import { ShapeSet } from '@_linked/core/collections/ShapeSet';
-import { xsd } from '@_linked/xsd/ontologies/xsd';
+import * as xsd from '@_linked/xsd/ontologies/xsd';
 import { literalProperty, objectProperty } from '@_linked/core/shapes/SHACL';
 import * as actionConstants from '../constants.js';
-import { schema } from '../ontologies/schema.js';
+import * as schema from '../ontologies/schema.js';
 import { linkedShape } from '../package.js';
 import { Person } from './Person.js';
 import { Place } from './Place.js';

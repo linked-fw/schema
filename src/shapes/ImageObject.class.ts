@@ -1,6 +1,6 @@
 import { Server } from '@_linked/server-utils/utils/Server';
 import { ShapeSet } from '@_linked/core/collections/ShapeSet';
-import { schema } from '../ontologies/schema.js';
+import * as schema from '../ontologies/schema.js';
 import { linkedShape } from '../package.js';
 import { MediaObject } from './MediaObject.class.js';
 
