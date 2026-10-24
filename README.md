@@ -2,7 +2,7 @@
 
 [schema.org](https://schema.org) for Linked: its vocabulary as Turtle, an accessor for every term,
 and shapes for the classes Linked apps use. The package mirrors schema.org and holds only its terms
-([vocabulary rules](docs/vocabulary-rules.md)).
+([vocabulary rules](https://github.com/linked-fw/schema/blob/main/docs/vocabulary-rules.md)).
 
 ## Terms
 
@@ -21,9 +21,10 @@ else. A namespace import is the one way to use them:
   vocabulary a term comes from, also where several are used side by side (`schema.name`,
   `rdfs.label`).
 - **It tree-shakes.** Every term is a `/*#__PURE__*/` named export, so a bundler keeps only the
-  terms a module uses. The whole module is 402,091 bytes of source (125,759 bytes minified when
-  every term is kept); a bundle that uses `schema.Person` alone costs 18 bytes more than one with
-  no terms at all (1,868 against 1,850 bytes, esbuild, minified), as measured in cli report 027.
+  terms a module uses. The whole module is 402,091 bytes of source, and a bundle that keeps
+  every term is 125,759 bytes (esbuild, minified); a bundle that uses `schema.Person` alone costs 18 bytes more than one with
+  no terms at all (1,868 against 1,850 bytes, esbuild, minified), as measured in
+  [cli report 027](https://github.com/linked-fw/cli/blob/main/docs/reports/027-ontology-accessor-generator.md).
   An aggregated object would keep all 2,802.
 
 Names are generated, one rule for all: a character that cannot appear in an identifier becomes
@@ -36,7 +37,8 @@ gets a trailing `_` (`schema:yield` → `schema.yield_`). There are no aliases.
 import {ns} from '@_linked/schema/ontologies/schema.data';
 ```
 
-Importing the package root (`@_linked/schema`) registers the ontology, which keeps every term;
+Importing the package root (`@_linked/schema`) or `shapes/index` registers the ontology, which
+keeps every term;
 import `ontologies/schema` directly where bundle size matters.
 
 ## The data
@@ -45,7 +47,7 @@ import `ontologies/schema` directly where bundle size matters.
 itself (`schema:` as an `owl:Ontology`). The namespace is `http://schema.org/`, not schema.org's preferred
 `https://schema.org/`: tools like jsonld convert every schema.org IRI to http, and
 `scripts/write-turtle.mjs` rewrites https on import. Every other file uses http too. To refresh
-the data from a schema.org release: [backlog 002](docs/backlog/002-refresh-schema-org-data.md).
+the data from a schema.org release: [backlog 002](https://github.com/linked-fw/schema/blob/main/docs/backlog/002-refresh-schema-org-data.md).
 
 `linked generate-ontology` writes the three modules in `src/ontologies/` from the data
 (`package.json` `"linkedOntologies"`); `linked build` fails when they are out of date. Never edit

@@ -28,8 +28,10 @@ The writer rewrites `https://schema.org/` to `http://schema.org/` (the package's
 keeps `schema:isPartOf` objects as published, and writes deterministic Turtle, so the diff is
 schema.org's changes. Then:
 
-- review removed terms and changed `rdfs:subClassOf` against `src/shapes/` and the exported terms
-  (`npm test` runs the shape check);
+- run `npx linked generate-ontology` to regenerate `src/ontologies/` (`linked build` fails until
+  then); a term schema.org removed then fails `tsc` in any shape that uses it;
+- review removed terms and changed `rdfs:subClassOf` against `src/shapes/` (`npm test` runs the
+  shape check);
 - note in the changeset what changed in the class hierarchy: apps sync it into every dataset,
   and the store infers types from it.
 
