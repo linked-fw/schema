@@ -24,11 +24,11 @@
     "test": "node --test tests/*.test.mjs"
   },
   "dependencies": {
-    "@_linked/core": "^2.37.2",
+    "@_linked/core": "^2.39.1",
     "@_linked/primitives": "^1.9.0",
     "@_linked/react": "^2.0.0",
-    "@_linked/server-utils": "^1.15.0",
-    "@_linked/xsd": "^1.3.1",
+    "@_linked/server-utils": "^1.16.1",
+    "@_linked/xsd": "^1.3.2",
     "formidable": "^3.5.4",
     "prism-react-renderer": "^2.4.1"
   },
@@ -36,7 +36,7 @@
     "react": "^18.2.0 || ^19.0.0"
   },
   "devDependencies": {
-    "@_linked/cli": "^1.54.0",
+    "@_linked/cli": "^1.56.0",
     "@changesets/changelog-github": "^1.0.0",
     "@changesets/cli": "^3.0.0",
     "@types/formidable": "^3.4.5",
