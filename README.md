@@ -79,3 +79,7 @@ them by hand.
 npx linked build    # checks the ontology modules, compiles, writes lib/esm/data/shapes.ttl
 npm test            # runs against lib/
 ```
+
+## Data license
+
+The package code is MIT licensed (see `LICENSE`). The bundled ontology data is derived from the schema.org vocabulary (https://schema.org), (c) the schema.org Sponsors and is not covered by the MIT license: it remains under the Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0), https://creativecommons.org/licenses/by-sa/3.0/. See `NOTICE`.

@@ -1,10 +1,12 @@
 {
   "name": "@_linked/schema",
   "displayName": "Schema",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "files": [
     "lib",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "LICENSE",
+    "NOTICE"
   ],
   "version": "1.8.1",
   "packageManager": "npm@12.2.0",

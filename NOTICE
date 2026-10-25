@@ -1,0 +1,8 @@
+@_linked/schema
+
+The code in this package is licensed under the MIT License (see LICENSE).
+
+The MIT License does not cover the bundled ontology data. That data is derived from the schema.org vocabulary (https://schema.org), (c) the schema.org Sponsors and remains under its own license:
+
+Creative Commons Attribution-ShareAlike 3.0 (CC BY-SA 3.0)
+https://creativecommons.org/licenses/by-sa/3.0/
