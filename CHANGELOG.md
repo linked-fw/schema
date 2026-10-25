@@ -1,5 +1,11 @@
 # @\_linked/schema
 
+## 1.8.2
+
+### Patch Changes
+
+- [#86](https://github.com/linked-fw/schema/pull/86) [`703dbba`](https://github.com/linked-fw/schema/commit/703dbba8ad21b69d545c4c9a181c2af27854c8ad) Thanks [@flyon](https://github.com/flyon)! - license: MIT; data license noted
+
 ## 1.8.1
 
 ### Patch Changes
