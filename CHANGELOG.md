@@ -1,5 +1,11 @@
 # @\_linked/schema
 
+## 1.9.1
+
+### Patch Changes
+
+- [#90](https://github.com/linked-fw/schema/pull/90) [`7906a19`](https://github.com/linked-fw/schema/commit/7906a19f752664618c702995d2274d185fd6d438) Thanks [@flyon](https://github.com/flyon)! - License: MIT (data under its original license)
+
 ## 1.9.0
 
 ### Minor Changes
