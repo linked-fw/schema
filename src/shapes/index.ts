@@ -20,6 +20,7 @@ import './Conversation.js';
 import './Country.js';
 import './CreativeWork.js';
 import './DataFeedItem.js';
+import './Dataset.js';
 import './DefinedTerm.js';
 import './Event.js';
 import './House.js';
