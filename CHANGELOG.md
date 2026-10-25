@@ -1,5 +1,11 @@
 # @\_linked/schema
 
+## 1.9.0
+
+### Minor Changes
+
+- [#88](https://github.com/linked-fw/schema/pull/88) [`4f915be`](https://github.com/linked-fw/schema/commit/4f915bedf21cfb2e7136880b8a5be12f230e0bcc) Thanks [@flyon](https://github.com/flyon)! - Adds a `Dataset` shape for `schema:Dataset`. It extends `CreativeWork` and adds no properties of its own, so a package whose dataset class is `rdfs:subClassOf schema:Dataset` can extend it.
+
 ## 1.8.2
 
 ### Patch Changes
