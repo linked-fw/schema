@@ -10,7 +10,9 @@
   ],
   "version": "1.9.1",
   "packageManager": "npm@12.2.0",
-  "linkedPackage": true,
+  "linked": {
+    "kind": "ontology"
+  },
   "linkedOntologies": {
     "schema": {
       "namespace": "http://schema.org/",
