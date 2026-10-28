@@ -1,5 +1,11 @@
 # @\_linked/schema
 
+## 1.9.2
+
+### Patch Changes
+
+- [#94](https://github.com/linked-fw/schema/pull/94) [`3bb2faa`](https://github.com/linked-fw/schema/commit/3bb2faa3a36615262486ffc5709fd54dbd902eaa) Thanks [@flyon](https://github.com/flyon)! - `package.json` says what this package is in `"linked": {"kind": "ontology"}` instead of `"linkedPackage": true`, which the CLI and server no longer read.
+
 ## 1.9.1
 
 ### Patch Changes
