@@ -11,7 +11,7 @@ summary: >
 
 # 004 — Turtle data, schema.org's hierarchy and only schema.org's terms
 
-Step P1 of CN plan 070 (store inference and ontology data), on the `store-inference` integration
+Step P1 of the host app's store-inference plan (store inference and ontology data), on the `store-inference` integration
 branch; released with the plan's release PR. Changeset: **major**
 (`.changeset/store-inference-schema-terms.md`, which lists every breaking change).
 
@@ -114,15 +114,14 @@ schema-added.ttl parsed 6 triples; JSON-LD 6 N-Quads; missing 0, extra 0
 The writer is idempotent: rewriting the jsonld N-Quads gives `schema.ttl` byte for byte, and it
 converts schema.org's current `.nt` release (1,101,977 B of Turtle) without error.
 
-## Effects on consumers (CN: C2)
+## Effects on consumers (host app: C2)
 
-- `src/pages/ComponentShapeConverter.tsx:97,112,130` compare a label to `isMarried` (dead); test
-  data `infra/peacegame/production-copy-for-test-env.n3`, `infra/fuseki/test-data/pg-production-copy.n3`
+- One host app page compares a label to `isMarried` (dead code); two of its test data files
   mention `isMarried`/`childItem`.
 - Stored addresses typed `schema:Thing` and data feed items typed `schema:CreativeWork` are no
-  longer selected by `PostalAddress`/`DataFeedItem`; CN and packages-local have no code using
+  longer selected by `PostalAddress`/`DataFeedItem`; the host app and packages-local have no code using
   `JoinAction`, `BefriendAction`, `Action.participant`/`objects`, `ArtBlock` or `childItem`.
-- Every `schema:` IRI a CN shape uses must be in `schema.ttl`; the mirror check reports the rest
+- Every `schema:` IRI a host app shape uses must be in `schema.ttl`; the mirror check reports the rest
   against this package.
 - `@_linked/org` and `@_linked/sioc` raise their `@_linked/schema` range to this major at release.
 
