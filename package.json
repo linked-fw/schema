@@ -37,11 +37,11 @@
     "test": "node --test tests/*.test.mjs"
   },
   "dependencies": {
-    "@_linked/core": "^2.41.0",
-    "@_linked/primitives": "^1.9.0",
-    "@_linked/react": "^2.0.0",
-    "@_linked/server-utils": "^1.16.1",
-    "@_linked/xsd": "^1.4.0",
+    "@_linked/core": "^3.0.0",
+    "@_linked/primitives": "^2.0.0",
+    "@_linked/react": "^3.0.0",
+    "@_linked/server-utils": "^2.0.0",
+    "@_linked/xsd": "^2.0.0",
     "formidable": "^3.5.4",
     "prism-react-renderer": "^2.4.1"
   },
