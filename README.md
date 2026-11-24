@@ -31,11 +31,16 @@ Names are generated, one rule for all: a character that cannot appear in an iden
 `_`, a leading digit gets a leading `_` (`schema:3DModel` → `schema._3DModel`), and a reserved word
 gets a trailing `_` (`schema:yield` → `schema.yield_`). There are no aliases.
 
-`ns`, `dataFiles`, `loadData()` and `_ontologyResource` are in `@_linked/schema/ontologies/schema.data`:
+Each term is an `{id}` with its full IRI. For a namespace function, use core's:
 
 ```ts
-import {ns} from '@_linked/schema/ontologies/schema.data';
+import {createNameSpace} from '@_linked/core/utils/NameSpace';
+
+const ns = createNameSpace('http://schema.org/');
 ```
+
+`ontologies/index` registers the ontology with its data and suggested prefix (`schema`). The
+package registers no prefix: an app lists the prefixes it uses in its own prefix map.
 
 Importing the package root (`@_linked/schema`) or `shapes/index` registers the ontology, which
 keeps every term;

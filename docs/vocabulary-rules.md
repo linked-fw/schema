@@ -10,8 +10,7 @@ summary: >
 
 `@_linked/schema` mirrors [schema.org](https://schema.org) (`linkedPackage('@_linked/schema',
 {mirrors: 'http://schema.org/'})`). The same rules hold for every package that mirrors a published
-standard (`@_linked/dcat`, `dcmi`, `org`, `sioc`, `owl`, `rdfs`, `xsd`); CN's arch-03
-(§Standard-vocabulary packages) states them for all of them.
+standard (`@_linked/dcat`, `dcmi`, `org`, `sioc`, `owl`, `rdfs`, `xsd`).
 
 ## Only schema.org's terms
 
