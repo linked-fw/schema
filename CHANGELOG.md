@@ -1,5 +1,11 @@
 # @\_linked/schema
 
+## 2.0.0
+
+### Major Changes
+
+- [#104](https://github.com/linked-fw/schema/pull/104) [`d56429b`](https://github.com/linked-fw/schema/commit/d56429b4680a1b90b4756c4f872c14bb060cb39e) Thanks [@flyon](https://github.com/flyon)! - Ontology modules in the one-index layout, and no prefix registered. `ontologies/schema` holds only the terms, each an `{id}` with its full IRI. `ontologies/index` registers every ontology of the package with core's `registerOntologies` (data and suggested prefix); the package entry and `shapes/index` import it. Removed: the `ontologies/<name>.data` and `ontologies/<name>.register` modules (`ns`, `dataFiles`, `loadData`, `_ontologyResource`) and `linkedOntology` from `package` (now `registerOntologies`). The package no longer adds a prefix: an app lists the prefixes it uses in its own prefix map. For a namespace function use `createNameSpace(namespace)` from `@_linked/core/utils/NameSpace`; for the data, the registration from `getRegisteredOntologies()`. Namespaces, term names and term IRIs are unchanged. Requires the core release with `registerOntologies`.
+
 ## 1.9.2
 
 ### Patch Changes
