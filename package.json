@@ -9,7 +9,7 @@
     "NOTICE"
   ],
   "version": "2.0.0",
-  "packageManager": "npm@12.2.0",
+  "packageManager": "npm@12.2.3",
   "linked": {
     "kind": "ontology"
   },
